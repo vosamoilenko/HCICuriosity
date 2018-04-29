@@ -81,4 +81,31 @@ class NewsController: NSObject {
         return sortedById
     }
     
+    func sortByDate(from: Date, to: Date=Date())->[News]{
+        var sortedByDate=[News]()
+        for searchedNews in newsArray{
+            if((searchedNews.date>=from) && (searchedNews.date<=to)){
+                sortedByDate.append(searchedNews)
+            }
+        }
+        return sortedByDate
+    }
+    
+    func getLastNews() -> [News]{
+        var sortedLast=[News]()
+        var dateForComparing=newsArray[0].date!
+        for searchedNews in newsArray{
+            if(searchedNews.date>dateForComparing){
+                dateForComparing=searchedNews.date
+            }
+        }
+        
+        for searchedNews in newsArray{
+            if(searchedNews.date==dateForComparing){
+                sortedLast.append(searchedNews)
+            }
+        }
+        return sortedLast
+    }
+    
 }

@@ -9,16 +9,16 @@
 import UIKit
 
 class News: NSObject {
-    let id: Int
-    let title: String
-    let category: String
-    let descriptionOfNews: String
-    let text: String
-    let source: String
-    let keywords: String
-    //let date: Date
+    let id: Int!
+    let title: String!
+    let category: String!
+    let descriptionOfNews: String!
+    let text: String!
+    let source: String!
+    let keywords: String!
+    let date: Date!
     
-    init(id:Int, title:String, category: String, descriptionOfNews: String, text: String, source:String, keywords:String){
+    init(id:Int, title:String, category: String, descriptionOfNews: String, text: String, source:String, keywords:String, date:String){
         self.id=id
         self.title=title
         self.category=category
@@ -26,7 +26,12 @@ class News: NSObject {
         self.text=text
         self.source=source
         self.keywords=keywords
-        //self.date=date
+        
+        let formatter = DateFormatter()
+        formatter.timeZone=TimeZone(abbreviation: "GMT")
+        formatter.dateFormat = "dd.MM.yyyy"
+        let someDateTime = formatter.date(from: date)
+        self.date=someDateTime
     }
 
 }
