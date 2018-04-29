@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1686A2920960F6700C5522F /* HCIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2720960F6700C5522F /* HCIListViewController.swift */; };
+		B1686A2A20960F6700C5522F /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2820960F6700C5522F /* NewsController.swift */; };
+		B1686A2C20960F7E00C5522F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2B20960F7E00C5522F /* News.swift */; };
+		B1686A2E20960F9B00C5522F /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2D20960F9B00C5522F /* CuriosityTests.swift */; };
 		E7E58EFB2095FC22003FFEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E58EFA2095FC22003FFEA7 /* AppDelegate.swift */; };
 		E7E58EFD2095FC22003FFEA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E58EFC2095FC22003FFEA7 /* ViewController.swift */; };
 		E7E58F002095FC22003FFEA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E58EFE2095FC22003FFEA7 /* Main.storyboard */; };
 		E7E58F022095FC22003FFEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E58F012095FC22003FFEA7 /* Assets.xcassets */; };
 		E7E58F052095FC22003FFEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E58F032095FC22003FFEA7 /* LaunchScreen.storyboard */; };
-		E7E58F102095FC22003FFEA7 /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E58F0F2095FC22003FFEA7 /* CuriosityTests.swift */; };
 		E7E58F1B2095FC22003FFEA7 /* CuriosityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E58F1A2095FC22003FFEA7 /* CuriosityUITests.swift */; };
 		E7E58F2F2095FE66003FFEA7 /* HCINewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E58F2A2095FE65003FFEA7 /* HCINewsTableViewCell.swift */; };
 		E7E58F302095FE66003FFEA7 /* HCINewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E58F2B2095FE65003FFEA7 /* HCINewsTableViewCell.xib */; };
@@ -39,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1686A2720960F6700C5522F /* HCIListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCIListViewController.swift; sourceTree = "<group>"; };
+		B1686A2820960F6700C5522F /* NewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		B1686A2B20960F7E00C5522F /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		B1686A2D20960F9B00C5522F /* CuriosityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
 		E7E58EF72095FC22003FFEA7 /* Curiosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curiosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E58EFA2095FC22003FFEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7E58EFC2095FC22003FFEA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +54,6 @@
 		E7E58F042095FC22003FFEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7E58F062095FC22003FFEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E58F0B2095FC22003FFEA7 /* CuriosityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuriosityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7E58F0F2095FC22003FFEA7 /* CuriosityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
 		E7E58F112095FC22003FFEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E58F162095FC22003FFEA7 /* CuriosityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuriosityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E58F1A2095FC22003FFEA7 /* CuriosityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityUITests.swift; sourceTree = "<group>"; };
@@ -84,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1686A1F20960E9200C5522F /* Modell */ = {
+			isa = PBXGroup;
+			children = (
+				B1686A2B20960F7E00C5522F /* News.swift */,
+			);
+			path = Modell;
+			sourceTree = "<group>";
+		};
+		B1686A2020960EA400C5522F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1686A2720960F6700C5522F /* HCIListViewController.swift */,
+				B1686A2820960F6700C5522F /* NewsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E7E58EEE2095FC22003FFEA7 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +130,8 @@
 		E7E58EF92095FC22003FFEA7 /* Curiosity */ = {
 			isa = PBXGroup;
 			children = (
+				B1686A2020960EA400C5522F /* Controller */,
+				B1686A1F20960E9200C5522F /* Modell */,
 				E7E58EFA2095FC22003FFEA7 /* AppDelegate.swift */,
 				E7E58EFC2095FC22003FFEA7 /* ViewController.swift */,
 				E7E58EFE2095FC22003FFEA7 /* Main.storyboard */,
@@ -122,7 +147,7 @@
 		E7E58F0E2095FC22003FFEA7 /* CuriosityTests */ = {
 			isa = PBXGroup;
 			children = (
-				E7E58F0F2095FC22003FFEA7 /* CuriosityTests.swift */,
+				B1686A2D20960F9B00C5522F /* CuriosityTests.swift */,
 				E7E58F112095FC22003FFEA7 /* Info.plist */,
 			);
 			path = CuriosityTests;
@@ -220,6 +245,7 @@
 					};
 					E7E58F0A2095FC22003FFEA7 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E7E58EF62095FC22003FFEA7;
 					};
@@ -286,7 +312,10 @@
 			files = (
 				E7E58F362095FEF0003FFEA7 /* Constants.swift in Sources */,
 				E7E58F2F2095FE66003FFEA7 /* HCINewsTableViewCell.swift in Sources */,
+				B1686A2C20960F7E00C5522F /* News.swift in Sources */,
 				E7E58F342095FECB003FFEA7 /* HCITitleNavigationBarView.swift in Sources */,
+				B1686A2A20960F6700C5522F /* NewsController.swift in Sources */,
+				B1686A2920960F6700C5522F /* HCIListViewController.swift in Sources */,
 				E7E58EFD2095FC22003FFEA7 /* ViewController.swift in Sources */,
 				E7E58EFB2095FC22003FFEA7 /* AppDelegate.swift in Sources */,
 			);
@@ -296,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7E58F102095FC22003FFEA7 /* CuriosityTests.swift in Sources */,
+				B1686A2E20960F9B00C5522F /* CuriosityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,11 +514,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CuriosityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hci-group3-interactive-news-explorer.CuriosityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Curiosity.app/Curiosity";
@@ -501,6 +532,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CuriosityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
