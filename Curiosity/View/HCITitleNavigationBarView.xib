@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCITitleNavigationBarView" customModule="Curiosity" customModuleProvider="target">
+            <connections>
+                <outlet property="category" destination="PVg-zM-Q0O" id="YpD-eL-lDS"/>
+                <outlet property="logoLabel" destination="oaa-PS-xRK" id="Iai-wm-zOK"/>
+                <outlet property="menuButton" destination="cji-cU-s8R" id="K6y-bK-D8u"/>
+                <outlet property="searchButton" destination="FSX-Eg-GBg" id="cS5-UR-nOd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Ya-Mq-eRk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaa-PS-xRK">
+                    <rect key="frame" x="154" y="11" width="68" height="19"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Curiosity">
+                            <attributes>
+                                <font key="NSFont" size="17" name="Times-Bold"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVg-zM-Q0O">
+                    <rect key="frame" x="159" y="31" width="57" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="category">
+                            <attributes>
+                                <font key="NSFont" size="14" name="AvenirNext-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHX-29-aLL">
+                    <rect key="frame" x="60" y="58" width="255" height="1"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="SYO-4f-LP8"/>
+                        <constraint firstAttribute="height" constant="1" id="dDQ-Ol-adt"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSX-Eg-GBg">
+                    <rect key="frame" x="329" y="14" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="searchIcon"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cji-cU-s8R">
+                    <rect key="frame" x="16" y="15" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="menuIcon"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PVg-zM-Q0O" firstAttribute="top" secondItem="oaa-PS-xRK" secondAttribute="bottom" constant="1" id="00v-cl-vwb"/>
+                <constraint firstAttribute="trailing" secondItem="BHX-29-aLL" secondAttribute="trailing" constant="60" id="8TS-fh-5cR"/>
+                <constraint firstItem="BHX-29-aLL" firstAttribute="leading" secondItem="8Ya-Mq-eRk" secondAttribute="leading" constant="60" id="Di1-8e-0yb"/>
+                <constraint firstItem="oaa-PS-xRK" firstAttribute="centerX" secondItem="8Ya-Mq-eRk" secondAttribute="centerX" id="Qzk-FR-omp"/>
+                <constraint firstItem="PVg-zM-Q0O" firstAttribute="centerX" secondItem="8Ya-Mq-eRk" secondAttribute="centerX" id="iiC-rn-3tT"/>
+                <constraint firstItem="ryx-Ba-Tv1" firstAttribute="bottom" secondItem="BHX-29-aLL" secondAttribute="bottom" id="plg-e9-eqU"/>
+                <constraint firstItem="oaa-PS-xRK" firstAttribute="top" secondItem="ryx-Ba-Tv1" secondAttribute="top" constant="11" id="qIg-yL-pTL"/>
+                <constraint firstItem="ryx-Ba-Tv1" firstAttribute="bottom" secondItem="BHX-29-aLL" secondAttribute="bottom" id="rmZ-iK-w44"/>
+                <constraint firstItem="PVg-zM-Q0O" firstAttribute="top" secondItem="oaa-PS-xRK" secondAttribute="bottom" constant="1" id="yuk-az-3qj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ryx-Ba-Tv1"/>
+            <point key="canvasLocation" x="205" y="-93"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menuIcon" width="100" height="100"/>
+        <image name="searchIcon" width="86" height="88"/>
+    </resources>
+</document>

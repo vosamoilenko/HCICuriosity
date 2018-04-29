@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCINewsTableViewCell" customModule="Curiosity" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="HCINewsTableViewCell" customModule="Curiosity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vty-u5-2Uo">
+                        <rect key="frame" x="15" y="8" width="345" height="16"/>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYm-FS-tWh">
+                        <rect key="frame" x="15" y="34" width="345" height="14"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Descripttion">
+                                <attributes>
+                                    <font key="NSFont" size="12" name="ArialMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVv-h8-Tfu">
+                        <rect key="frame" x="15" y="58" width="345" height="14"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Author">
+                                <attributes>
+                                    <font key="NSFont" size="12" name="ArialMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94K-kE-2jf">
+                        <rect key="frame" x="15" y="75" width="345" height="11.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Date">
+                                <attributes>
+                                    <font key="NSFont" size="10" name="ArialMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFo-tP-XfC">
+                        <rect key="frame" x="60" y="96" width="255" height="1"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="775-i6-BDD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xYm-FS-tWh" firstAttribute="top" secondItem="vty-u5-2Uo" secondAttribute="bottom" constant="10" id="1fT-P0-g3T"/>
+                    <constraint firstItem="eFo-tP-XfC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="KHo-Nz-1zc"/>
+                    <constraint firstAttribute="bottom" secondItem="eFo-tP-XfC" secondAttribute="bottom" constant="2.5" id="MDd-pr-x5r"/>
+                    <constraint firstItem="vty-u5-2Uo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="NI4-ns-TrS"/>
+                    <constraint firstItem="94K-kE-2jf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="NO9-36-W1a"/>
+                    <constraint firstAttribute="trailing" secondItem="eFo-tP-XfC" secondAttribute="trailing" constant="60" id="QnP-PQ-eqc"/>
+                    <constraint firstAttribute="trailing" secondItem="vty-u5-2Uo" secondAttribute="trailing" constant="15" id="TVt-Wy-Fz9"/>
+                    <constraint firstAttribute="trailing" secondItem="94K-kE-2jf" secondAttribute="trailing" constant="15" id="c1n-w5-mKR"/>
+                    <constraint firstItem="vty-u5-2Uo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gqd-Z3-jrj"/>
+                    <constraint firstItem="eFo-tP-XfC" firstAttribute="top" secondItem="94K-kE-2jf" secondAttribute="bottom" constant="9.5" id="iYR-ZH-ir7"/>
+                    <constraint firstItem="94K-kE-2jf" firstAttribute="top" secondItem="OVv-h8-Tfu" secondAttribute="bottom" constant="3" id="jtu-eG-tx6"/>
+                    <constraint firstItem="OVv-h8-Tfu" firstAttribute="top" secondItem="xYm-FS-tWh" secondAttribute="bottom" constant="10" id="kJW-NA-yeZ"/>
+                    <constraint firstAttribute="trailing" secondItem="OVv-h8-Tfu" secondAttribute="trailing" constant="15" id="sc3-tk-N6S"/>
+                    <constraint firstItem="xYm-FS-tWh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="tWK-82-X1f"/>
+                    <constraint firstItem="OVv-h8-Tfu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="vop-ia-OjG"/>
+                    <constraint firstAttribute="trailing" secondItem="xYm-FS-tWh" secondAttribute="trailing" constant="15" id="zVK-rK-djB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLabel" destination="OVv-h8-Tfu" id="fWm-eM-ZXB"/>
+                <outlet property="dateLabel" destination="94K-kE-2jf" id="d8W-hi-Bij"/>
+                <outlet property="descriptionLabel" destination="xYm-FS-tWh" id="10D-WO-69j"/>
+                <outlet property="titleLabel" destination="vty-u5-2Uo" id="bwy-kE-tDN"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

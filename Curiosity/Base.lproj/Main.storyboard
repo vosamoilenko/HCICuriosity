@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,74 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-9f-QUd" customClass="HCITitleNavigationBarView" customModule="Curiosity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="ady-EE-4xA"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NE5-5f-N9L">
+                                <rect key="frame" x="0.0" y="104" width="320" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="OAx-Ko-eUl"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJR-WV-RLn">
+                                <rect key="frame" x="0.0" y="104" width="320" height="464"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Cug-54-2Gq">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cug-54-2Gq" id="MEq-3u-ZKQ" customClass="HCINewsTableViewCell" customModule="Curiosity" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mJR-WV-RLn" firstAttribute="top" secondItem="hzi-9f-QUd" secondAttribute="bottom" id="0r6-2S-JCH"/>
+                            <constraint firstItem="NE5-5f-N9L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5LN-aj-UaT"/>
+                            <constraint firstItem="NE5-5f-N9L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kat-I5-B1A"/>
+                            <constraint firstItem="mJR-WV-RLn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q2N-gl-IqA"/>
+                            <constraint firstItem="hzi-9f-QUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Utw-m5-K5k"/>
+                            <constraint firstItem="hzi-9f-QUd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V3u-t9-jO5"/>
+                            <constraint firstItem="NE5-5f-N9L" firstAttribute="top" secondItem="hzi-9f-QUd" secondAttribute="bottom" id="Z8S-Ac-Eu8"/>
+                            <constraint firstItem="mJR-WV-RLn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iO4-qx-XpO"/>
+                            <constraint firstItem="hzi-9f-QUd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rH9-9k-AWz"/>
+                            <constraint firstItem="mJR-WV-RLn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yUF-PJ-42g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0AV-Xs-AVP" appends="YES" id="yTU-Xu-41I"/>
+                            <outletCollection property="gestureRecognizers" destination="uNN-80-TE7" appends="YES" id="uDG-hZ-8OR"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="leftSwipeRecognizer" destination="uNN-80-TE7" id="F3J-0E-U9F"/>
+                        <outlet property="rightSwipeRecognizer" destination="0AV-Xs-AVP" id="1F0-Zg-Zef"/>
+                        <outlet property="searchBar" destination="NE5-5f-N9L" id="4m6-zx-Gmm"/>
+                        <outlet property="tableView" destination="mJR-WV-RLn" id="E4c-WK-x2e"/>
+                        <outlet property="titleView" destination="hzi-9f-QUd" id="znH-Ci-9KG"/>
+                        <outlet property="topConstrain" destination="0r6-2S-JCH" id="cFR-M4-bS2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="0AV-Xs-AVP"/>
+                <swipeGestureRecognizer direction="right" id="uNN-80-TE7"/>
             </objects>
+            <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
     </scenes>
 </document>
