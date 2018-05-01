@@ -9,6 +9,11 @@
 import UIKit
 
 class HCIArticleViewController: UIViewController {
+    @IBOutlet var mainPicture: UIImageView!
+    @IBOutlet var articleTitle: UILabel!
+    @IBOutlet var articleSource: UILabel!
+    @IBOutlet var articleDescription: UILabel!
+    @IBOutlet var articleText: UITextView!
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
     @IBOutlet weak var toolbar: UIToolbar!
     
@@ -25,7 +30,17 @@ class HCIArticleViewController: UIViewController {
         super.viewDidLoad()
         
         self.titleView.category.text = category
+        articleText?.isEditable = false
+        initializeFakeArticleData()
         initializeToolbar()
+    }
+    
+    func initializeFakeArticleData() {
+        mainPicture.image = UIImage(named: "testPic")
+        articleTitle?.text = fakeTitle
+        articleSource?.text = fakeSource
+        articleDescription?.text = fakeDescription
+        articleText?.text = fakeText
     }
     
     func initializeToolbar() {
@@ -33,8 +48,6 @@ class HCIArticleViewController: UIViewController {
         beginningSpace.width = CGFloat(toolbarBeginningSpace)
         let usualSpace : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         usualSpace.width = CGFloat(toolbarSpace)
-        let middleSpace : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-        middleSpace.width = CGFloat(toolbarMiddleSpace)
         
         barButtonItems.append(beginningSpace)
         barButtonItems.append(UIBarButtonItem(image: UIImage(named: "followIcon"), style: .plain, target: self, action: #selector(followPressed(sender:))))

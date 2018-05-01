@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var rightSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet var leftSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet weak var searchBar: UISearchBar!
-    
+
     @IBOutlet weak var topConstrain: NSLayoutConstraint!
     
     
@@ -111,14 +111,13 @@ extension ViewController  {
 }
 extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if isSearchBarVisible {
-//            openSearchBar()
-//        }
+        if isSearchBarVisible {
+            openSearchBar()
+        }
         
         if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
             avc.category = titleView.category.text!
             self.present(avc, animated: true, completion: nil)
-//            navigationController?.pushViewController(avc, animated: true)
         }
     }
 }

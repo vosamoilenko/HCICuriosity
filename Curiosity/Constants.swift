@@ -12,9 +12,15 @@ import UIKit
 //Toolbar constants
 var toolbarBeginningSpace = 15
 var toolbarSpace = 40
-var toolbarMiddleSpace = 115
 
-let defaultColor = UIColor.gray
+let defaultColor = UIColor.darkGray
+
+//fake data for article view
+//@Alina
+    let fakeTitle = "Why are chemical weapons worse than other weapons of mass destruction?"
+    let fakeSource = "William Schabas, The Guardian"
+    let fakeDescription = "The outrage of nuclear-armed countries at their use in Syria has the whiff of hypocrisy."
+    let fakeText = "When the British, French and American governments used force against Syria earlier this month, they claimed they were acting to ensure respect for international law. Yet the use of force without the authorisation of the United Nations security council is contrary to the charter of the UN. There is something bewildering about violating international law in order to promote the enforcement of international law. If there is a taboo on the use of chemical weapons, why is there not also a taboo on the unilateral use of armed force, contrary to international law? Does one taboo trump the other?\n That three nuclear powers express outrage about inhumane weapons has a ring of cynicism. Their conduct recalls that of tobacco companies howling about the health dangers of electronic cigarettes. Although couched in humanitarian language, the real motives of the United States, France and Britain may have more to do with protecting a monopoly on weapons of terror.\nThe use of chemical weapons in the Syrian civil war appears to be occasional and somewhat isolated, rather than systematic. In a conflict responsible for the deaths of 500,000 people, most of them civilians, the casualties from chemical weapons probably number in the hundreds. The use of chemical weapons is hardly the only serious violation of international humanitarian law to feature in the conflict.\nMany categories of weapons are prohibited by specific treaties and declarations that form part of international law. The earliest such rule dates back exactly 150 years. The St Petersburg Declaration of 1868 condemned the use of exploding bullets. The pre-first world war Hague Conventions established that “the right of belligerents to adopt means of injuring the enemy is not unlimited”. They expressly prohibit “poison or poisoned arms”. After the 1914-18 war, British government lawyers prepared criminal charges against Kaiser Wilhelm II for the use of poison gas and “liquid fire” by German forces. A century later, lists of prohibited weapons include asphyxiating gas, cluster munitions, anti-personnel mines and blinding laser weapons."
 
 // This fake data I used for working on my screen
 // @Volodymyr
