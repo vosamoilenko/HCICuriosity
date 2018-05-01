@@ -111,8 +111,14 @@ extension ViewController  {
 }
 extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if isSearchBarVisible {
-            openSearchBar()
+//        if isSearchBarVisible {
+//            openSearchBar()
+//        }
+        
+        if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
+            avc.category = titleView.category.text!
+            self.present(avc, animated: true, completion: nil)
+//            navigationController?.pushViewController(avc, animated: true)
         }
     }
 }
@@ -133,10 +139,13 @@ extension ViewController : UITableViewDataSource {
         
         return cell!
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return decr.count;
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }
 }
+

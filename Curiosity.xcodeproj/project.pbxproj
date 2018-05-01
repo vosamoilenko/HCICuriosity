@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		979E69CA209783E600C1B184 /* HCIArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E69C9209783E600C1B184 /* HCIArticleViewController.swift */; };
 		B1686A2920960F6700C5522F /* HCIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2720960F6700C5522F /* HCIListViewController.swift */; };
 		B1686A2A20960F6700C5522F /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2820960F6700C5522F /* NewsController.swift */; };
 		B1686A2C20960F7E00C5522F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2B20960F7E00C5522F /* News.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		979E69C9209783E600C1B184 /* HCIArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIArticleViewController.swift; sourceTree = "<group>"; };
 		B1686A2720960F6700C5522F /* HCIListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCIListViewController.swift; sourceTree = "<group>"; };
 		B1686A2820960F6700C5522F /* NewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		B1686A2B20960F7E00C5522F /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B1686A2720960F6700C5522F /* HCIListViewController.swift */,
+				979E69C9209783E600C1B184 /* HCIArticleViewController.swift */,
 				B1686A2820960F6700C5522F /* NewsController.swift */,
 			);
 			path = Controller;
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979E69CA209783E600C1B184 /* HCIArticleViewController.swift in Sources */,
 				E7E58F362095FEF0003FFEA7 /* Constants.swift in Sources */,
 				E7E58F2F2095FE66003FFEA7 /* HCINewsTableViewCell.swift in Sources */,
 				B1686A2C20960F7E00C5522F /* News.swift in Sources */,

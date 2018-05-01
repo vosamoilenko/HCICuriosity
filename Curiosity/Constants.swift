@@ -1,11 +1,17 @@
 //
-//  Constats.swift
+//  Constants.swift
 //  Curiosity
 //
 //  Copyright © 2018 InteractiveNewsExplorer. All rights reserved.
 //
 
 import Foundation
+
+//Article View Constants
+//Toolbar constants
+var toolbarBeginningSpace = 15
+var toolbarSpace = 40
+var toolbarMiddleSpace = 115
 
 // This fake data I used for working on my screen
 // @Volodymyr

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,6 +80,48 @@
                 <swipeGestureRecognizer direction="right" id="uNN-80-TE7"/>
             </objects>
             <point key="canvasLocation" x="135" y="133.09859154929578"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="nSD-3X-Jz3">
+            <objects>
+                <viewController storyboardIdentifier="Article" id="oul-MZ-p4u" customClass="HCIArticleViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vwy-Gl-GyW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPA-kG-1KP">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="kvH-qF-DRr"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEu-Gp-O3h" userLabel="Title View" customClass="HCITitleNavigationBarView" customModule="Curiosity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="QhG-nn-di7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FEu-Gp-O3h" firstAttribute="top" secondItem="gB2-hf-ltK" secondAttribute="top" id="4sa-EP-4nQ"/>
+                            <constraint firstAttribute="trailing" secondItem="rPA-kG-1KP" secondAttribute="trailing" id="6ej-aa-uBZ"/>
+                            <constraint firstItem="rPA-kG-1KP" firstAttribute="bottom" secondItem="gB2-hf-ltK" secondAttribute="bottom" id="Qge-dn-YnG"/>
+                            <constraint firstItem="FEu-Gp-O3h" firstAttribute="leading" secondItem="gB2-hf-ltK" secondAttribute="leading" id="ah4-k1-8ho"/>
+                            <constraint firstItem="rPA-kG-1KP" firstAttribute="leading" secondItem="vwy-Gl-GyW" secondAttribute="leading" id="eAY-kG-0qA"/>
+                            <constraint firstItem="gB2-hf-ltK" firstAttribute="trailing" secondItem="FEu-Gp-O3h" secondAttribute="trailing" id="iVQ-Vg-nfr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gB2-hf-ltK"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleView" destination="FEu-Gp-O3h" id="OCv-M9-bJL"/>
+                        <outlet property="toolbar" destination="rPA-kG-1KP" id="v6b-95-lGl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dy4-RO-MQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="133"/>
         </scene>
     </scenes>
 </document>
