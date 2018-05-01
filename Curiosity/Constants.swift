@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import UIKit
 
 //Article View Constants
 //Toolbar constants
 var toolbarBeginningSpace = 15
 var toolbarSpace = 40
 var toolbarMiddleSpace = 115
+
+let defaultColor = UIColor.gray
 
 // This fake data I used for working on my screen
 // @Volodymyr
