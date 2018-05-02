@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
     @IBOutlet var rightSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet var leftSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet weak var searchBar: UISearchBar!
-
     @IBOutlet weak var topConstrain: NSLayoutConstraint!
+    
     
     
     
@@ -26,6 +26,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.delegate = self
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -117,7 +121,7 @@ extension ViewController : UITableViewDelegate {
         
         if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
             avc.category = titleView.category.text!
-            self.present(avc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(avc, animated: true)
         }
     }
 }
