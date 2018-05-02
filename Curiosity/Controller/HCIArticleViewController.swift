@@ -33,6 +33,23 @@ class HCIArticleViewController: UIViewController {
         articleText?.isEditable = false
         initializeFakeArticleData()
         initializeToolbar()
+        
+        // I add a function for changing a behaviour and image of button.
+        // Now it after pressing go back to ViewController.
+        
+        self.titleView.activateBackButton()
+        
+        // Set observer for recieving a notification from
+        // titleView.menuButton when it's pressed.
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(dismissVc),
+            name: Notification.Name("backButtonPressed"),
+            object: nil)
+    }
+    // This func is connected with observer as a selector.
+    @objc func dismissVc() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     func initializeFakeArticleData() {

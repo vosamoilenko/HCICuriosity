@@ -17,8 +17,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var topConstrain: NSLayoutConstraint!
     
     
-    
-    
     var categoryIndex = 0
     var isSearchBarVisible = false
     var isMenuBarVisible = false
@@ -55,6 +53,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             selector: #selector(openMenuBar),
             name: Notification.Name("menuButtonPressed"),
             object: nil)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -117,12 +116,13 @@ extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if isSearchBarVisible {
             openSearchBar()
+        } else {
+            if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
+                avc.category = titleView.category.text!
+                self.navigationController?.pushViewController(avc, animated: true)
+            }
         }
-        
-        if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
-            avc.category = titleView.category.text!
-            self.navigationController?.pushViewController(avc, animated: true)
-        }
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 extension ViewController : UITableViewDataSource {
