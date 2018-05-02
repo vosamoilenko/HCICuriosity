@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="0AV-Xs-AVP"/>
-                <swipeGestureRecognizer direction="right" id="uNN-80-TE7"/>
+                <swipeGestureRecognizer direction="left" id="uNN-80-TE7"/>
             </objects>
             <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
