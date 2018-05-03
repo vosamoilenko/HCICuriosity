@@ -5,19 +5,13 @@
 //  Created by Alina Godun on 30.04.18.
 //  Copyright © 2018 InteractiveNewsExplorer. All rights reserved.
 //
-
 import UIKit
+import WebKit
 
 class HCIArticleViewController: UIViewController {
-    @IBOutlet var mainPicture: UIImageView!
-    @IBOutlet var articleTitle: UILabel!
-    @IBOutlet var articleSource: UILabel!
-    @IBOutlet var articleDescription: UILabel!
-    @IBOutlet var articleText: UITextView!
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
+    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
-    
-    let articleLink = "http://fakearticle.com/article/234562/"
     
     var category = String()
     var followPressed = false
@@ -30,13 +24,13 @@ class HCIArticleViewController: UIViewController {
         super.viewDidLoad()
         
         self.titleView.category.text = category
-        articleText?.isEditable = false
-        initializeFakeArticleData()
+        
+        let htmlHelper = HTMLHelper()
+        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: fakeNews), baseURL: nil)
         initializeToolbar()
         
         // I add a function for changing a behaviour and image of button.
         // Now it after pressing go back to ViewController.
-        
         self.titleView.activateBackButton()
         
         // Set observer for recieving a notification from
@@ -47,17 +41,10 @@ class HCIArticleViewController: UIViewController {
             name: Notification.Name("backButtonPressed"),
             object: nil)
     }
+    
     // This func is connected with observer as a selector.
     @objc func dismissVc() {
         self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    func initializeFakeArticleData() {
-        mainPicture.image = UIImage(named: "testPic")
-        articleTitle?.text = fakeTitle
-        articleSource?.text = fakeSource
-        articleDescription?.text = fakeDescription
-        articleText?.text = fakeText
     }
     
     func initializeToolbar() {
@@ -133,7 +120,7 @@ class HCIArticleViewController: UIViewController {
     }
     
     @objc func share(sender: UIBarButtonItem) {
-        let avc = UIActivityViewController(activityItems: [articleLink], applicationActivities: [])
+        let avc = UIActivityViewController(activityItems: [fakeArticleLink], applicationActivities: [])
         avc.popoverPresentationController?.sourceView = self.view
         present(avc, animated: true)
     }
