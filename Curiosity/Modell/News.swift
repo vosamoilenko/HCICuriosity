@@ -10,6 +10,7 @@ import UIKit
 
 class News: NSObject {
     let id: Int!
+    let mainPic: String!
     let title: String!
     let category: String!
     let descriptionOfNews: String!
@@ -18,8 +19,9 @@ class News: NSObject {
     let keywords: String!
     let date: Date!
     
-    init(id:Int, title:String, category: String, descriptionOfNews: String, text: String, source:String, keywords:String, date:String){
+    init(id:Int, mainPicture: String,  title:String, category: String, descriptionOfNews: String, text: String, source:String, keywords:String, date:String){
         self.id=id
+        self.mainPic = mainPicture
         self.title=title
         self.category=category
         self.descriptionOfNews=descriptionOfNews

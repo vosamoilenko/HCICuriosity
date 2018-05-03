@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import WebKit
 
 class HCIArticleViewController: UIViewController {
-    @IBOutlet var mainPicture: UIImageView!
-    @IBOutlet var articleTitle: UILabel!
-    @IBOutlet var articleSource: UILabel!
-    @IBOutlet var articleDescription: UILabel!
-    @IBOutlet var articleText: UITextView!
+//    @IBOutlet var mainPicture: UIImageView!
+//    @IBOutlet var articleTitle: UILabel!
+//    @IBOutlet var articleSource: UILabel!
+//    @IBOutlet var articleDescription: UILabel!
+//    @IBOutlet var articleText: UITextView!
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
+    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
     
     let articleLink = "http://fakearticle.com/article/234562/"
@@ -30,8 +32,9 @@ class HCIArticleViewController: UIViewController {
         super.viewDidLoad()
         
         self.titleView.category.text = category
-        articleText?.isEditable = false
-        initializeFakeArticleData()
+        
+        let htmlHelper = HTMLHelper()
+        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: fakeNews), baseURL: nil)
         initializeToolbar()
         
         // I add a function for changing a behaviour and image of button.
@@ -52,12 +55,25 @@ class HCIArticleViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-    func initializeFakeArticleData() {
-        mainPicture.image = UIImage(named: "testPic")
-        articleTitle?.text = fakeTitle
-        articleSource?.text = fakeSource
-        articleDescription?.text = fakeDescription
-        articleText?.text = fakeText
+    func getHTMLStr() -> String {
+        var html = "<html>"
+        html += "<head>"
+        html += "<meta name=\"viewport\" content=\"initial-scale=1\">"
+        html += "<style> #title { text-align: center; font-size: 110%; margin: 3%}"
+        html += "#source { text-align: center; font-size: 75%; }"
+        html += "#title, #description { font-weight: 500; }"
+        html += "#text, #description { text-align: justify; font-size: 90%; }"
+        html += "#text, #source, #description { margin: 5%; }</style>"
+        html += "</head>"
+        html += "<body><font face = \"Avenir\">"
+        html += "<img src=\"" + fakeArticlePicLink + "\" width = 360>"
+        html += "<div id = \"title\"><p>" + fakeTitle + "</p></div>"
+        html += "<div id = \"source\"><p>" + fakeSource + "</p></div>"
+        html += "<div id = \"description\"><p>" + fakeDescription + "</p></div>"
+        html += "<div id = \"text\"><p>" + fakeText + "</p></div>"
+        html += "</font></body>"
+        html += "</html>"
+        return html;
     }
     
     func initializeToolbar() {
