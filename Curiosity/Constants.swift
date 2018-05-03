@@ -17,6 +17,7 @@ let defaultColor = UIColor.darkGray
 
 //fake data for article view
 //@Alina
+    let fakeArticleLink = "http://fakearticle.com/article/234562/"
     let fakeID = 1002;
     let fakeCategory = "Politics"
     let fakeKeywords = "Weapon, Politics, Guardian"
