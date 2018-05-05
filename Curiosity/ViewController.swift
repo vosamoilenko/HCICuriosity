@@ -38,7 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
         
-        self.titleView.category.text = cat[categoryIndex]
+        self.titleView.category.text = categoryArr[categoryIndex]
         
         self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
@@ -94,19 +94,20 @@ extension ViewController  {
     }
     func changeCategory(direction: UISwipeGestureRecognizerDirection) {
         
-        
         let isRight = (direction == .right) ? true : false
         let animationDirection = isRight ? UITableViewRowAnimation.right : UITableViewRowAnimation.left
+        
         if isRight {
             categoryIndex += 1
         } else {
             categoryIndex -= 1
         }
-        if categoryIndex < 0 {categoryIndex = cat.count - 1}
-        self.titleView.category.text = cat[categoryIndex%6]
+        if categoryIndex < 0 {categoryIndex = categoryArr.count - 1}
+        
+        self.titleView.category.text = categoryArr[categoryIndex%categoryArr.count]
         
         var arr = [IndexPath]()
-        for var i in decr.indices {
+        for var i in fakeDataSet.indices {
             arr.append(IndexPath.init(row: i, section: 0))
         }
         self.tableView.reloadRows(at: arr, with: animationDirection)
@@ -119,6 +120,7 @@ extension ViewController : UITableViewDelegate {
         } else {
             if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
                 avc.category = titleView.category.text!
+                avc.articleID = indexPath.row
                 self.navigationController?.pushViewController(avc, animated: true)
             }
         }
@@ -128,23 +130,24 @@ extension ViewController : UITableViewDelegate {
 extension ViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "HCINewsTableViewCell", for: indexPath) as? HCINewsTableViewCell
+        let fakeNews = fakeDataSet[indexPath.row]
         
-        let description = decr[indexPath.row]
-        let title = tit[indexPath.row]
-        let author = auth[indexPath.row]
-        let date = dat[indexPath.row]
         
-        cell?.descriptionLabel.text = description
+        let preview = fakeNews.preview
+        let title = fakeNews.title
+        let author = fakeNews.source
+        let date = fakeNews.date
+        
+        cell?.descriptionLabel.text = preview
         cell?.titleLabel.text = title
         cell?.authorLabel.text = author
         cell?.dateLabel.text = date
-        
         
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return decr.count;
+        return fakeDataSet.count;
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

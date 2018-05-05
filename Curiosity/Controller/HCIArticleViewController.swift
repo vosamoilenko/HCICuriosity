@@ -19,6 +19,8 @@ class HCIArticleViewController: UIViewController {
     var likePressed = false
     var savePressed = false
     
+    var articleID: Int!
+    
     var barButtonItems = [UIBarButtonItem]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,8 @@ class HCIArticleViewController: UIViewController {
         self.titleView.category.text = category
         
         let htmlHelper = HTMLHelper()
-        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: fakeNews), baseURL: nil)
+        
+        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: fakeDataSet[articleID]), baseURL: nil)
         initializeToolbar()
         
         // I add a function for changing a behaviour and image of button.
