@@ -7,8 +7,44 @@
 //
 import UIKit
 
-class NewsController: NSObject {
-//    var newsArray = [News]()
+enum NewsCategory: String {
+    case world = "World"
+    case business = "Business"
+    case technologie = "Technologie"
+    case sport = "Sport"
+    case health = "Health"
+    case science = "Science"
+    case entertainment = "Entertainment"
+}
+
+struct NewsManager {
+    var allNews = fakeDataSet
+    var currentCategoryIndex = 0
+    let categories = [
+        "World",
+        "Business",
+        "Technologie",
+        "Sport",
+        "Health",
+        "Science",
+        "Entertainment"
+    ]
+    var currentNews: [News] {
+        get {
+            return newsByCategoryIndex()
+        }
+    }
+    
+    func newsByCategoryIndex() -> [News] {
+        _ = 4
+        
+        return self.allNews.filter { (news) -> Bool in
+            print(self.currentCategoryIndex)
+            return news.category.rawValue == self.categories[self.currentCategoryIndex]
+        }
+    }
+  }
+
 //
 //    func sortByTitle(title:String)->[News]{
 //        var sortedByTitle=[News]()
@@ -107,5 +143,4 @@ class NewsController: NSObject {
 //        }
 //        return sortedLast
 //    }
-    
-}
+

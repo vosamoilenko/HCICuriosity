@@ -8,27 +8,6 @@
 import Foundation
 import UIKit
 
-
-enum NewsCategory: String {
-    case world = "World"
-    case business = "Business"
-    case technologie = "Technologie"
-    case sport = "Sport"
-    case health = "Heakth"
-    case science = "Science"
-    case entertainment = "Entertainment"
-}
-
-let categoryArr = [
-    "World",
-    "Business",
-    "Technologie",
-    "Sport",
-    "Health",
-    "Science",
-    "Entertainment"
-]
-
 //Article View Constants
 //Toolbar constants
 var toolbarBeginningSpace = 15

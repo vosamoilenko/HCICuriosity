@@ -16,8 +16,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var topConstrain: NSLayoutConstraint!
     
+    var newsManager = NewsManager()
     
-    var categoryIndex = 0
     var isSearchBarVisible = false
     var isMenuBarVisible = false
     var searchRequest: String = ""
@@ -38,7 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
         
-        self.titleView.category.text = categoryArr[categoryIndex]
+        self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex]
         
         self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
@@ -93,24 +93,28 @@ extension ViewController  {
         changeCategory(direction: sender.direction)
     }
     func changeCategory(direction: UISwipeGestureRecognizerDirection) {
-        
         let isRight = (direction == .right) ? true : false
         let animationDirection = isRight ? UITableViewRowAnimation.right : UITableViewRowAnimation.left
         
         if isRight {
-            categoryIndex += 1
+            self.newsManager.currentCategoryIndex += 1
         } else {
-            categoryIndex -= 1
+            self.newsManager.currentCategoryIndex -= 1
         }
-        if categoryIndex < 0 {categoryIndex = categoryArr.count - 1}
-        
-        self.titleView.category.text = categoryArr[categoryIndex%categoryArr.count]
-        
-        var arr = [IndexPath]()
-        for var i in fakeDataSet.indices {
-            arr.append(IndexPath.init(row: i, section: 0))
+        self.newsManager.currentCategoryIndex = self.newsManager.currentCategoryIndex % self.newsManager.categories.count
+        if self.newsManager.currentCategoryIndex < 0 {
+            self.newsManager.currentCategoryIndex = self.newsManager.categories.count - 1
         }
-        self.tableView.reloadRows(at: arr, with: animationDirection)
+        
+        
+        
+        self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex % self.newsManager.categories.count]
+        
+        self.tableView.beginUpdates()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
+        self.tableView.endUpdates()
+
+        
     }
 }
 extension ViewController : UITableViewDelegate {
@@ -127,11 +131,13 @@ extension ViewController : UITableViewDelegate {
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+
 extension ViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "HCINewsTableViewCell", for: indexPath) as? HCINewsTableViewCell
-        let fakeNews = fakeDataSet[indexPath.row]
         
+        let news = self.newsManager.currentNews
+        let fakeNews = news[indexPath.row]
         
         let preview = fakeNews.preview
         let title = fakeNews.title
@@ -147,7 +153,7 @@ extension ViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fakeDataSet.count;
+        return self.newsManager.currentNews.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
