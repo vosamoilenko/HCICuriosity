@@ -22,6 +22,28 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     var isMenuBarVisible = false
     var searchRequest: String = ""
     
+    //
+    var isSearched:Bool = false
+    
+    fileprivate func setObservers() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(openSearchBar),
+            name: Notification.Name("searchButtonPressed"),
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(openMenuBar),
+            name: Notification.Name("menuButtonPressed"),
+            object: nil)
+    }
+    
+    fileprivate func setDelegates() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.searchBar.delegate = self
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,9 +51,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.searchBar.delegate = self
+        setDelegates()
         
         let nib = UINib(nibName: "HCINewsTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "HCINewsTableViewCell")
@@ -43,16 +63,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(openSearchBar),
-            name: Notification.Name("searchButtonPressed"),
-            object: nil)
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(openMenuBar),
-            name: Notification.Name("menuButtonPressed"),
-            object: nil)
+        setObservers()
         
     }
     
@@ -87,9 +98,17 @@ extension ViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        if !searchRequest.isEmpty {
+            isSearched = true
+        } else {
+            isSearched = false
+        }
+        
         self.searchBar.endEditing(true)
         self.searchBar.resignFirstResponder()
         self.openSearchBar()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: .fade)
     }
 }
 // Manage Swipe and row animations in tableView
@@ -98,6 +117,8 @@ extension ViewController  {
         changeCategory(direction: sender.direction)
     }
     func changeCategory(direction: UISwipeGestureRecognizerDirection) {
+        searchRequest = ""
+        isSearched = false
         let isRight = (direction == .right) ? true : false
         let animationDirection = isRight ? UITableViewRowAnimation.right : UITableViewRowAnimation.left
         
@@ -116,8 +137,6 @@ extension ViewController  {
         self.tableView.beginUpdates()
         self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
         self.tableView.endUpdates()
-
-        
     }
 }
 extension ViewController : UITableViewDelegate {
@@ -139,13 +158,20 @@ extension ViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "HCINewsTableViewCell", for: indexPath) as? HCINewsTableViewCell
         
-        let news = self.newsManager.currentNews
-        let fakeNews = news[indexPath.row]
+        var news: [News]
+        var article: News
         
-        let preview = fakeNews.preview
-        let title = fakeNews.title
-        let author = fakeNews.source
-        let date = fakeNews.date
+        if isSearched {
+            news = self.newsManager.newsBySearch(request: searchRequest)
+        } else {
+            news = self.newsManager.currentNews
+        }
+        article = news[indexPath.row]
+        
+        let preview = article.preview
+        let title = article.title
+        let author = article.source
+        let date = article.date
         
         cell?.descriptionLabel.text = preview
         cell?.titleLabel.text = title
@@ -156,7 +182,11 @@ extension ViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.newsManager.currentNews.count
+        if isSearched {
+            return self.newsManager.newsBySearch(request: searchRequest).count
+        } else {
+            return self.newsManager.currentNews.count
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
