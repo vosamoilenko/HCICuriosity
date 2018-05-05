@@ -84,7 +84,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchRequest = searchText
-        print(searchRequest)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
+        self.openSearchBar()
     }
 }
 // Manage Swipe and row animations in tableView
@@ -105,8 +110,6 @@ extension ViewController  {
         if self.newsManager.currentCategoryIndex < 0 {
             self.newsManager.currentCategoryIndex = self.newsManager.categories.count - 1
         }
-        
-        
         
         self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex % self.newsManager.categories.count]
         

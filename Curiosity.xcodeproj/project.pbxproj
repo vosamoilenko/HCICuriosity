@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9713AFA4209B80D300E07778 /* HTMLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713AFA3209B80D300E07778 /* HTMLHelper.swift */; };
 		979E69CA209783E600C1B184 /* HCIArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E69C9209783E600C1B184 /* HCIArticleViewController.swift */; };
-		B1686A2920960F6700C5522F /* HCIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2720960F6700C5522F /* HCIListViewController.swift */; };
 		B1686A2A20960F6700C5522F /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2820960F6700C5522F /* NewsManager.swift */; };
 		B1686A2C20960F7E00C5522F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2B20960F7E00C5522F /* News.swift */; };
 		B1686A2E20960F9B00C5522F /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1686A2D20960F9B00C5522F /* CuriosityTests.swift */; };
@@ -47,7 +46,6 @@
 /* Begin PBXFileReference section */
 		9713AFA3209B80D300E07778 /* HTMLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLHelper.swift; sourceTree = "<group>"; };
 		979E69C9209783E600C1B184 /* HCIArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIArticleViewController.swift; sourceTree = "<group>"; };
-		B1686A2720960F6700C5522F /* HCIListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCIListViewController.swift; sourceTree = "<group>"; };
 		B1686A2820960F6700C5522F /* NewsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
 		B1686A2B20960F7E00C5522F /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		B1686A2D20960F9B00C5522F /* CuriosityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		B1686A2020960EA400C5522F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B1686A2720960F6700C5522F /* HCIListViewController.swift */,
 				E7E58EFC2095FC22003FFEA7 /* ViewController.swift */,
 				979E69C9209783E600C1B184 /* HCIArticleViewController.swift */,
 			);
@@ -326,7 +323,6 @@
 				B1686A2C20960F7E00C5522F /* News.swift in Sources */,
 				E7E58F342095FECB003FFEA7 /* HCITitleNavigationBarView.swift in Sources */,
 				B1686A2A20960F6700C5522F /* NewsManager.swift in Sources */,
-				B1686A2920960F6700C5522F /* HCIListViewController.swift in Sources */,
 				E7E58EFD2095FC22003FFEA7 /* ViewController.swift in Sources */,
 				E78DAC88209E362000E1BE0D /* FakeDataSet.swift in Sources */,
 				E7E58EFB2095FC22003FFEA7 /* AppDelegate.swift in Sources */,

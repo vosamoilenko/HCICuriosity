@@ -35,11 +35,16 @@ struct NewsManager {
         }
     }
     
+    func newsBySearch(request: String) -> [News] {
+        return currentNews.filter { (news) -> Bool in
+            return news.text.range(of: request) != nil || news.preview.range(of: request) != nil || news.title.range(of: request) != nil
+        }
+        
+    }
+    
     func newsByCategoryIndex() -> [News] {
-        _ = 4
         
         return self.allNews.filter { (news) -> Bool in
-            print(self.currentCategoryIndex)
             return news.category.rawValue == self.categories[self.currentCategoryIndex]
         }
     }

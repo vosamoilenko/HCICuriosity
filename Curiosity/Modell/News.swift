@@ -19,6 +19,9 @@ class News: NSObject {
     var keywords: String
     var category: NewsCategory
     
+    // For @Alina
+    var isFavorite: Bool = false
+    
     init(id:Int, imageURL: URL, title:String, category: NewsCategory, preview: String, text: String, source:String, keywords:String, date:String){
         
         self.id = id
