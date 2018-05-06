@@ -13,6 +13,7 @@ class HCIArticleViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var category = String()
     var followPressed = false
     var notificationPressed = false
@@ -20,7 +21,10 @@ class HCIArticleViewController: UIViewController {
     var savePressed = false
     
     var articleID: Int!
-    
+
+    @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
+    var isSearchBarVisible:Bool = false
+
     var barButtonItems = [UIBarButtonItem]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,30 @@ class HCIArticleViewController: UIViewController {
             selector: #selector(dismissVc),
             name: Notification.Name("backButtonPressed"),
             object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(openSearchBar),
+            name: Notification.Name("searchButtonPressedIDK"),
+            object: nil)
+    }
+    
+    @objc func openSearchBar() {
+        
+        var value = self.topWebViewConstraint.constant
+        
+        if !isSearchBarVisible {
+            value += self.searchBar.frame.size.height
+            self.searchBar.becomeFirstResponder()
+        } else {
+            value -= self.searchBar.frame.size.height
+            self.searchBar.resignFirstResponder()
+        }
+        isSearchBarVisible = !isSearchBarVisible
+        self.topWebViewConstraint.constant = value
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
     
     // This func is connected with observer as a selector.
@@ -121,11 +149,12 @@ class HCIArticleViewController: UIViewController {
             removeFromSaved()
         }
     }
-    
+    // FIX: Error because i removed all your's fakeData from Constants file
     @objc func share(sender: UIBarButtonItem) {
-        let avc = UIActivityViewController(activityItems: [fakeArticleLink], applicationActivities: [])
-        avc.popoverPresentationController?.sourceView = self.view
-        present(avc, animated: true)
+        
+//        let avc = UIActivityViewController(activityItems: [fakeArticleLink], applicationActivities: [])
+//        avc.popoverPresentationController?.sourceView = self.view
+//        present(avc, animated: true)
     }
     
     //To Do When Categories are ready

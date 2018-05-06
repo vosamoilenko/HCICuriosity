@@ -21,35 +21,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     var isSearchBarVisible = false
     var isMenuBarVisible = false
     var searchRequest: String = ""
-    
-    //
     var isSearched:Bool = false
-    
-    fileprivate func setObservers() {
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(openSearchBar),
-            name: Notification.Name("searchButtonPressed"),
-            object: nil)
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(openMenuBar),
-            name: Notification.Name("menuButtonPressed"),
-            object: nil)
-    }
-    
-    fileprivate func setDelegates() {
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.searchBar.delegate = self
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
         
         setDelegates()
         
@@ -64,20 +42,38 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         
         setObservers()
-        
     }
-    
+    fileprivate func setObservers() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(openSearchBar),
+            name: Notification.Name("searchButtonPressed"),
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(openMenuBar),
+            name: Notification.Name("menuButtonPressed"),
+            object: nil)
+    }
+    fileprivate func setDelegates() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.searchBar.delegate = self
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isSearchBarVisible {
             openSearchBar()
         }
     }
+}
+// actions for TitleView
+extension ViewController {
     @objc func openMenuBar() {
         print("check")
     }
     @objc func openSearchBar() {
         var value = self.topConstrain.constant
-
+        
         if !isSearchBarVisible {
             value += self.searchBar.frame.size.height
             self.searchBar.becomeFirstResponder()

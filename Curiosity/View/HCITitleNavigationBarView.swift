@@ -32,8 +32,12 @@ class HCITitleNavigationBarView: UIView {
             NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "backButtonPressed")))
             }
         } else if sender.tag == 1 {
+            if !isBackButton {
+                NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "searchButtonPressed")))
+            } else {
+                NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "searchButtonPressedIDK")))
+            }
             
-            NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "searchButtonPressed")))
         }
     }
     
