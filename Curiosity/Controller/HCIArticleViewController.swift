@@ -12,24 +12,21 @@ class HCIArticleViewController: UIViewController {
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
-    
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
+    
     var category = String()
     var article: News!
-
-    @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
     var isSearchBarVisible:Bool = false
-
     var barButtonItems = [UIBarButtonItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        loadArticle()
+        initializeToolbar()
         
         self.titleView.category.text = category
-        
-        let htmlHelper = HTMLHelper()
-        
-        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: article), baseURL: nil)
-        initializeToolbar()
         
         // I add a function for changing a behaviour and image of button.
         // Now it after pressing go back to ViewController.
@@ -73,22 +70,29 @@ class HCIArticleViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    func loadArticle() {
+        let htmlHelper = HTMLHelper()
+        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: article), baseURL: nil)
+    }
+    
     func initializeToolbar() {
-        let beginningSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-        beginningSpace.width = CGFloat(toolbarBeginningSpace)
-        let usualSpace : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-        usualSpace.width = CGFloat(toolbarSpace)
+        let iconNames = ["followIcon", "notificationIcon", "likeIcon", "saveIcon", "shareIcon"]
+        let pressedIconsNames = ["followPressedIcon", "notificationPressedIcon", "likePressedIcon", "savePressedIcon", "shareIcon"]
+        let selectors = [#selector(followPressed(sender:)),
+                         #selector(notificationPressed(sender:)),
+                         #selector(self.likePressed(sender:)),
+                         #selector(savePressed(sender:)),
+                         #selector(share(sender:))]
+        let buttonStates = article.getButtonStates()
         
         barButtonItems.append(beginningSpace)
-        barButtonItems.append(UIBarButtonItem(image: UIImage(named: "followIcon"), style: .plain, target: self, action: #selector(followPressed(sender:))))
-        barButtonItems.append(usualSpace)
-        barButtonItems.append(UIBarButtonItem(image: UIImage(named: "notificationIcon"), style: .plain, target: self, action: #selector(notificationPressed(sender:))))
-        barButtonItems.append(usualSpace)
-        barButtonItems.append(UIBarButtonItem(image: UIImage(named: "likeIcon"), style: .plain, target: self, action: #selector(likePressed(sender:))))
-        barButtonItems.append(usualSpace)
-        barButtonItems.append(UIBarButtonItem(image: UIImage(named: "saveIcon"), style: .plain, target: self, action: #selector(savePressed(sender:))))
-        barButtonItems.append(usualSpace)
-        barButtonItems.append(UIBarButtonItem(image: UIImage(named: "shareIcon"), style: .plain, target: self, action: #selector(share(sender:))))
+        for i in 0 ..< iconNames.count {
+            let imageName = buttonStates[i] ? pressedIconsNames[i] : iconNames[i]
+            let currentButton = UIBarButtonItem(image: UIImage(named: imageName), style: .plain, target: self, action: selectors[i])
+            barButtonItems.append(currentButton)
+            barButtonItems.append(usualSpace)
+        }
+        barButtonItems.removeLast()
         
         for barButton in barButtonItems {
             barButton.tintColor = defaultColor
@@ -98,48 +102,48 @@ class HCIArticleViewController: UIViewController {
     }
     
     @objc func followPressed(sender: UIBarButtonItem) {
-        if (!followPressed) {
-            followPressed = true
+        if (!article.isFollowed) {
+            article.isFollowed = true
             sender.image =  UIImage(named: "followPressedIcon")
             addToFollowed()
         } else {
-            followPressed = false
+            article.isFollowed = false
             sender.image =  UIImage(named: "followIcon")
             removeFromFollowed()
         }
     }
     
     @objc func notificationPressed(sender: UIBarButtonItem) {
-        if (!notificationPressed) {
-            notificationPressed = true
+        if (!article.notificationsEnabled) {
+            article.notificationsEnabled = true
             sender.image =  UIImage(named: "notificationPressedIcon")
             enableNotifications()
         } else {
-            notificationPressed = false
+            article.notificationsEnabled = false
             sender.image =  UIImage(named: "notificationIcon")
             disableNotifications()
         }
     }
     
     @objc func likePressed(sender: UIBarButtonItem) {
-        if (!likePressed) {
-            likePressed = true
+        if (!article.isLiked) {
+            article.isLiked = true
             sender.image =  UIImage(named: "likePressedIcon")
             affectRecommendations()
         } else {
-            likePressed = false
+            article.isLiked = false
             sender.image =  UIImage(named: "likeIcon")
             affectRecommendations()
         }
     }
     
     @objc func savePressed(sender: UIBarButtonItem) {
-        if (!savePressed) {
-            savePressed = true
+        if (!article.isSaved) {
+            article.isSaved = true
             sender.image =  UIImage(named: "savePressedIcon")
             addToSaved()
         } else {
-            savePressed = false
+            article.isSaved = false
             sender.image =  UIImage(named: "saveIcon")
             removeFromSaved()
         }

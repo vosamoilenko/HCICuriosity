@@ -19,8 +19,11 @@ class News: NSObject {
     var keywords: String
     var category: NewsCategory
     
-    // For @Alina
-    var isFavorite: Bool = false
+    var isFollowed: Bool = false
+    var notificationsEnabled: Bool = false
+    var isLiked: Bool = false
+    var isSaved: Bool = false
+    var isShared = false
     
     init(id:Int, imageURL: URL, title:String, category: NewsCategory, preview: String, text: String, source:String, keywords:String, date:String){
         
@@ -33,6 +36,16 @@ class News: NSObject {
         self.source = source
         self.keywords = keywords
         self.date = date
+    }
+    
+    func getButtonStates() -> [Bool] {
+        var states = [Bool]()
+        states.append(isFollowed)
+        states.append(notificationsEnabled)
+        states.append(isLiked)
+        states.append(isSaved)
+        states.append(isShared) //state of share button
+        return states
     }
 
 }
