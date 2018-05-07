@@ -143,6 +143,7 @@ extension ViewController : UITableViewDelegate {
             if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
                 avc.category = titleView.category.text!
                 avc.article = newsManager.currentNews[indexPath.row]
+                avc.newsManager = newsManager
                 self.navigationController?.pushViewController(avc, animated: true)
             }
         }

@@ -17,6 +17,7 @@ class HCIArticleViewController: UIViewController {
     
     var category = String()
     var article: News!
+    var newsManager: NewsManager!
     var isSearchBarVisible:Bool = false
     var barButtonItems = [UIBarButtonItem]()
     
@@ -148,40 +149,43 @@ class HCIArticleViewController: UIViewController {
             removeFromSaved()
         }
     }
-    // FIX: Error because i removed all your's fakeData from Constants file
+    
     @objc func share(sender: UIBarButtonItem) {
-        
         let avc = UIActivityViewController(activityItems: [article.sourceLink], applicationActivities: [])
         avc.popoverPresentationController?.sourceView = self.view
         present(avc, animated: true)
     }
     
-    //To Do When Categories are ready
     func addToFollowed() {
-        
+        newsManager.categoriesNews[.recommended]?.append(article)
     }
     
     func removeFromFollowed() {
-        
+        var recommended = newsManager.categoriesNews[.recommended]
+        let index = recommended?.index(of: article)
+        recommended?.remove(at: index!)
     }
     
+    func affectRecommendations() {
+        newsManager.categoriesNews[.recommended]?.append(article)
+    }
+    
+    func addToSaved() {
+        newsManager.categoriesNews[.favourites]?.append(article)
+    }
+    
+    func removeFromSaved() {
+        var favourites = newsManager.categoriesNews[.favourites]
+        let index = favourites?.index(of: article)
+        favourites?.remove(at: index!)
+    }
+    
+    //To Do
     func enableNotifications() {
         
     }
     
     func disableNotifications() {
-        
-    }
-    
-    func affectRecommendations() {
-        
-    }
-    
-    func addToSaved() {
-        
-    }
-    
-    func removeFromSaved() {
         
     }
 }
