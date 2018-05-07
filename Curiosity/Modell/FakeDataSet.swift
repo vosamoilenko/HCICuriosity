@@ -49,7 +49,7 @@ let fakeDataSet = [
         id: 1,
         imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/11799/production/_101177517_mediaitem101177516.jpg")!,
         title: "Apple shares hit all-time high after Buffett raises stake",
-        category: .technologie,
+        category: .technologies,
         preview: "Apple shares have hit an all-time high on news that legendary investor Warren Buffett now has a roughly 5% stake in the tech giant.",
         text: """
             Shares in Apple, already the world's most valuable company, rose by almost 4% on Friday to more than $183.7 each.
@@ -73,7 +73,7 @@ let fakeDataSet = [
         id: 1,
         imageURL: URL.init(string: "https://ichef.bbci.co.uk/news/660/cpsprodpb/14DEF/production/_101178458_5eba6389-3a4c-4ac7-8fee-6c5348b2bc03.jpg")!,
         title: "Air France-KLM boss quits as staff reject pay deal",
-        category: .technologie,
+        category: .technologies,
         preview: "Air France-KLM chief Jean-Marc Janaillac has announced his resignation after French staff at the strike-hit airline rejected a new pay deal.",
         text: """
             "I accept the consequences of this vote and will tender my resignation to the boards of Air France and Air France-KLM in coming days," he said.

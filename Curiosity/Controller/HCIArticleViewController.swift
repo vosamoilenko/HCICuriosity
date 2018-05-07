@@ -15,12 +15,7 @@ class HCIArticleViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     var category = String()
-    var followPressed = false
-    var notificationPressed = false
-    var likePressed = false
-    var savePressed = false
-    
-    var articleID: Int!
+    var article: News!
 
     @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
     var isSearchBarVisible:Bool = false
@@ -33,7 +28,7 @@ class HCIArticleViewController: UIViewController {
         
         let htmlHelper = HTMLHelper()
         
-        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: fakeDataSet[articleID]), baseURL: nil)
+        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: article), baseURL: nil)
         initializeToolbar()
         
         // I add a function for changing a behaviour and image of button.
