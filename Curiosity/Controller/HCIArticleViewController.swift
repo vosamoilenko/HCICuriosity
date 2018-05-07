@@ -151,9 +151,9 @@ class HCIArticleViewController: UIViewController {
     // FIX: Error because i removed all your's fakeData from Constants file
     @objc func share(sender: UIBarButtonItem) {
         
-//        let avc = UIActivityViewController(activityItems: [fakeArticleLink], applicationActivities: [])
-//        avc.popoverPresentationController?.sourceView = self.view
-//        present(avc, animated: true)
+        let avc = UIActivityViewController(activityItems: [article.sourceLink], applicationActivities: [])
+        avc.popoverPresentationController?.sourceView = self.view
+        present(avc, animated: true)
     }
     
     //To Do When Categories are ready

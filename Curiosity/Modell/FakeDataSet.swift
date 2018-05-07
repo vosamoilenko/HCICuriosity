@@ -44,7 +44,7 @@ let fakeDataSet = [
 
             His victory makes him the longest-lasting leader since Soviet dictator Joseph Stalin, who ruled for nearly 30 years.
             """,
-        source: "SkyNews", keywords: "Putin Russia Novalny", date: "05.05.2018"),
+        source: "SkyNews", sourceLink: "https://news.sky.com/story/anti-putin-protests-spark-clashes-across-russia-11359342",  keywords: "Putin Russia Novalny", date: "05.05.2018"),
     News(
         id: 1,
         imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/11799/production/_101177517_mediaitem101177516.jpg")!,
@@ -68,7 +68,7 @@ let fakeDataSet = [
             The moves, which return money to its shareholders, had been widely anticipated in the aftermath of the new tax law, which lowered the corporate tax rate and reduced the incentives for firms to hoard cash overseas.
             Berkshire Hathaway will host its annual meeting for shareholders in Omaha, Nebraska this weekend.
             """,
-        source: "BBC", keywords: "Apple Buffett Nebraska", date: "04.05.2018"),
+        source: "BBC", sourceLink: "http://www.bbc.com/news/business-44012577", keywords: "Apple Buffett Nebraska", date: "04.05.2018"),
     News(
         id: 1,
         imageURL: URL.init(string: "https://ichef.bbci.co.uk/news/660/cpsprodpb/14DEF/production/_101178458_5eba6389-3a4c-4ac7-8fee-6c5348b2bc03.jpg")!,
@@ -97,5 +97,5 @@ let fakeDataSet = [
             "There is inevitably some pain for staff when structural changes are made, but once that is dealt with, you're left with a much healthier company," said aviation consultant John Strickland.
             "That has been proved in the cases of the turnarounds achieved by Iberia and British Airways."
             """,
-        source: "BBC", keywords: "AirFrance Strike", date: "04.05.2018")
+        source: "BBC", sourceLink: "http://www.bbc.com/news/business-44011391", keywords: "AirFrance Strike", date: "04.05.2018")
 ]
