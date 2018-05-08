@@ -391,7 +391,7 @@ Whether it's "peacock" or "continental" or just the right clothes, tat or car, t
         date: "06.04.2018"),
     News(
         id: 8,
-        imageURL: URL.init(string: "https://leonardo.osnova.io/e5a41de5-9ee5-789e-cecc-d5cc5e9a3186/-/format/mp4/")!,
+        imageURL: URL.init(string: "https://www.worldhealth.net/media/original_images/synthetic_genes.png")!,
         title: "Synthetic Cancer Indicator",
         category: .health,
         preview: "An early warning system for the four most common cancers has been developed in the form of a synthetic mole that becomes visible on the skin if a tumor develops, as published in the journal Science Translational Medicine.",
