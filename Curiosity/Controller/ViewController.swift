@@ -29,6 +29,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         self.navigationController?.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
+        self.searchBar.placeholder = "Search by category"
+        
         setDelegates()
         
         let nib = UINib(nibName: "HCINewsTableViewCell", bundle: nil)

@@ -13,7 +13,6 @@ class HCIArticleViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
     
-    @IBOutlet weak var searchBar: UISearchBar!
     var category = String()
     var followPressed = false
     var notificationPressed = false
@@ -23,14 +22,12 @@ class HCIArticleViewController: UIViewController {
     var articleID: Int!
 
     @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
-    var isSearchBarVisible:Bool = false
 
     var barButtonItems = [UIBarButtonItem]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.titleView.category.text = category
-        
         let htmlHelper = HTMLHelper()
         
         webView.loadHTMLString(htmlHelper.convertToHTMLString(news: fakeDataSet[articleID]), baseURL: nil)
@@ -39,6 +36,7 @@ class HCIArticleViewController: UIViewController {
         // I add a function for changing a behaviour and image of button.
         // Now it after pressing go back to ViewController.
         self.titleView.activateBackButton()
+        self.titleView.searchButton.isHidden = true
         
         // Set observer for recieving a notification from
         // titleView.menuButton when it's pressed.
@@ -47,30 +45,6 @@ class HCIArticleViewController: UIViewController {
             selector: #selector(dismissVc),
             name: Notification.Name("backButtonPressed"),
             object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(openSearchBar),
-            name: Notification.Name("searchButtonPressedIDK"),
-            object: nil)
-    }
-    
-    @objc func openSearchBar() {
-        
-        var value = self.topWebViewConstraint.constant
-        
-        if !isSearchBarVisible {
-            value += self.searchBar.frame.size.height
-            self.searchBar.becomeFirstResponder()
-        } else {
-            value -= self.searchBar.frame.size.height
-            self.searchBar.resignFirstResponder()
-        }
-        isSearchBarVisible = !isSearchBarVisible
-        self.topWebViewConstraint.constant = value
-        UIView.animate(withDuration: 0.3, animations: {
-            self.view.layoutIfNeeded()
-        }, completion: nil)
     }
     
     // This func is connected with observer as a selector.
