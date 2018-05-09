@@ -29,7 +29,6 @@ class HCIArticleViewController: UIViewController {
         initializeToolbar()
         
         self.titleView.category.text = category
-
         
         // I add a function for changing a behaviour and image of button.
         // Now it after pressing go back to ViewController.
@@ -47,6 +46,8 @@ class HCIArticleViewController: UIViewController {
     
     // This func is connected with observer as a selector.
     @objc func dismissVc() {
+//        var previousVC = self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)!-2] as? ViewController
+//        previousVC?.updateTable(.none)
         self.navigationController?.popToRootViewController(animated: true)
     }
     

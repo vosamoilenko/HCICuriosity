@@ -114,6 +114,12 @@ extension ViewController  {
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         changeCategory(direction: sender.direction)
     }
+    func updateTable(_ animationDirection: UITableViewRowAnimation) {
+        self.tableView.beginUpdates()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
+        self.tableView.endUpdates()
+    }
+    
     func changeCategory(direction: UISwipeGestureRecognizerDirection) {
         searchRequest = ""
         isSearched = false
@@ -132,9 +138,7 @@ extension ViewController  {
         
         self.titleView.category.text = self.newsManager.categoriesNames[self.newsManager.currentCategoryIndex % self.newsManager.categoriesNames.count]
         
-        self.tableView.beginUpdates()
-        self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
-        self.tableView.endUpdates()
+        updateTable(animationDirection)
     }
 }
 extension ViewController : UITableViewDelegate {
