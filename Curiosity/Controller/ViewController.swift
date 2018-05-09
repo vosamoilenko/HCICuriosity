@@ -38,8 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.searchBar.placeholder = "Search by category"
         
@@ -51,7 +50,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.tableView.reloadData()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: .fade)
     }
     
     // Set observers for Observe pressing and events from HCITitleNavigationBarView
