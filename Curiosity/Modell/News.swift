@@ -16,13 +16,17 @@ class News: NSObject {
     var date: String
     var imageURL: URL
     var source: String
+    var sourceLink: String
     var keywords: String
     var category: NewsCategory
     
-    // For @Alina
-    var isFavorite: Bool = false
+    var isFollowed: Bool = false
+    var notificationsEnabled: Bool = false
+    var isLiked: Bool = false
+    var isSaved: Bool = false
+    var isShared = false
     
-    init(id:Int, imageURL: URL, title:String, category: NewsCategory, preview: String, text: String, source:String, keywords:String, date:String){
+    init(id:Int, imageURL: URL, title:String, category: NewsCategory, preview: String, text: String, source:String, sourceLink: String, keywords:String, date:String){
         
         self.id = id
         self.imageURL = imageURL
@@ -31,8 +35,19 @@ class News: NSObject {
         self.preview = preview
         self.text = text
         self.source = source
+        self.sourceLink = sourceLink
         self.keywords = keywords
         self.date = date
+    }
+    
+    func getButtonStates() -> [Bool] {
+        var states = [Bool]()
+        states.append(isFollowed)
+        states.append(notificationsEnabled)
+        states.append(isLiked)
+        states.append(isSaved)
+        states.append(isShared)
+        return states
     }
 
 }

@@ -38,7 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
         
-        self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex]
+        self.titleView.category.text = self.newsManager.currentCategoryName
         
         self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
@@ -125,12 +125,12 @@ extension ViewController  {
         } else {
             self.newsManager.currentCategoryIndex -= 1
         }
-        self.newsManager.currentCategoryIndex = self.newsManager.currentCategoryIndex % self.newsManager.categories.count
+        self.newsManager.currentCategoryIndex = self.newsManager.currentCategoryIndex % self.newsManager.categoriesNames.count
         if self.newsManager.currentCategoryIndex < 0 {
-            self.newsManager.currentCategoryIndex = self.newsManager.categories.count - 1
+            self.newsManager.currentCategoryIndex = self.newsManager.categoriesNames.count - 1
         }
         
-        self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex % self.newsManager.categories.count]
+        self.titleView.category.text = self.newsManager.categoriesNames[self.newsManager.currentCategoryIndex % self.newsManager.categoriesNames.count]
         
         self.tableView.beginUpdates()
         self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
@@ -144,7 +144,8 @@ extension ViewController : UITableViewDelegate {
         } else {
             if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
                 avc.category = titleView.category.text!
-                avc.articleID = indexPath.row
+                avc.article = newsManager.currentNews[indexPath.row]
+                avc.newsManager = newsManager
                 self.navigationController?.pushViewController(avc, animated: true)
             }
         }
