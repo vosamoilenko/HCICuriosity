@@ -16,6 +16,7 @@ class HCIArticleViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
     
+    var prevVC: ViewController!
     var category = String()
     var article: News!
     var newsManager: NewsManager!
@@ -46,9 +47,7 @@ class HCIArticleViewController: UIViewController {
     
     // This func is connected with observer as a selector.
     @objc func dismissVc() {
-//        var previousVC = self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)!-2] as? ViewController
-//        previousVC?.updateTable(.none)
-        self.navigationController?.popToRootViewController(animated: true)
+self.navigationController?.popToRootViewController(animated: true)
     }
     
     func loadArticle() {

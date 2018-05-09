@@ -23,28 +23,38 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     var searchRequest: String = ""
     var isSearched:Bool = false
     
+    fileprivate func addingTargets() {
+        self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
+        self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
+    }
+    
+    fileprivate func preapreTableViewAndCells() {
+        let nib = UINib(nibName: "HCINewsTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: "HCINewsTableViewCell")
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 44
+        self.titleView.category.text = self.newsManager.currentCategoryName
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.delegate = self
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.searchBar.placeholder = "Search by category"
         
+        preapreTableViewAndCells()
         setDelegates()
-        
-        let nib = UINib(nibName: "HCINewsTableViewCell", bundle: nil)
-        self.tableView.register(nib, forCellReuseIdentifier: "HCINewsTableViewCell")
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 44
-        
-        self.titleView.category.text = self.newsManager.currentCategoryName
-        
-        self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
-        self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
-        
+        addingTargets()
         setObservers()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView.reloadData()
+    }
+    
+    // Set observers for Observe pressing and events from HCITitleNavigationBarView
     fileprivate func setObservers() {
         NotificationCenter.default.addObserver(
             self,
@@ -57,11 +67,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             name: Notification.Name("menuButtonPressed"),
             object: nil)
     }
+    // Set delegate for UIElements
     fileprivate func setDelegates() {
+        self.navigationController?.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.searchBar.delegate = self
     }
+    //Detect touches
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isSearchBarVisible {
             openSearchBar()
@@ -69,6 +82,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     }
 }
 // actions for TitleView
+// The whole extension is for separating actions methods
 extension ViewController {
     @objc func openMenuBar() {
         print("check")
@@ -150,6 +164,7 @@ extension ViewController : UITableViewDelegate {
                 avc.category = titleView.category.text!
                 avc.article = newsManager.currentNews[indexPath.row]
                 avc.newsManager = newsManager
+                avc.prevVC = self
                 self.navigationController?.pushViewController(avc, animated: true)
             }
         }
