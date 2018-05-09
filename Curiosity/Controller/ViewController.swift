@@ -8,39 +8,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
     @IBOutlet var rightSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet var leftSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var topConstrain: NSLayoutConstraint!
     
+    var newsManager = NewsManager()
     
-    
-    var categoryIndex = 0
     var isSearchBarVisible = false
     var isMenuBarVisible = false
     var searchRequest: String = ""
+    var isSearched:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.searchBar.delegate = self
+        self.navigationController?.delegate = self
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        setDelegates()
         
         let nib = UINib(nibName: "HCINewsTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "HCINewsTableViewCell")
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
         
-        self.titleView.category.text = cat[categoryIndex]
+        self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex]
         
         self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         
+        setObservers()
+    }
+    fileprivate func setObservers() {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(openSearchBar),
@@ -52,18 +55,25 @@ class ViewController: UIViewController {
             name: Notification.Name("menuButtonPressed"),
             object: nil)
     }
-    
+    fileprivate func setDelegates() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.searchBar.delegate = self
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isSearchBarVisible {
             openSearchBar()
         }
     }
+}
+// actions for TitleView
+extension ViewController {
     @objc func openMenuBar() {
         print("check")
     }
     @objc func openSearchBar() {
         var value = self.topConstrain.constant
-
+        
         if !isSearchBarVisible {
             value += self.searchBar.frame.size.height
             self.searchBar.becomeFirstResponder()
@@ -81,7 +91,20 @@ class ViewController: UIViewController {
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchRequest = searchText
-        print(searchRequest)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        if !searchRequest.isEmpty {
+            isSearched = true
+        } else {
+            isSearched = false
+        }
+        
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
+        self.openSearchBar()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: .fade)
     }
 }
 // Manage Swipe and row animations in tableView
@@ -90,53 +113,80 @@ extension ViewController  {
         changeCategory(direction: sender.direction)
     }
     func changeCategory(direction: UISwipeGestureRecognizerDirection) {
-        
-        
+        searchRequest = ""
+        isSearched = false
         let isRight = (direction == .right) ? true : false
         let animationDirection = isRight ? UITableViewRowAnimation.right : UITableViewRowAnimation.left
-        if isRight {
-            categoryIndex += 1
-        } else {
-            categoryIndex -= 1
-        }
-        if categoryIndex < 0 {categoryIndex = cat.count - 1}
-        self.titleView.category.text = cat[categoryIndex%6]
         
-        var arr = [IndexPath]()
-        for var i in decr.indices {
-            arr.append(IndexPath.init(row: i, section: 0))
+        if isRight {
+            self.newsManager.currentCategoryIndex += 1
+        } else {
+            self.newsManager.currentCategoryIndex -= 1
         }
-        self.tableView.reloadRows(at: arr, with: animationDirection)
+        self.newsManager.currentCategoryIndex = self.newsManager.currentCategoryIndex % self.newsManager.categories.count
+        if self.newsManager.currentCategoryIndex < 0 {
+            self.newsManager.currentCategoryIndex = self.newsManager.categories.count - 1
+        }
+        
+        self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex % self.newsManager.categories.count]
+        
+        self.tableView.beginUpdates()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
+        self.tableView.endUpdates()
     }
 }
 extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if isSearchBarVisible {
             openSearchBar()
+        } else {
+            if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
+                avc.category = titleView.category.text!
+                avc.articleID = indexPath.row
+                self.navigationController?.pushViewController(avc, animated: true)
+            }
         }
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+
 extension ViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "HCINewsTableViewCell", for: indexPath) as? HCINewsTableViewCell
         
-        let description = decr[indexPath.row]
-        let title = tit[indexPath.row]
-        let author = auth[indexPath.row]
-        let date = dat[indexPath.row]
+        var news: [News]
+        var article: News
         
-        cell?.descriptionLabel.text = description
+        if isSearched {
+            news = self.newsManager.newsBySearch(request: searchRequest)
+        } else {
+            news = self.newsManager.currentNews
+        }
+        article = news[indexPath.row]
+        
+        let preview = article.preview
+        let title = article.title
+        let author = article.source
+        let date = article.date
+        
+        cell?.descriptionLabel.text = preview
         cell?.titleLabel.text = title
         cell?.authorLabel.text = author
         cell?.dateLabel.text = date
         
-        
         return cell!
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return decr.count;
+        if isSearched {
+            return self.newsManager.newsBySearch(request: searchRequest).count
+        } else {
+            return self.newsManager.currentNews.count
+        }
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }
 }
+

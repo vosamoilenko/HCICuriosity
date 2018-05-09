@@ -14,8 +14,10 @@ class HCITitleNavigationBarView: UIView {
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
+    var isBackButton = false
     
     var view: UIView!
+    let images = [#imageLiteral(resourceName: "menuIcon"), #imageLiteral(resourceName: "iconback")]
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,16 +26,31 @@ class HCITitleNavigationBarView: UIView {
     
     @objc func notify(sender: UIButton) {
         if sender.tag == 0 {
+            if !isBackButton {
             NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "menuButtonPressed")))
+            } else {
+            NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "backButtonPressed")))
+            }
         } else if sender.tag == 1 {
-            NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "searchButtonPressed")))
+            if !isBackButton {
+                NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "searchButtonPressed")))
+            } else {
+                NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: "searchButtonPressedIDK")))
+            }
+            
         }
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
+    }
+    
+    func activateBackButton() {
+        DispatchQueue.main.async {
+            self.menuButton.setImage(self.images[1], for: .normal)
+        }
+        isBackButton = true
     }
     
     func setup() {
