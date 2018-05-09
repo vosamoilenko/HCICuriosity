@@ -411,7 +411,7 @@ The prototype early warning system has been functioning reliably during lab test
         imageURL: URL.init(string: "https://cdn.theatlantic.com/assets/media/img/2018/04/16/teamzissou/1920.jpg?1523886699")!,
         title: "The Hunt for Wonder Drugs at the North Pole",
         category: .health,
-        preview: "Bio-Scouting on the North Pole: Norvegian scientists travel to find new sources of medicine",
+        preview: "In a race against antibiotic resistance, a Norwegian research team sails into the Arctic darkness.",
         text: """
             Gathered around a white plastic table, four scientists surgically explored a quaking pile of mud, freshly scraped from the bottom of the ocean and spiked with twitching tentacles and antennae. In the persistent dusk of an Arctic October, illuminated only by the navigation lights of their ship, the scientists’ orange rubber jumpsuits looked like a collection of traffic cones, bright and reflective against the murky sky. With long tweezers, the researchers organized the mess before them into tidy piles of sponges, starfish, and squirts, delicately picking each out of the morass as if extracting a prized shrimp from a takeout carton of lo mein. I hopped back and forth behind them, trying to stay warm in the biting ocean air and out of range of any sludge flung from the work area. Even in the Arctic, mud is still mud—copious, dirty, and potentially filled with life.
 
