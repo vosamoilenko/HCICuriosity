@@ -52,9 +52,7 @@ struct HTMLHelper {
         
         var html = String(htmlBeginning)
 //        should work
-        html += "<img src=\"https://www.theatlantic.com/science/archive/2018/04/searching-the-arctic-seas-for-lifesaving-drugs/557231/\" width = 360>"
-//        should load nothing
-        html += "<img src=\"www.theatlantic.com/science/archive/2018/04/searching-the-arctic-seas-for-lifesaving-drugs/557231/\" width = 360>"
+        html += "<img src=\"\(article.imageName)\" width = 360>"
         html += getHTMLFor(id: "title", element: article.title)
         html += getHTMLFor(id: "source", element: article.source)
         html += getHTMLFor(id: "description", element: article.preview)

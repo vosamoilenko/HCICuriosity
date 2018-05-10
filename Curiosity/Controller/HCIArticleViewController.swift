@@ -52,7 +52,8 @@ self.navigationController?.popToRootViewController(animated: true)
     
     func loadArticle() {
         let htmlHelper = HTMLHelper()
-        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: article), baseURL: Bundle.main.bundleURL)
+        let baseURL = Bundle.main.bundleURL.appendingPathComponent("Resources")
+        webView.loadHTMLString(htmlHelper.convertToHTMLString(news: article), baseURL: baseURL)
     }
     
     func initializeToolbar() {
