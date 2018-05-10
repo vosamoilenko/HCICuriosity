@@ -51,7 +51,7 @@ struct HTMLHelper {
         }
         
         var html = String(htmlBeginning)
-        html += "<img src=\"" + article.imageURL.absoluteString + "\" width = 360>"
+        html += "<img src=\"articlePic8.jpg\" width = 360>"
         html += getHTMLFor(id: "title", element: article.title)
         html += getHTMLFor(id: "source", element: article.source)
         html += getHTMLFor(id: "description", element: article.preview)

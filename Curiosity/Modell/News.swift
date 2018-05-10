@@ -14,7 +14,7 @@ class News: NSObject {
     var preview: String
     var text: String
     var date: String
-    var imageURL: URL
+    var imageName: String
     var source: String
     var sourceLink: String
     var keywords: String
@@ -26,10 +26,10 @@ class News: NSObject {
     var isSaved: Bool = false
     var isShared = false
     
-    init(id:Int, imageURL: URL, title:String, category: NewsCategory, preview: String, text: String, source:String, sourceLink: String, keywords:String, date:String){
+    init(id:Int, imageName: String, title:String, category: NewsCategory, preview: String, text: String, source:String, sourceLink: String, keywords:String, date:String){
         
         self.id = id
-        self.imageURL = imageURL
+        self.imageName = imageName
         self.title = title
         self.category = category
         self.preview = preview

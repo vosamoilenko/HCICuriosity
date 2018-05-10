@@ -11,7 +11,7 @@ import Foundation
 let fakeDataSet = [
     News(
         id: 0,
-        imageURL: URL.init(string: "https://e3.365dm.com/18/03/2048x1536/skynews-putin-vladimir-russia_4260694.jpg?20180320201520")!,
+        imageName: "articlePic0",
         title: "'More than 1,200' arrested as anti-Putin protests held across Russia",
         category: .world,
         preview: "Protests against Vladimir Putin have taken place across Russia ahead of his inauguration for a fourth presidential term, with more than 1,200 people arrested.",
@@ -47,7 +47,7 @@ let fakeDataSet = [
         source: "SkyNews", sourceLink: "https://news.sky.com/story/anti-putin-protests-spark-clashes-across-russia-11359342",  keywords: "Putin Russia Novalny", date: "05.05.2018"),
     News(
         id: 1,
-        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/11799/production/_101177517_mediaitem101177516.jpg")!,
+        imageName: "articlePic1.jpg",
         title: "Apple shares hit all-time high after Buffett raises stake",
         category: .technologies,
         preview: "Apple shares have hit an all-time high on news that legendary investor Warren Buffett now has a roughly 5% stake in the tech giant.",
@@ -71,7 +71,7 @@ let fakeDataSet = [
         source: "BBC", sourceLink: "http://www.bbc.com/news/business-44012577", keywords: "Apple Buffett Nebraska", date: "04.05.2018"),
     News(
         id: 2,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/news/660/cpsprodpb/14DEF/production/_101178458_5eba6389-3a4c-4ac7-8fee-6c5348b2bc03.jpg")!,
+        imageName: "articlePic2.jpg",
         title: "Air France-KLM boss quits as staff reject pay deal",
         category: .technologies,
         preview: "Air France-KLM chief Jean-Marc Janaillac has announced his resignation after French staff at the strike-hit airline rejected a new pay deal.",
@@ -100,7 +100,7 @@ let fakeDataSet = [
         source: "BBC", sourceLink: "http://www.bbc.com/news/business-44011391", keywords: "AirFrance Strike", date: "04.05.2018"),
     News(
         id: 3,
-        imageURL: URL.init(string: "https://i.kinja-img.com/gawker-media/image/upload/s--4UHK4mFf--/c_scale,f_auto,fl_progressive,q_80,w_800/dirqwryugd7jmd0l3v62.png")!,
+        imageName: "articlePic3.jpg",
         title: "Simulated Moon Dust Kills Cells and Alters DNA, Signaling Trouble for Future Lunar Colonists",
         category: .science,
         preview: "Astronauts hoping stay on the moon for long-term missions have another reason to worry about moon dust: It could be quite harmful if inhaled, as demonstrated in a new study.",
@@ -127,7 +127,7 @@ let fakeDataSet = [
         date: "07.05.2018"),
     News(
         id: 4,
-        imageURL: URL.init(string: "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/05/DcLpRFoUQAEaxJ_.jpg")!,
+        imageName: "articlePic4.jpg",
         title: "Meet the street artist who made $1,000 by adding a Bitcoin QR code to his murals",
         category: .entertainment,
         preview: "Pascal Boyart is using QR codes to fuel his street art with Bitcoin donations",
@@ -175,7 +175,7 @@ let fakeDataSet = [
         date: "08.05.2018"),
     News(
         id: 5,
-         imageURL: URL.init(string: "https://static01.nyt.com/images/2018/05/08/nyregion/08Schneiderman/merlin_136338426_149798ac-7134-41e0-bd9b-7be2bb86002e-superJumbo.jpg?quality=90&auto=webp")!,
+         imageName: "articlePic5.jpg",
          title: "Eric Schneiderman Resigns as New York Attorney General Amid Assault Claims by 4 Women",
          category: .world,
          preview: "Eric T. Schneiderman, the New York State attorney general who rose to prominence as an antagonist of the Trump administration, abruptly resigned on Monday night hours after The New Yorker reported that four women had accused him of physically assaulting them.",
@@ -251,7 +251,7 @@ On Monday afternoon, a criminal defense lawyer from Lankler Siffert & Wohl advis
          date: "07.05.2018"),
     News(
         id: 6,
-        imageURL: URL.init(string: "https://iadsb.tmgrup.com.tr/cb9961/645/344/0/20/800/447?u=https://idsb.tmgrup.com.tr/2018/04/29/1524993021577.jpg")!,
+        imageName: "articlePic6.jpg",
         title: "Turkish fan rents crane to circumvent stadium ban",
         category: .sport,
         preview: "A fan of Turkish second-tier team Denizlispor found an unusual way to bypass a one-year ban on entering the team's stadium.",
@@ -274,7 +274,7 @@ Denizlispor did not disappoint its devoted supporter and thrashed their opponent
         date: "29.04.2018"),
     News(
         id: 7,
-        imageURL: URL.init(string: "https://img.bleacherreport.net/img/article/media_slots/photos/002/789/677/eb512569a28c96b4e44b450b95fd651d_crop_exact.jpeg?h=533&w=800&q=70&crop_x=center&crop_y=top")!,
+        imageName: "articlePic7.jpg",
         title: "Inside the Premier League of Football Fashion: Why Style Matters for Top Players",
         category: .business,
         preview: "Personal shopper: how a school student built his own business and became a friend of the world famous footballers",
@@ -391,7 +391,7 @@ Whether it's "peacock" or "continental" or just the right clothes, tat or car, t
         date: "06.04.2018"),
     News(
         id: 8,
-        imageURL: URL.init(string: "https://www.worldhealth.net/media/original_images/synthetic_genes.png")!,
+        imageName: "articlePic8.png",
         title: "Synthetic Cancer Indicator",
         category: .health,
         preview: "An early warning system for the four most common cancers has been developed in the form of a synthetic mole that becomes visible on the skin if a tumor develops, as published in the journal Science Translational Medicine.",
@@ -408,7 +408,7 @@ The prototype early warning system has been functioning reliably during lab test
         date: "24.04.2018"),
     News(
         id: 9,
-        imageURL: URL.init(string: "https://cdn.theatlantic.com/assets/media/img/2018/04/16/teamzissou/1920.jpg?1523886699")!,
+        imageName: "articlePic9.jpg",
         title: "The Hunt for Wonder Drugs at the North Pole",
         category: .health,
         preview: "In a race against antibiotic resistance, a Norwegian research team sails into the Arctic darkness.",
