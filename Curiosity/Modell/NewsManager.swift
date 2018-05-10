@@ -10,34 +10,11 @@ import UIKit
 enum NewsCategory: String {
     case world = "World"
     case business = "Business"
-<<<<<<< HEAD
-    case technologie = "Technologie"
-=======
     case technologies = "Technologies"
->>>>>>> master
     case sport = "Sport"
     case health = "Health"
     case science = "Science"
     case entertainment = "Entertainment"
-<<<<<<< HEAD
-}
-
-struct NewsManager {
-    var allNews = fakeDataSet
-    var currentCategoryIndex = 0
-    let categories = [
-        "World",
-        "Business",
-        "Technologie",
-        "Sport",
-        "Health",
-        "Science",
-        "Entertainment"
-    ]
-    var currentNews: [News] {
-        get {
-            return newsByCategoryIndex()
-=======
     case recommended = "Recommended"
     case favourites = "Favourites"
 }
@@ -79,7 +56,6 @@ class NewsManager {
     init() {
         for article in fakeDataSet {
             categoriesNews[article.category]?.append(article)
->>>>>>> master
         }
     }
     
@@ -87,20 +63,7 @@ class NewsManager {
         return currentNews.filter { (news) -> Bool in
             return news.text.range(of: request) != nil || news.preview.range(of: request) != nil || news.title.range(of: request) != nil
         }
-<<<<<<< HEAD
-        
-    }
-    
-    func newsByCategoryIndex() -> [News] {
-        
-        return self.allNews.filter { (news) -> Bool in
-            return news.category.rawValue == self.categories[self.currentCategoryIndex]
-        }
-    }
-  }
 
-
-=======
     }
 }
 
@@ -138,7 +101,6 @@ class NewsManager {
 //  }
 
 //
->>>>>>> master
 //    func sortByTitle(title:String)->[News]{
 //        var sortedByTitle=[News]()
 //        for searchedNews in newsArray{
@@ -236,8 +198,6 @@ class NewsManager {
 //        }
 //        return sortedLast
 //    }
-<<<<<<< HEAD
-//
-=======
 
->>>>>>> master
+
+

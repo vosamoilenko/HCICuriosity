@@ -16,15 +16,7 @@ class News: NSObject {
     var date: String
     var imageURL: URL
     var source: String
-<<<<<<< HEAD
-    var keywords: String
-    var category: NewsCategory
-    
-    // For @Alina
-    var isFavorite: Bool = false
-    
-    init(id:Int, imageURL: URL, title:String, category: NewsCategory, preview: String, text: String, source:String, keywords:String, date:String){
-=======
+
     var sourceLink: String
     var keywords: String
     var category: NewsCategory
@@ -36,7 +28,6 @@ class News: NSObject {
     var isShared = false
     
     init(id:Int, imageURL: URL, title:String, category: NewsCategory, preview: String, text: String, source:String, sourceLink: String, keywords:String, date:String){
->>>>>>> master
         
         self.id = id
         self.imageURL = imageURL
@@ -45,10 +36,7 @@ class News: NSObject {
         self.preview = preview
         self.text = text
         self.source = source
-<<<<<<< HEAD
-        self.keywords = keywords
-        self.date = date
-=======
+
         self.sourceLink = sourceLink
         self.keywords = keywords
         self.date = date
@@ -62,7 +50,6 @@ class News: NSObject {
         states.append(isSaved)
         states.append(isShared)
         return states
->>>>>>> master
     }
 
 }

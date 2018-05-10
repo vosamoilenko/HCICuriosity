@@ -33,11 +33,7 @@ struct HTMLHelper {
         htmlEnding = htmlEndingTags.joined()
     }
     
-<<<<<<< HEAD
-    func convertToHTMLString(news article: News) -> String {
-        func getHTMLFor(id: String, element: String) -> String {
-            return "<p><div id = \(id)><p>" + element + "</p></div>"
-=======
+
     func parseTextIntoParagraphs(text: String) -> String {
         let textParagraphs = text.components(separatedBy: "\n");
         
@@ -53,7 +49,6 @@ struct HTMLHelper {
     func convertToHTMLString(news article: News) -> String {
         func getHTMLFor(id: String, element: String) -> String {
             return "<p><div id = \(id)><p>" + element + "</div></p>"
->>>>>>> master
         }
         
         var html = String(htmlBeginning)
@@ -61,11 +56,7 @@ struct HTMLHelper {
         html += getHTMLFor(id: "title", element: article.title)
         html += getHTMLFor(id: "source", element: article.source)
         html += getHTMLFor(id: "description", element: article.preview)
-<<<<<<< HEAD
-        html += getHTMLFor(id: "text", element: article.text)
-=======
         html += parseTextIntoParagraphs(text: article.text)
->>>>>>> master
         html += htmlEnding
         return html
     }
