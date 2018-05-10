@@ -10,11 +10,16 @@ import UIKit
 enum NewsCategory: String {
     case world = "World"
     case business = "Business"
+<<<<<<< HEAD
     case technologie = "Technologie"
+=======
+    case technologies = "Technologies"
+>>>>>>> master
     case sport = "Sport"
     case health = "Health"
     case science = "Science"
     case entertainment = "Entertainment"
+<<<<<<< HEAD
 }
 
 struct NewsManager {
@@ -32,6 +37,49 @@ struct NewsManager {
     var currentNews: [News] {
         get {
             return newsByCategoryIndex()
+=======
+    case recommended = "Recommended"
+    case favourites = "Favourites"
+}
+
+class NewsManager {
+    var categoriesNews = [
+        NewsCategory.world : [News](),
+        NewsCategory.business : [News](),
+        NewsCategory.technologies : [News](),
+        NewsCategory.sport : [News](),
+        NewsCategory.health : [News](),
+        NewsCategory.science : [News](),
+        NewsCategory.entertainment : [News](),
+        NewsCategory.recommended : [News](),
+        NewsCategory.favourites : [News](),
+    ]
+    let categoriesNames = [
+        "World",
+        "Business",
+        "Technologies",
+        "Sport",
+        "Health",
+        "Science",
+        "Entertainment",
+        "Recommended",
+        "Favourites",
+    ]
+    var currentCategoryIndex = 0
+    var currentCategoryName : String {
+        return categoriesNames[currentCategoryIndex]
+    }
+    var currentCategory : NewsCategory {
+        return NewsCategory.init(rawValue: currentCategoryName)!
+    }
+    var currentNews : [News] {
+        return categoriesNews[currentCategory]!
+    }
+    
+    init() {
+        for article in fakeDataSet {
+            categoriesNews[article.category]?.append(article)
+>>>>>>> master
         }
     }
     
@@ -39,6 +87,7 @@ struct NewsManager {
         return currentNews.filter { (news) -> Bool in
             return news.text.range(of: request) != nil || news.preview.range(of: request) != nil || news.title.range(of: request) != nil
         }
+<<<<<<< HEAD
         
     }
     
@@ -51,6 +100,45 @@ struct NewsManager {
   }
 
 
+=======
+    }
+}
+
+//struct NewsManager {
+//    var allNews = fakeDataSet
+//    var currentCategoryIndex = 0
+//    let categories = [
+//        "World",
+//        "Business",
+//        "Technologie",
+//        "Sport",
+//        "Health",
+//        "Science",
+//        "Entertainment"
+//    ]
+//    var currentNews: [News] {
+//        get {
+//            return newsByCategoryIndex()
+//        }
+//    }
+//
+//    func newsBySearch(request: String) -> [News] {
+//        return currentNews.filter { (news) -> Bool in
+//            return news.text.range(of: request) != nil || news.preview.range(of: request) != nil || news.title.range(of: request) != nil
+//        }
+//
+//    }
+//
+//    func newsByCategoryIndex() -> [News] {
+//
+//        return self.allNews.filter { (news) -> Bool in
+//            return news.category.rawValue == self.categories[self.currentCategoryIndex]
+//        }
+//    }
+//  }
+
+//
+>>>>>>> master
 //    func sortByTitle(title:String)->[News]{
 //        var sortedByTitle=[News]()
 //        for searchedNews in newsArray{
@@ -148,4 +236,8 @@ struct NewsManager {
 //        }
 //        return sortedLast
 //    }
+<<<<<<< HEAD
 //
+=======
+
+>>>>>>> master

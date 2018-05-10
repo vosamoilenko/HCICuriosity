@@ -23,6 +23,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     var searchRequest: String = ""
     var isSearched:Bool = false
     
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,11 +39,44 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         
         self.titleView.category.text = self.newsManager.categories[self.newsManager.currentCategoryIndex]
         
+=======
+    fileprivate func addingTargets() {
+>>>>>>> master:Curiosity/Controller/ViewController.swift
         self.leftSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
         self.rightSwipeRecognizer.addTarget(self, action: #selector(handleSwipe))
+    }
+    
+    fileprivate func preapreTableViewAndCells() {
+        let nib = UINib(nibName: "HCINewsTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: "HCINewsTableViewCell")
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 44
+        self.titleView.category.text = self.newsManager.currentCategoryName
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+         
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.searchBar.placeholder = "Search by category"
         
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
         setObservers()
     }
+=======
+        preapreTableViewAndCells()
+        setDelegates()
+        addingTargets()
+        setObservers()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: .fade)
+    }
+    
+    // Set observers for Observe pressing and events from HCITitleNavigationBarView
+>>>>>>> master:Curiosity/Controller/ViewController.swift
     fileprivate func setObservers() {
         NotificationCenter.default.addObserver(
             self,
@@ -55,11 +89,21 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             name: Notification.Name("menuButtonPressed"),
             object: nil)
     }
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
     fileprivate func setDelegates() {
+=======
+    // Set delegate for UIElements
+    fileprivate func setDelegates() {
+        self.navigationController?.delegate = self
+>>>>>>> master:Curiosity/Controller/ViewController.swift
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.searchBar.delegate = self
     }
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
+=======
+    //Detect touches
+>>>>>>> master:Curiosity/Controller/ViewController.swift
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isSearchBarVisible {
             openSearchBar()
@@ -67,6 +111,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     }
 }
 // actions for TitleView
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
+=======
+// The whole extension is for separating actions methods
+>>>>>>> master:Curiosity/Controller/ViewController.swift
 extension ViewController {
     @objc func openMenuBar() {
         print("check")
@@ -112,6 +160,12 @@ extension ViewController  {
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         changeCategory(direction: sender.direction)
     }
+    func updateTable(_ animationDirection: UITableViewRowAnimation) {
+        self.tableView.beginUpdates()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
+        self.tableView.endUpdates()
+    }
+    
     func changeCategory(direction: UISwipeGestureRecognizerDirection) {
         searchRequest = ""
         isSearched = false
@@ -123,6 +177,7 @@ extension ViewController  {
         } else {
             self.newsManager.currentCategoryIndex -= 1
         }
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
         self.newsManager.currentCategoryIndex = self.newsManager.currentCategoryIndex % self.newsManager.categories.count
         if self.newsManager.currentCategoryIndex < 0 {
             self.newsManager.currentCategoryIndex = self.newsManager.categories.count - 1
@@ -133,6 +188,16 @@ extension ViewController  {
         self.tableView.beginUpdates()
         self.tableView.reloadSections(IndexSet.init(integer: 0), with: animationDirection)
         self.tableView.endUpdates()
+=======
+        self.newsManager.currentCategoryIndex = self.newsManager.currentCategoryIndex % self.newsManager.categoriesNames.count
+        if self.newsManager.currentCategoryIndex < 0 {
+            self.newsManager.currentCategoryIndex = self.newsManager.categoriesNames.count - 1
+        }
+        
+        self.titleView.category.text = self.newsManager.categoriesNames[self.newsManager.currentCategoryIndex % self.newsManager.categoriesNames.count]
+        
+        updateTable(animationDirection)
+>>>>>>> master:Curiosity/Controller/ViewController.swift
     }
 }
 extension ViewController : UITableViewDelegate {
@@ -142,7 +207,13 @@ extension ViewController : UITableViewDelegate {
         } else {
             if let avc = storyboard?.instantiateViewController(withIdentifier: "Article") as? HCIArticleViewController {
                 avc.category = titleView.category.text!
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
                 avc.articleID = indexPath.row
+=======
+                avc.article = newsManager.currentNews[indexPath.row]
+                avc.newsManager = newsManager
+                avc.prevVC = self
+>>>>>>> master:Curiosity/Controller/ViewController.swift
                 self.navigationController?.pushViewController(avc, animated: true)
             }
         }
@@ -156,6 +227,7 @@ extension ViewController : UITableViewDataSource {
         
         var news: [News]
         var article: News
+<<<<<<< HEAD:Curiosity/Controller/ViewController.swift
         
         if isSearched {
             news = self.newsManager.newsBySearch(request: searchRequest)
@@ -169,6 +241,21 @@ extension ViewController : UITableViewDataSource {
         let author = article.source
         let date = article.date
         
+=======
+        
+        if isSearched {
+            news = self.newsManager.newsBySearch(request: searchRequest)
+        } else {
+            news = self.newsManager.currentNews
+        }
+        article = news[indexPath.row]
+        
+        let preview = article.preview
+        let title = article.title
+        let author = article.source
+        let date = article.date
+        
+>>>>>>> master:Curiosity/Controller/ViewController.swift
         cell?.descriptionLabel.text = preview
         cell?.titleLabel.text = title
         cell?.authorLabel.text = author

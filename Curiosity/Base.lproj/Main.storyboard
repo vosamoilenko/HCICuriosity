@@ -106,6 +106,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4MU-6l-diH">
                                 <rect key="frame" x="0.0" y="104" width="320" height="56"/>
                                 <constraints>
@@ -113,6 +114,8 @@
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+=======
+>>>>>>> master
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPA-kG-1KP">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
@@ -146,18 +149,27 @@
                             <constraint firstItem="G4b-BZ-DGf" firstAttribute="leading" secondItem="gB2-hf-ltK" secondAttribute="leading" id="c86-kz-pjt"/>
                             <constraint firstItem="gB2-hf-ltK" firstAttribute="trailing" secondItem="G4b-BZ-DGf" secondAttribute="trailing" id="cgw-ug-eiq"/>
                             <constraint firstItem="rPA-kG-1KP" firstAttribute="leading" secondItem="vwy-Gl-GyW" secondAttribute="leading" id="eAY-kG-0qA"/>
+<<<<<<< HEAD
                             <constraint firstItem="4MU-6l-diH" firstAttribute="top" secondItem="FEu-Gp-O3h" secondAttribute="bottom" id="eWJ-Xg-RXx"/>
                             <constraint firstItem="4MU-6l-diH" firstAttribute="leading" secondItem="gB2-hf-ltK" secondAttribute="leading" id="f3c-w2-Dnr"/>
                             <constraint firstItem="gB2-hf-ltK" firstAttribute="trailing" secondItem="FEu-Gp-O3h" secondAttribute="trailing" id="iVQ-Vg-nfr"/>
                             <constraint firstItem="4MU-6l-diH" firstAttribute="trailing" secondItem="gB2-hf-ltK" secondAttribute="trailing" id="jQI-O1-pFJ"/>
+=======
+                            <constraint firstItem="gB2-hf-ltK" firstAttribute="trailing" secondItem="FEu-Gp-O3h" secondAttribute="trailing" id="iVQ-Vg-nfr"/>
+>>>>>>> master
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gB2-hf-ltK"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="searchBar" destination="4MU-6l-diH" id="dfG-RQ-m4Z"/>
                         <outlet property="titleView" destination="FEu-Gp-O3h" id="OCv-M9-bJL"/>
                         <outlet property="toolbar" destination="rPA-kG-1KP" id="v6b-95-lGl"/>
                         <outlet property="topWebViewConstraint" destination="Mcm-qs-kLe" id="kQT-Pq-Ch1"/>
+=======
+                        <outlet property="titleView" destination="FEu-Gp-O3h" id="OCv-M9-bJL"/>
+                        <outlet property="toolbar" destination="rPA-kG-1KP" id="v6b-95-lGl"/>
+>>>>>>> master
                         <outlet property="webView" destination="G4b-BZ-DGf" id="evF-6F-Uzm"/>
                     </connections>
                 </viewController>
