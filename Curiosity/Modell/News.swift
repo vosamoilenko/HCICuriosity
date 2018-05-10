@@ -16,7 +16,6 @@ class News: NSObject {
     var date: String
     var imageURL: URL
     var source: String
-
     var sourceLink: String
     var keywords: String
     var category: NewsCategory
@@ -36,7 +35,6 @@ class News: NSObject {
         self.preview = preview
         self.text = text
         self.source = source
-
         self.sourceLink = sourceLink
         self.keywords = keywords
         self.date = date

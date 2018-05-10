@@ -63,7 +63,6 @@ class NewsManager {
         return currentNews.filter { (news) -> Bool in
             return news.text.range(of: request) != nil || news.preview.range(of: request) != nil || news.title.range(of: request) != nil
         }
-
     }
 }
 
@@ -198,6 +197,4 @@ class NewsManager {
 //        }
 //        return sortedLast
 //    }
-
-
 

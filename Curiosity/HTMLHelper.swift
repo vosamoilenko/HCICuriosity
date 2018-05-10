@@ -33,7 +33,6 @@ struct HTMLHelper {
         htmlEnding = htmlEndingTags.joined()
     }
     
-
     func parseTextIntoParagraphs(text: String) -> String {
         let textParagraphs = text.components(separatedBy: "\n");
         

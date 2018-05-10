@@ -2,29 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "icons8-checkmark.png",
-=======
       "filename" : "icons8-sun_glasses-2.png",
->>>>>>> master
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "icons8-checkmark-1.png",
-=======
       "filename" : "icons8-sun_glasses-1.png",
->>>>>>> master
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "icons8-checkmark-2.png",
-=======
       "filename" : "icons8-sun_glasses.png",
->>>>>>> master
       "scale" : "3x"
     }
   ],

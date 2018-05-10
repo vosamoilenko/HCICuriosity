@@ -12,6 +12,7 @@ class HCIArticleViewController: UIViewController {
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
+
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
     
