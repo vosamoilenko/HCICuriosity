@@ -162,10 +162,12 @@ self.navigationController?.popToRootViewController(animated: true)
     
     //To Do
     func enableNotifications() {
-        NotificationManager.shared.sendLocalNotification(in: TimeInterval.init(10), cat: article.category)
+        NotificationManager.shared.sendLocalNotification(in: TimeInterval.init(2), cat: article.category)
     }
     
     func disableNotifications() {
         
     }
 }
+
+
