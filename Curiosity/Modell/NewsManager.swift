@@ -8,8 +8,6 @@
 import UIKit
 
 enum NewsCategory: String {
-    case recommended = "Recommended"
-    case favourites = "Favourites"
     case world = "World"
     case business = "Business"
     case technologies = "Technologies"
@@ -17,29 +15,32 @@ enum NewsCategory: String {
     case health = "Health"
     case science = "Science"
     case entertainment = "Entertainment"
+    case recommended = "Recommended"
+    case favourites = "Favourites"
 }
 
 class NewsManager {
-    var categoriesNews = [NewsCategory.recommended : [News](),
-                      NewsCategory.favourites : [News](),
-                      NewsCategory.world : [News](),
-                      NewsCategory.business : [News](),
-                      NewsCategory.technologies : [News](),
-                      NewsCategory.sport : [News](),
-                      NewsCategory.health : [News](),
-                      NewsCategory.science : [News](),
-                      NewsCategory.entertainment : [News]()
+    var categoriesNews = [
+        NewsCategory.world : [News](),
+        NewsCategory.business : [News](),
+        NewsCategory.technologies : [News](),
+        NewsCategory.sport : [News](),
+        NewsCategory.health : [News](),
+        NewsCategory.science : [News](),
+        NewsCategory.entertainment : [News](),
+        NewsCategory.recommended : [News](),
+        NewsCategory.favourites : [News](),
     ]
     let categoriesNames = [
-        "Recommended",
-        "Favourites",
         "World",
         "Business",
         "Technologies",
         "Sport",
         "Health",
         "Science",
-        "Entertainment"
+        "Entertainment",
+        "Recommended",
+        "Favourites",
     ]
     var currentCategoryIndex = 0
     var currentCategoryName : String {

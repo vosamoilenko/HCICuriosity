@@ -122,11 +122,11 @@ self.navigationController?.popToRootViewController(animated: true)
         if (!article.isSaved) {
             article.isSaved = true
             sender.image =  UIImage(named: "savePressedIcon")
-            addToSaved()
+            addToFavorites()
         } else {
             article.isSaved = false
             sender.image =  UIImage(named: "saveIcon")
-            removeFromSaved()
+            removeFromFavorites()
         }
     }
     
@@ -150,14 +150,13 @@ self.navigationController?.popToRootViewController(animated: true)
         newsManager.categoriesNews[.recommended]?.append(article)
     }
     
-    func addToSaved() {
+    func addToFavorites() {
         newsManager.categoriesNews[.favourites]?.append(article)
     }
     
-    func removeFromSaved() {
-        var favourites = newsManager.categoriesNews[.favourites]
-        let index = favourites?.index(of: article)
-        favourites?.remove(at: index!)
+    func removeFromFavorites() {
+        let index = newsManager.categoriesNews[.favourites]!.index(of: article)
+        newsManager.categoriesNews[.favourites]!.remove(at: index!)
     }
     
     //To Do
