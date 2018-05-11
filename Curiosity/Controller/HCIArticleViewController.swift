@@ -14,8 +14,7 @@ class HCIArticleViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
 
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var topWebViewConstraint: NSLayoutConstraint!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var prevVC: ViewController!
     var category = String()
@@ -26,9 +25,11 @@ class HCIArticleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        self.activityIndicator.startAnimating()
         loadArticle()
         initializeToolbar()
+        
+        self.webView.navigationDelegate = self
         
         self.titleView.category.text = category
         
@@ -48,7 +49,7 @@ class HCIArticleViewController: UIViewController {
     
     // This func is connected with observer as a selector.
     @objc func dismissVc() {
-self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     func loadArticle() {
@@ -168,6 +169,14 @@ self.navigationController?.popToRootViewController(animated: true)
     func disableNotifications() {
         
     }
+}
+
+extension HCIArticleViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView,
+                 didFinish navigation: WKNavigation!) {
+        self.activityIndicator.isHidden = true
+    }
+
 }
 
 
