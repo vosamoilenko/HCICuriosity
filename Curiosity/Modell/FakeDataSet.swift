@@ -11,7 +11,7 @@ import Foundation
 let fakeDataSet = [
     News(
         id: 0,
-        imageName: "articlePic0",
+        imageName: "articlePic0.jpg",
         title: "'More than 1,200' arrested as anti-Putin protests held across Russia",
         category: .world,
         preview: "Protests against Vladimir Putin have taken place across Russia ahead of his inauguration for a fourth presidential term, with more than 1,200 people arrested.",
@@ -175,11 +175,11 @@ let fakeDataSet = [
         date: "08.05.2018"),
     News(
         id: 5,
-         imageName: "articlePic5.jpg",
-         title: "Eric Schneiderman Resigns as New York Attorney General Amid Assault Claims by 4 Women",
-         category: .world,
-         preview: "Eric T. Schneiderman, the New York State attorney general who rose to prominence as an antagonist of the Trump administration, abruptly resigned on Monday night hours after The New Yorker reported that four women had accused him of physically assaulting them.",
-         text: """
+        imageName: "articlePic5.jpg",
+        title: "Eric Schneiderman Resigns as New York Attorney General Amid Assault Claims by 4 Women",
+        category: .world,
+        preview: "Eric T. Schneiderman, the New York State attorney general who rose to prominence as an antagonist of the Trump administration, abruptly resigned on Monday night hours after The New Yorker reported that four women had accused him of physically assaulting them.",
+        text: """
             “It’s been my great honor and privilege to serve as attorney general for the people of the State of New York,” Mr. Schneiderman said in a statement. “In the last several hours, serious allegations, which I strongly contest, have been made against me.
 
             “While these allegations are unrelated to my professional conduct or the operations of the office, they will effectively prevent me from leading the office’s work at this critical time. I therefore resign my office, effective at the close of business on May 8, 2018.”
@@ -245,10 +245,10 @@ let fakeDataSet = [
 
             On Monday afternoon, a criminal defense lawyer from Lankler Siffert & Wohl advised Mr. Scheiderman as he sought to respond to The New Yorker, two people with knowledge of the matter said. Later in the day, one of Mr. Schneiderman’s associates contacted several other law firms in an effort to retain a lawyer to represent him in connection with the criminal investigation, according to several people briefed on the matter.
          """,
-         source: "Danny Hakim and Vivian Wang, The New York Times",
-         sourceLink: "https://www.nytimes.com/2018/05/07/nyregion/new-york-attorney-general-eric-schneiderman-abuse.html",
-         keywords: "Politics NY Women",
-         date: "07.05.2018"),
+        source: "Danny Hakim and Vivian Wang, The New York Times",
+        sourceLink: "https://www.nytimes.com/2018/05/07/nyregion/new-york-attorney-general-eric-schneiderman-abuse.html",
+        keywords: "Politics NY Women",
+        date: "07.05.2018"),
     News(
         id: 6,
         imageName: "articlePic6.jpg",
@@ -520,7 +520,7 @@ The prototype early warning system has been functioning reliably during lab test
     //________________________________________Sport Data Set____________________________________________
     News(
         id: 10,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/4FC7/production/_101232402_serena_getty.jpg")!,
+        imageName: "articlePic8.png",
         title: "Italian Open: Serena Williams withdraws from clay-court tournament",
         category: .sport,
         preview: "Serena Williams has withdrawn from this month's Italian Open, five days after opting out of the WTA event in Madrid.",
@@ -539,7 +539,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 11,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/1093F/production/_101230976_curry2.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "NBA: Golden State Warriors to face Houston Rockets in Western Conference finals",
         category: .sport,
         preview: "Reigning champions Golden State Warriors will face Houston Rockets for a place in the NBA finals.",
@@ -558,7 +558,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 12,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/12CC0/production/_101229967_lehmannsmith_getty.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Darren Lehmann: Former Australia head coach set for new role",
         category: .sport,
         preview: "Former Australia head coach Darren Lehmann, who resigned after the ball-tampering scandal in March, is set for a new role with Cricket Australia.",
@@ -587,7 +587,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 13,
-        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/26C2/production/_101222990_gettyimages-829629148.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Toronto Blue Jays player Roberto Osuna charged with assault",
         category: .sport,
         preview: "Canadian police have charged Toronto Blue Jays baseball pitcher Roberto Osuna with assault.",
@@ -608,7 +608,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 14,
-        imageURL: URL.init(string: "http://e2.365dm.com/18/05/16-9/20/skysports-brian-odriscoll_4304074.jpg?20180508160311")!,
+        imageName: "articlePic0.jpg",
         title: "QUIZ: European Champions Cup finals!",
         category: .sport,
         preview: "We're down to two in Europe's premier competition! For Leinster and Racing 92, the biggest day of their seasons has arrived, and you can catch it live on Sky Sports!",
@@ -621,7 +621,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 15,
-        imageURL: URL.init(string: "http://e0.365dm.com/18/03/16-9/20/skysports-dillian-whyte-boxing_4260550.jpg?20180320163449")!,
+        imageName: "articlePic0.jpg",
         title: "Dillian Whyte will appeal 'outrageous' WBC rule, says Eddie Hearn",
         category: .sport,
         preview: "Dillian Whyte will object to the WBC's ruling that prevented him becoming Deontay Wilder's mandatory challenger, said promoter Eddie Hearn.",
@@ -667,7 +667,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 16,
-        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/A0C1/production/_101235114_mediaitem101235111.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Google bans abortion poll ads in Ireland",
         category: .technologies,
         preview: "Google will ban all advertisements relating to Republic of Ireland's forthcoming referendum on abortion, which takes place on 25 May.",
@@ -686,7 +686,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 17,
-        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/22DB/production/_98032980_e2a612e7-5015-438d-8893-64a70b46e344.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Paedophilia-defending' YouTuber has channel removed",
         category: .technologies,
         preview: "A Singaporean YouTuber who allegedly posted videos defending paedophilia has had his channel terminated.",
@@ -705,7 +705,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 18,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/news/660/cpsprodpb/18679/production/_101216999_e0121b55-1956-4247-b0e2-9e69cf14d751.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "World of Warcraft attacker jailed in US",
         category: .technologies,
         preview: "A World of Warcraft gamer has been sentenced to jail in the US for carrying out a cyber-attack that interfered with the service in Europe.",
@@ -726,7 +726,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 19,
-        imageURL: URL.init(string: "https://www.technewsworld.com/article_images/story_graphics_xlarge/xl-2018-snap-spectacles2-1.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "eBay plans to relaunch eBay India after it makes $1.1B selling its Flipkart stake to Walmart",
         category: .technologies,
         preview: "Last year, eBay appeared to throw in the towel in India after it sold its business in the country to Flipkart and took a minority stake in the country’s e-commerce leader. Now, eBay is making a u-turn.",
@@ -751,7 +751,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 20,
-        imageURL: URL.init(string: "https://techcrunch.com/wp-content/uploads/2018/05/chrome-linux-apps.png?w=990&crop=1")!,
+        imageName: "articlePic0.jpg",
         title: "You can now run Linux apps on Chrome OS",
         category: .technologies,
         preview: "For the longest time, developers have taken Chrome OS machines and run tools like Crouton to turn them into Linux-based developer machines.",
@@ -775,7 +775,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 21,
-        imageURL: URL.init(string: "https://techcrunch.com/wp-content/uploads/2018/05/gettyimages-73210343.jpg?w=730&crop=1")!,
+        imageName: "articlePic0.jpg",
         title: "StubHub bets on Pivotal and Google Cloud as it looks to go beyond tickets",
         category: .technologies,
         preview: "StubHub is best known as a destination for buying and selling event tickets. The company operates in 48 countries and sells a ticket every 1.3 seconds. But the company wants to go beyond that and provide its users with a far more comprehensive set of services around entertainment.",
@@ -802,7 +802,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 22,
-        imageURL: URL.init(string: "https://techcrunch.com/wp-content/uploads/2018/05/screen-shot-2018-05-09-at-13-53-53.png?w=730&crop=1")!,
+        imageName: "articlePic0.jpg",
         title: "Amazon opens showrooms in model homes to demo, sell smart home products",
         category: .technologies,
         preview: "Last week, we reported on how Amazon was leveraging a new relationship with home builder Lennar to expand its smart home business, specifically in the sale of home security services.",
@@ -833,7 +833,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 23,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/news/660/cpsprodpb/14078/production/_100004028_blackpanther3.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Disney rides Black Panther to profit",
         category: .business,
         preview: "Black Panther's runaway success boosted Walt Disney's profits in the first three months of 2018, helping to offset pressures in the TV business.",
@@ -867,7 +867,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 24,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/news/660/cpsprodpb/110C7/production/_101013896_hi045639536.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Iran sanctions threaten North Sea deal",
         category: .business,
         preview: "The Rhum gas field in the North Sea, which supplies 5% of the UK's gas, is half-owned by the Iranian State Oil Company.",
@@ -911,7 +911,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 25,
-        imageURL: URL.init(string: "https://ichef.bbci.co.uk/news/660/cpsprodpb/B3B3/production/_101230064_vodafone.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Vodafone makes €18bn swoop on Liberty Global cable networks",
         category: .business,
         preview: "Vodafone will pay €18.4bn (£16.1bn) for cable networks in Germany and eastern Europe owned by US firm Liberty Global.",
@@ -952,7 +952,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 26,
-        imageURL: URL.init(string: "https://i.guim.co.uk/img/media/c9904512dd824d078917cc0cbd636e9b11c2f4ec/0_0_3907_2344/master/3907.jpg?w=300&q=55&auto=format&usm=12&fit=max&s=1116a8067eff7bf69b20387369c4288f")!,
+        imageName: "articlePic0.jpg",
         title: "Richard Branson set for large profit if CYBG and Virgin Money merge",
         category: .business,
         preview: "CYBG has offered £1.6bn, seven years after Branson’s £747m buy-out of Northern Rock",
@@ -994,7 +994,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 27,
-        imageURL: URL.init(string: "https://i.guim.co.uk/img/media/1363a43fad457d28da8461d77be056f0421a73ac/665_12_2053_1232/master/2053.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=3889b0d431816de18f56f6bc1ac066d2")!,
+        imageName: "articlePic0.jpg",
         title: "Argentina seeks IMF loan to rescue peso from downward slide",
         category: .business,
         preview: "President Macri says it would help country ‘avoid a crisis like the ones we have faced before’",
@@ -1030,7 +1030,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 28,
-        imageURL: URL.init(string: "https://i.guim.co.uk/img/media/12b469b6eaf4073b4c1d98c478a04054faf8dd14/0_296_5760_3457/master/5760.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=f344a267c2d8419b516d4a0530e0c685")!,
+        imageName: "articlePic0.jpg",
         title: "Rail industry prepares for season ticket cull in fares shake-up",
         category: .business,
         preview: "UK-wide consultation to study outdated ticketing rules that have ballooned in complexity",
@@ -1074,7 +1074,7 @@ The prototype early warning system has been functioning reliably during lab test
     //________________________________________World data set______________________________________________________
     News(
         id: 29,
-        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/10F3B/production/_101253496_empanadilla_getty.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Spanish woman wins spy cam case over supermarket pasty",
         category: .world,
         preview: "A Spanish judge has told a supermarket to reinstate a sacked worker or pay her €19,000 (£16,758; $22,636), arguing that secret video showing her eating a pasty had breached her privacy.",
@@ -1095,7 +1095,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 30,
-        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/B498/production/_101223264_compitaly.gif")!,
+        imageName: "articlePic0.jpg",
         title: "Five Star and League: Italy populist leaders close to government deal",
         category: .world,
         preview: "Italy's anti-establishment Five Star Movement and right-wing League party say they have made significant steps to forming a government, more than two months after a general election.",
@@ -1132,7 +1132,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 31,
-        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/1670D/production/_101271919_5d04c7ed-d8d3-4289-be6d-50933ebc5088.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Catalonia's Carles Puigdemont opts out of presidency",
         category: .world,
         preview: "Former Catalan president Carles Puigdemont has nominated a political newcomer to be the region's new president.",
@@ -1157,7 +1157,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 32,
-        imageURL: URL.init(string: "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/05/11/screenshotblackairbnb11.jpg?itok=xgXpT2Jq")!,
+        imageName: "articlePic0.jpg",
         title: "A woman thought she saw burglars, but they were just black Airbnb guests",
         category: .world,
         preview: "LOS ANGELES, California (NYTIMES) - It was an entirely routine moment: Four people exited the home they had rented on Airbnb in Rialto, California, and loaded suitcases into their car.",
@@ -1211,7 +1211,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 33,
-        imageURL: URL.init(string: "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/05/11/2018-03-20t184708z_1867166395_rc16f723f080_rtrmadp_3_laudamotion-m-a-ryanair.jpg?itok=R64NgnBR")!,
+        imageName: "articlePic0.jpg",
         title: "Survey says two-thirds of flight attendants endure sexual harassment",
         category: .world,
         preview: "NEW YORK (BLOOMBERG) - More than two-thirds of flight attendants in the US report experiencing verbal or physical sexual harassment during their careers, according to a study released on Thursday (May 10) by the Association of Flight Attendants-CWA.",
@@ -1237,7 +1237,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 34,
-        imageURL: URL.init(string: "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/05/11/topshots-topshot-syria-israel-conflict-204238.jpg?itok=oeawKUB9")!,
+        imageName: "articlePic0.jpg",
         title: "Calls for restraint after Israeli raids on 'Iranians' in Syria",
         category: .world,
         preview: "JERUSALEM (AFP) - Israel carried out widespread deadly raids against what it said were Iranian targets in Syria on Thursday (May 10) after rocket fire towards its forces it blamed on Iran, drawing global calls for restraint.",
@@ -1324,10 +1324,10 @@ The prototype early warning system has been functioning reliably during lab test
     
     
     //________________________________________Health data set______________________________________________________
-
+    
     News(
         id: 35,
-        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321772/senior-woman-learning-to-walk-again-after-stroke.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Stroke survivors may benefit from magnetic brain stimulation",
         category: .health,
         preview: "A new meta-analysis of existing studies shows that a technique called repetitive transcranial magnetic stimulation might be a useful tool to help stroke survivors regain the ability to walk independently.",
@@ -1372,7 +1372,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 36,
-        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321765/woman-holding-clock.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Body clock gene may protect against breast cancer",
         category: .health,
         preview: "Our bodies have an innate timer known as the biological clock. A new study suggests that one gene that helps to regulate this timer may also have a protective role against breast cancer.",
@@ -1429,7 +1429,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 37,
-        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321752/distracted-woman.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Alzheimer's: Are changes in the brain's attention hub at fault?",
         category: .health,
         preview: "Researchers suggest that we become more easily distracted as we age, and that it's all down to a part of our brains called the locus coeruleus. Could this advance our understanding of Alzheimer's disease?",
@@ -1498,7 +1498,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 38,
-        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321740/concussion-helmet-illustration.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Even mild TBI might raise dementia risk",
         category: .health,
         preview: "Concussion does not have to result in loss of consciousness for it to be followed by a higher risk of developing dementia.",
@@ -1566,7 +1566,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 39,
-        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321601/dandelion-in-the-wind.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Letter from the Editor: Winds of change",
         category: .health,
         preview: "Spring has finally sprung outside the Medical News Today office. The sun has been shining, daffodils are in bloom, and all that's required to go outside is a light jacket and scarf — which, in England, is practically summer attire.",
@@ -1603,7 +1603,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 40,
-        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321738/balding-man.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Existing drug may be the answer to hair loss",
         category: .health,
         preview: "Sometimes, the answer to a difficult problem may come from an unexpected direction. In this instance, researchers have found that a drug designed to treat osteoarthritis might also combat baldness.",
@@ -1665,7 +1665,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 41,
-        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321723/student-asleep.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Quiet rest after learning helps us to remember the fine details",
         category: .health,
         preview: "Most of us know that without sleep, we are unable to create new memories. But is simply resting — without falling into the dreamy state — for only 10 minutes after learning something enough for us to memorize it in fine detail? Recent research suggests so.",
@@ -1716,11 +1716,11 @@ The prototype early warning system has been functioning reliably during lab test
         source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321723.php", keywords: "rest remember the fine details learning memorize", date:"06.05.2018"),
     
     
-        //________________________________________Science data set______________________________________________________
+    //________________________________________Science data set______________________________________________________
     
     News(
         id: 42,
-        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050818_EC_gaia_feat.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Gaia delivers a trove of data revealing secrets of the Milky Way",
         category: .science,
         preview: "Astronomers are using the info to gauge the galaxy’s mass, size up exoplanets and more",
@@ -1774,7 +1774,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 43,
-        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050918_LG_interstellar-gas-cloud_feat.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "First 3-D map of a gas cloud in space shows it’s flat like a pancake",
         category: .science,
         preview: "Its newfound shape could explain why the structure is missing stars",
@@ -1806,7 +1806,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 44,
-        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/051018_MT_north-korea-nuclear-test_feat.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Satellite data backs theory of North Korean nuclear site collapse",
         category: .science,
         preview: "Whether underground cave-ins have made the facility unusable is unknown",
@@ -1831,7 +1831,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 45,
-        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050918_SM_amphibian-fungus_feat.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "A deadly frog-killing fungus probably originated in East Asia",
         category: .science,
         preview: "The pandemic form of Bd chytrid likely emerged 50 to 120 years ago, a genetic study finds",
@@ -1867,7 +1867,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 46,
-        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050818_EC_proton-brief_feat.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "The proton’s weak side is just as feeble as physicists thought",
         category: .science,
         preview: "Scientists make the most precise measurement yet of the particle’s weak charge",
@@ -1887,7 +1887,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 47,
-        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050818_SM_caterpillar_feat.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "These caterpillars march. They fluff. They scare London.",
         category: .science,
         preview: "Threats to trees and health aside, oak processionary moth larvae have socially redeeming qualities",
@@ -1919,7 +1919,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 48,
-        imageURL: URL.init(string: "https://akns-images.eonline.com/eol_images/Entire_Site/201849/rs_600x600-180509134044-600-the-arrangement.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Kyle West Sets the Record Straight About Who He Truly Is on The Arrangement",
         category: .entertainment,
         preview: "Kyle West (Josh Henderson) is returning to the Iris Holloway show to set the record straight about who he really is. Not the loyal friend, caring fiancé or good man he described himself as.",
@@ -1939,7 +1939,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 49,
-        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2017230/rs_600x600-170330183617-600x600.brooklyn-nine-nine-melissa-fumero-andy-samberg-lp.33017.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Brooklyn Nine-Nine Might Be Saved From Cancellation",
         category: .entertainment,
         preview: "It's a TV miracle! After being canceled by Fox in a no-good very-bad move, it's looking likely that Brooklyn Nine-Nine will be the latest series to be saved from cancellation. Huzzah!",
@@ -1964,7 +1964,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 50,
-        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018410/rs_600x600-180510165845-600x600.big-bang-theory-wedding2-lp.51018.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "The Big Bang Theory Finale: Sheldon and Amy Finally Got Married",
         category: .entertainment,
         preview: "Was that possibly the nerdiest wedding to have ever occurred?Sheldon and Amy just tied the knot on the Big Bang Theory and boy were there a lot of guest stars. Kathy Bates! Laurie Metcalf! Jerry O'Connell! Wil Wheaton!",
@@ -1992,7 +1992,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 51,
-        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018024/rs_600x600-180124134512-600-murphy-brown-3.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "New TV Shows 2018: Your Guide to Who's In Them and What They're About",
         category: .entertainment,
         preview: "Ain't no rest for the TV fan. Doesn't it feel like just yesterday all the new shows were premiering? Well, get ready, because  the networks have started ordering pilots to series for the 2018-19 TV season ahead of their Upfront presentations in New York City next week. Doesn't it feel like being a TV viewer is a full-time job these days? It's exhausting and exhilarating and we wouldn't have it any other way.",
@@ -2059,7 +2059,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 52,
-        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/201828/rs_600x600-180308190054-600-sarah-drew-scandal-abc.png")!,
+        imageName: "articlePic0.jpg",
         title: "Grey's Anatomy: Did April Die?",
         category: .entertainment,
         preview: "All you need to know about tonight's episode of Grey's Anatomy is that they played Snow Patrol. ",
@@ -2085,7 +2085,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 53,
-        imageURL: URL.init(string: "https://akns-images.eonline.com/eol_images/Entire_Site/2018410/rs_634x1024-180510195423-634.chris-hardwick-lydia-hearst-solo-star-wars-premiere.ct.051018.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Solo: A Star Wars Story Premieres in Hollywood: See All the Red Carpet Photos",
         category: .entertainment,
         preview: "The Star Wars galaxy has officially descended onto Hollywood!",
@@ -2104,7 +2104,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 54,
-        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018411/rs_600x600-180511052919-600.christina-aguilera-twice.51118.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Christina Aguilera Goes Back to Basics With the Ballad Twice",
         category: .entertainment,
         preview: "This is Christina Aguilera stripped...again.",
@@ -2126,7 +2126,7 @@ The prototype early warning system has been functioning reliably during lab test
     
     News(
         id: 55,
-        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018410/rs_600x600-180510110454-600.girls.51018.jpg")!,
+        imageName: "articlePic0.jpg",
         title: "Rita Ora, Cardi B, Bebe Rexha and Charli XCX Explore Bisexuality With Girls",
         category: .entertainment,
         preview: "Sometimes, Rita Ora just wants to kiss girls—and so do Cardi B, Bebe Rexha and Charli XCX, apparently. Ora recruited the rapper and two of her pop peers for the song Girls, a new summer anthem released today.",
@@ -2141,12 +2141,10 @@ The prototype early warning system has been functioning reliably during lab test
         Added Ora, "I hope you dance your socks off with us!"
 
         Rexha, who just had a No. 1 country hit, leapt at the chance to record a verse. "I've been so inspired by the powerful female singers of our time, and I couldn't be more proud to join Rita, Cardi and Charli in carrying on the tradition of bold, sexy and fearless expression," she said. "I strive to be a fierce champion of female empowerment and equal representation in music and beyond and am so excited to have this anthem out there in the world for girls everywhere."
-        Likewise, Charli XCX was "instantly" down to work with Ora. "She's one of my favorite people I've met through music, a genuine person who is really funny and someone I count as a true friend. There's nothing more fun than making music with your friends," the singer said, adding, "I just want to throw a huge party when this song is out. Everyone's invited, let's get f--ked up!"
+        Likewise, Charli XCX was "instantly" down to work with Ora. "She's one of my favorite people I've met through music, a genuine person who is really funny and someone I count as a true friend. There's nothing more fun than making music with your friends," the singer said, adding, "I just want to throw a huge party when this song is out. Everyone's invited!"
 
         Ora will kick off her sold-out European Girls Tour in Glasgow on May 11.
         """,
         source: "Enews", sourceLink: "https://www.eonline.com/news/934221/rita-ora-cardi-b-bebe-rexha-and-charli-xcx-explore-bisexuality-with-girls", keywords: "Rita Ora, Cardi B, Bebe Rexha and Charli XCX Girls", date:"10.05.2018")
-    
-    
 ]
 

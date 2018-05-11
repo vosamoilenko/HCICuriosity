@@ -7,6 +7,7 @@
 //
 import UIKit
 import WebKit
+import UserNotifications
 
 class HCIArticleViewController: UIViewController {
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
@@ -161,7 +162,7 @@ self.navigationController?.popToRootViewController(animated: true)
     
     //To Do
     func enableNotifications() {
-        
+        NotificationManager.shared.sendLocalNotification(in: TimeInterval.init(10), cat: article.category)
     }
     
     func disableNotifications() {

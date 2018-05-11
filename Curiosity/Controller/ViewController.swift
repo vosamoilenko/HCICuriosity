@@ -41,6 +41,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
          
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.searchBar.placeholder = "Search by category"
+        self.titleView.menuButton.isHidden = true
         
         preapreTableViewAndCells()
         setDelegates()
@@ -51,6 +52,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.tableView.reloadSections(IndexSet.init(integer: 0), with: .fade)
+        
+        NotificationManager.shared.requestAuthorization()
     }
     
     // Set observers for Observe pressing and events from HCITitleNavigationBarView
