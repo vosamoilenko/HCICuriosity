@@ -1,43 +1,51 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "app-icon-notifications@2x-1.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "app-icon-notifications@3x-1.png",
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "app-icon-spotlight_settings@2x-1.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "app-icon-spotlight_settings@3x-1.png",
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "app-icon-spotlight@2x-1.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "app-icon-spotlight@3x-1.png",
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "app-icon-iphone_app@2x-1.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "app-icon-iphone_app@3x-1.png",
       "scale" : "3x"
     },
     {
@@ -86,9 +94,46 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ios-marketing",
       "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "app-icon-appstore@1x-1.png",
       "scale" : "1x"
+    },
+    {
+      "filename" : "app-icon-appstore@1x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-iphone_app@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-iphone_app@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-notifications@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-notifications@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-spotlight_settings@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-spotlight_settings@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-spotlight@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "app-icon-spotlight@3x.png",
+      "unassigned" : true
     }
   ],
   "info" : {
