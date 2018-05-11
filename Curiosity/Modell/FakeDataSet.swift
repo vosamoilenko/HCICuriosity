@@ -207,7 +207,7 @@ let fakeDataSet = [
             Women’s issues had also been a focal point for Mr. Schneiderman, who had announced, for instance, a lawsuit against the company once run by the former filmmaker Harvey Weinstein, who was accused of decades of sexual misconduct. “We have never seen anything as despicable as what we’ve seen right here,” Mr. Schneiderman said then.
 
             Ms. Manning Barish, in The New Yorker account, described being slapped by Mr. Schneiderman after they had both been drinking; she and Ms. Selvaratnam said several of the attacks occurred after alcohol had been consumed.
-    
+         
             “It was horrendous,” she said. “It just came out of nowhere. My ear was ringing. I lost my balance and fell backward onto the bed. I sprang up, but at this point there was very little room between the bed and him. I got up to try to shove him back, or take a swing, and he pushed me back down. He then used his body weight to hold me down, and he began to choke me. The choking was very hard. It was really bad. I kicked. In every fiber, I felt I was being beaten by a man.”
 
             Debra S. Katz, a lawyer for Ms. Manning Barish, said that it was Mr. Schneiderman’s “fantasy and his fantasy alone that the behavior was welcome.”
@@ -227,7 +227,7 @@ let fakeDataSet = [
             Mr. Schneiderman’s former wife said she was taken aback by the allegations being leveled against him.
 
             “I’ve known Eric for nearly 35 years as a husband, father and friend,” said Jennifer Cunningham, his ex-wife and frequent political strategist. “These allegations are completely inconsistent with the man I know, who has always been someone of the highest character, outstanding values and a loving father.”
-    
+         
             Mr. Schneiderman has long been regarded as one of the state’s most progressive politicians, even before his 2013 lawsuit against Trump University and his subsequent suits against the Trump administration made him the darling of the political left. Last fall, Mr. Schneiderman’s office proudly pointed to a segment on the late-night comedy show “Full Frontal with Samantha Bee,” in which the attorney general was described as “a hero who stood up to democracy’s nemesis,” a Superman-like character known as Schneider-man.
 
             His credentials as an advocate for women, in particular, had gone unquestioned.
@@ -243,8 +243,8 @@ let fakeDataSet = [
 
             Also on Monday evening, Mr. Trump’s son Donald Trump Jr. dug up an old tweet from Mr. Schneiderman in which he said, “No one is above the law” and tweeted at him, “You were saying???”
 
-On Monday afternoon, a criminal defense lawyer from Lankler Siffert & Wohl advised Mr. Scheiderman as he sought to respond to The New Yorker, two people with knowledge of the matter said. Later in the day, one of Mr. Schneiderman’s associates contacted several other law firms in an effort to retain a lawyer to represent him in connection with the criminal investigation, according to several people briefed on the matter.
-""",
+            On Monday afternoon, a criminal defense lawyer from Lankler Siffert & Wohl advised Mr. Scheiderman as he sought to respond to The New Yorker, two people with knowledge of the matter said. Later in the day, one of Mr. Schneiderman’s associates contacted several other law firms in an effort to retain a lawyer to represent him in connection with the criminal investigation, according to several people briefed on the matter.
+         """,
          source: "Danny Hakim and Vivian Wang, The New York Times",
          sourceLink: "https://www.nytimes.com/2018/05/07/nyregion/new-york-attorney-general-eric-schneiderman-abuse.html",
          keywords: "Politics NY Women",
@@ -731,7 +731,6 @@ The prototype early warning system has been functioning reliably during lab test
         category: .technologies,
         preview: "Last year, eBay appeared to throw in the towel in India after it sold its business in the country to Flipkart and took a minority stake in the country’s e-commerce leader. Now, eBay is making a u-turn.",
         text: """
-            Last year, eBay appeared to throw in the towel in India after it sold its business in the country to Flipkart and took a minority stake in the country’s e-commerce leader. Now, eBay is making a u-turn.
 
             In the wake of Walmart’s intention to buy a controlling stake in Flipkart for $16 billion, eBay has announced that it is among the investors that will be selling its stake in the business, in eBay’s case for gross proceeds of $1.1 billion. And along with that, it said it plans to relaunch eBay India, focusing not on domestic sales as it had done previously, but on cross-border sales: selling into India from abroad, and from India to other markets.
 
@@ -757,7 +756,7 @@ The prototype early warning system has been functioning reliably during lab test
         category: .technologies,
         preview: "For the longest time, developers have taken Chrome OS machines and run tools like Crouton to turn them into Linux-based developer machines.",
         text: """
-            For the longest time, developers have taken Chrome OS machines and run tools like Crouton to turn them into Linux-based developer machines. That was a bit of a hassle, but it worked. But things are getting easier. Soon, if you want to run Linux apps on your Chrome OS machine, all you’ll have to do is switch a toggle in the Settings menu. That’s because Google is going to start shipping Chrome OS with a custom virtual machine that runs Debian Stretch, the current stable version of the operating system.
+            That was a bit of a hassle, but it worked. But things are getting easier. Soon, if you want to run Linux apps on your Chrome OS machine, all you’ll have to do is switch a toggle in the Settings menu. That’s because Google is going to start shipping Chrome OS with a custom virtual machine that runs Debian Stretch, the current stable version of the operating system.
 
             It’s worth stressing that we’re not just talking about a shell here, but full support for graphical apps, too. That means you could now, for example, run Microsoft’s Linux version of Visual Studio Code right on your Chrome OS machine. Or build your Android app in Android Studio and test it right on your laptop, thanks to the built-in support for Android apps that came to Chrome OS last year.
 
@@ -781,7 +780,7 @@ The prototype early warning system has been functioning reliably during lab test
         category: .technologies,
         preview: "StubHub is best known as a destination for buying and selling event tickets. The company operates in 48 countries and sells a ticket every 1.3 seconds. But the company wants to go beyond that and provide its users with a far more comprehensive set of services around entertainment.",
         text: """
-            StubHub is best known as a destination for buying and selling event tickets. The company operates in 48 countries and sells a ticket every 1.3 seconds. But the company wants to go beyond that and provide its users with a far more comprehensive set of services around entertainment. To do that, it’s working on changing its development culture and infrastructure to become more nimble. As the company announced today, it’s betting on Google Cloud and Pivotal Cloud Foundry as the infrastructure for this move.
+            To do that, it’s working on changing its development culture and infrastructure to become more nimble. As the company announced today, it’s betting on Google Cloud and Pivotal Cloud Foundry as the infrastructure for this move.
 
             StubHub  CTO Matt Swann told me that the idea behind going with Pivotal — and the twelve-factor app model that entails — is to help the company accelerate its journey and give it an option to run new apps in both an on-premise and cloud environment.
 
@@ -808,7 +807,7 @@ The prototype early warning system has been functioning reliably during lab test
         category: .technologies,
         preview: "Last week, we reported on how Amazon was leveraging a new relationship with home builder Lennar to expand its smart home business, specifically in the sale of home security services.",
         text: """
-            Last week, we reported on how Amazon was leveraging a new relationship with home builder Lennar to expand its smart home business, specifically in the sale of home security services. Today, Amazon is taking the next step forward in that strategy: it’s launching a new chain of showrooms it’s calling the Amazon Experience Centers across Lennar model homes to demo and help sell its smart home devices, Amazon Dash Buttons, and other consumer electronics services such as streaming Prime Content with Fire TV.
+            Today, Amazon is taking the next step forward in that strategy: it’s launching a new chain of showrooms it’s calling the Amazon Experience Centers across Lennar model homes to demo and help sell its smart home devices, Amazon Dash Buttons, and other consumer electronics services such as streaming Prime Content with Fire TV.
 
             The model homes will be fully connected up as Alexa-enabled smart homes, Amazon says, with customers able to walk through and see the full effect of being able to use Alexa to control all electronic and connected kit, from TVs and lights to thermostat and window blinds.
 
@@ -873,7 +872,6 @@ The prototype early warning system has been functioning reliably during lab test
         category: .business,
         preview: "The Rhum gas field in the North Sea, which supplies 5% of the UK's gas, is half-owned by the Iranian State Oil Company.",
         text: """
-            The Rhum gas field in the North Sea, which supplies 5% of the UK's gas, is half-owned by the Iranian State Oil Company.
 
             BP, which owns the other half, is in the process of offloading its share to small North Sea specialist Serica, but that deal has not completed.
 
@@ -1070,8 +1068,652 @@ The prototype early warning system has been functioning reliably during lab test
             A final report from the rail industry on the fare system is expected to be published in the autumn.
 
             """,
-        source: "The Guardian", sourceLink: "https://www.theguardian.com/money/2018/may/08/rail-industry-prepares-for-season-ticket-cull-in-fares-shake-up", keywords: "UK train industry rail", date:"08.05.2018")
+        source: "The Guardian", sourceLink: "https://www.theguardian.com/money/2018/may/08/rail-industry-prepares-for-season-ticket-cull-in-fares-shake-up", keywords: "UK train industry rail", date:"08.05.2018"),
     
+    
+    //________________________________________World data set______________________________________________________
+    News(
+        id: 29,
+        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/10F3B/production/_101253496_empanadilla_getty.jpg")!,
+        title: "Spanish woman wins spy cam case over supermarket pasty",
+        category: .world,
+        preview: "A Spanish judge has told a supermarket to reinstate a sacked worker or pay her €19,000 (£16,758; $22,636), arguing that secret video showing her eating a pasty had breached her privacy.",
+        text: """
+            A spy camera in the Córdoba shop had recorded the woman eating a pasty while serving customers, violating the rules.
+            The woman, not named, was sacked in November, having worked there for 12 years. She was unaware of the camera.
+            A European ruling says firms must not use such recordings in dismissal cases.
+            The Córdoba supermarket disciplined the worker because she had breached hygiene rules and had helped herself to a pasty - an empanadilla - on sale to the public.
+            Her lawyer, Valentín Aguilar, says on his website (in Spanish) that the Córdoba court ruling is a legal first for Spain.
+
+            In January, five other Spanish supermarket workers - all women - won a similar case at the European Court of Human Rights.
+            Spanish courts had accepted covert video evidence from a supermarket chain, MSA, which accused the five of stealing items and helping co-workers and customers to do so.
+            But the European Court in Strasbourg found that under Spanish data protection law the workers should have been informed that they were under surveillance. The spy camera violated their right to privacy, the judges ruled, in López Ribalda v Spain.
+            In that case, the court ordered Spain to pay each of the five women €4,000 in damages, as well as €500 in costs to four, and €569 in costs to one.
+            MSA had made them aware of visible cameras in the shop, but not of hidden cameras.
+            """,
+        source: "BBC", sourceLink: "http://www.bbc.com/news/world-europe-44071422", keywords: "Spanish Valentin spy cam camera", date:"10.05.2018"),
+    
+    News(
+        id: 30,
+        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/B498/production/_101223264_compitaly.gif")!,
+        title: "Five Star and League: Italy populist leaders close to government deal",
+        category: .world,
+        preview: "Italy's anti-establishment Five Star Movement and right-wing League party say they have made significant steps to forming a government, more than two months after a general election.",
+        text: """
+            Luigi Di Maio of Five Star and Matteo Salvini of The League have been given until Sunday to solve their differences.
+            The prospect of a populist, Eurosceptic government has worried investors.
+            But a deal would end political deadlock and the threat of another vote.
+            The two leaders said in a joint statement they were aiming to "provide a response and a political government for the country as soon as possible". They have given no indication who would lead the government or what their policies will be.
+            Mr Di Maio wrote on Facebook: "I cannot hide my joy and happiness that we can finally start solving Italy's problems".
+            Once a programme is agreed, Five Star members are expected to have an online vote on it, in line with the movement's belief in direct democracy.
+
+            President Sergio Mattarella, who had earlier given the parties until Thursday afternoon to reach a partnership deal, agreed to extend the deadline. But in a speech he appeared to warn them not to build a government that confronted the European Union and the euro.
+            It would be a mistake, he warned, "to look to 19th-Century solutions when trying to solve the problems of the 21st Century".
+            Italy's main FTMIB share index fell by more than 1% and government bond yields hit a seven-week high as the prospects of a populist coalition grew.
+            What would a populist government mean for EU?
+            By James Reynolds, BBC Rome correspondent
+            In many ways, a Five Star-League coalition is a natural choice. Each party campaigned in the March general election as a populist, anti-system movement, wary of Italy's current relationship with the rest of the European Union.
+            Five Star picked up votes by promising income support for the country's poor. The League wants to impose a 15% flat tax which would benefit companies.
+            In order to fund these promises, the parties have each called for a renegotiation of the EU's strict fiscal rules.
+            We don't yet know if the two parties, in coalition, will want to go further.
+            Five Star has stepped back from an earlier promise to hold a referendum on the country's membership of the single currency.
+            The League, which once promised to withdraw from the EU entirely, currently says it wants to reform the union from within.
+
+            Why is Berlusconi important?
+            Five Star has been open to taking part in a government with the nationalist League for some time, but always refused to work with Matteo Salvini's centre-right coalition ally, ex-Prime Minister Silvio Berlusconi. The centre-right coalition won the 4 March election without sufficient support for a majority, while Five Star was the biggest single party.
+
+            The 81-year-old billionaire is considered corrupt by Five Star, and he has said the anti-establishment movement does "not have the political maturity" for government.
+            Until President Mattarella abandoned attempts at forming a government earlier this week, threatening a "neutral" government run by technocrats, Mr Salvini had said he would not abandon Mr Berlusconi.
+            Eventually, on Wednesday night, the former prime minister agreed not to stand in the way of a Five Star coalition with The League.
+            However, he insisted his Forza Italia party would not back a confidence motion if they present a new government to parliament. They would not need his support as the two parties between them command over half the vote.
+
+            """,
+        source: "BBC", sourceLink: "http://www.bbc.com/news/world-europe-44066711", keywords: "Italy Luigi Di Maio of Five Star", date:"10.05.2018"),
+    
+    News(
+        id: 31,
+        imageURL: URL.init(string: "https://ichef-1.bbci.co.uk/news/660/cpsprodpb/1670D/production/_101271919_5d04c7ed-d8d3-4289-be6d-50933ebc5088.jpg")!,
+        title: "Catalonia's Carles Puigdemont opts out of presidency",
+        category: .world,
+        preview: "Former Catalan president Carles Puigdemont has nominated a political newcomer to be the region's new president.",
+        text: """
+            In a video from his self-imposed exile in Berlin, Mr Puigdemont named Quim Torra to be a candidate for the presidency of the region.
+            Mr Torra is an MP from Mr Puigdemont's pro-independence party, Together for Catalonia (JxCat).
+            Spain declared the 2017 referendum on the region's independence as illegal.
+            After Madrid imposed direct rule on the region, Mr Puigdemont and many members of his government were arrested or fled the country.
+
+            Elections were held in December 2017, however no party won an overall majority.
+            Led by Mr Puigdemont's party, the pro-independence groupings won a narrow majority in the regional parliament.
+            However they have been unable to elect a candidate for the presidency.
+
+            To date, the candidates selected by the pro-independence parties haven't been able to attend nomination sessions as they face criminal charges of rebellion and sedition for their role in last October's referendum.
+            In the case of Mr Puigdemont, he was unable to return from self-imposed exile.
+            Jordi Sanchez, another civil society leader, was put forward by the separatists but could not be released from prison.
+
+            Mr Torra worked as an executive for a multi-national insurance company, before he entered politics by joining the pro-independence civil society pressure group Òmnium Cultural.
+            He also ran a publishing company, dedicated to publishing works of Catalan literature and journalism.
+            """,
+        source: "BBC", sourceLink: "http://www.bbc.com/news/world-europe-44071796", keywords: "Carles Puigdemont Catalania", date:"10.05.2018"),
+    
+    News(
+        id: 32,
+        imageURL: URL.init(string: "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/05/11/screenshotblackairbnb11.jpg?itok=xgXpT2Jq")!,
+        title: "A woman thought she saw burglars, but they were just black Airbnb guests",
+        category: .world,
+        preview: "LOS ANGELES, California (NYTIMES) - It was an entirely routine moment: Four people exited the home they had rented on Airbnb in Rialto, California, and loaded suitcases into their car.",
+        text: """
+            Within minutes, several police cars had arrived and the group was being questioned as a helicopter flew overhead. A neighbour who did not recognise them had called the police, suspecting they were burglars.
+
+            They were in fact four creative professionals in town for an event. Now the three black people in the group are suing the Rialto Police Department, saying they were unfairly treated during the April 30 encounter.
+
+            "Got surrounded by the police for being black in a white neighbourhood," one of the guests, Donisha Prendergast, a filmmaker and a granddaughter of Bob Marley, wrote on Instagram.
+
+            "I'm sad and irritated to see that fear is still the first place police officers go in their pursuit to serve and protect, to the point that protocol supersedes their ability to have discernment."
+
+            "We have been dealing with different emotions and you want to laugh about this but it's not funny," Kelly Fyffe-Marshall, another filmmaker, wrote on Instagram.
+
+            "The trauma is real. I've been angry, frustrated and sad. This is insanity."
+
+            Komi-Oluwa Olafimihan, an artist, pointed out that "over 700 people that look just like me did not walk away alive from a situation like this last year."
+
+            The police and the renters offered different versions of events, but both recorded video: The police through their body cameras, the renters through their phones.
+
+            Fyffe-Marshall said the officers came out of their cars, demanding that the group put their hands in the air. At first, the renters "joked about the misunderstanding," she said, but the situation escalated after 20 minutes when a sergeant arrived.
+
+            The sergeant didn't know what Airbnb was, "insisted that we were lying about it and said we had to prove it," Fyffe-Marshall said. She showed the officers their booking confirmations and called the landlord, and the group was detained for 45 minutes, she said.
+
+            She said the neighbour called the police because they had failed to wave at her.
+
+            Fyffe-Marshall and Prendergast declined interview requests.
+
+            The Rialto Police Department said in a statement that the group was questioned for 22 minutes and that officers had not used restraints on them. The officers learned they were Airbnb guests "through reasonable inquiry," and they were "immediately released without incident," the police said.
+
+            "The Rialto Police Department is confident officers treated the involved individuals with dignity, respect and professionalism," the police said.
+
+            Many people of colour have reported that police have been called on them while going about their everyday business, a fact of life that has seen several prominent examples in recent weeks.
+
+            National outrage followed the arrest of two black men in a Philadelphia Starbucks; a group of black women had police called on them for golfing too slowly in York County, Pennsylvania; and two Native American brothers had a college visit in Colorado cut short when a parent told a 911 dispatcher that their behaviour and clothing was suspicious.
+
+            Airbnb has for years been battling concerns over discrimination - though its focus had been on those renting out their homes, not neighbours. The company brought on prominent advisers, including Eric Holder, the former US attorney-general, to help form new policies, and released a 32-page report in 2016 on how it planned to fight discrimination.
+
+            Airbnb said that what happened to the guests in Rialto was "unconscionable."
+
+            Laura W. Murphy, a senior adviser, and Janaye Ingram, the head of national partnerships, sent a letter to Rialto's police chief and mayor Monday (May 7) to request a meeting.
+
+            "We are deeply disturbed by the public reports suggesting that the police department's response was dictated by the guests' race," the two wrote.
+
+            "As African-American women who have seen the inequitable treatment of people of colour, we know that these kinds of incidents are often rooted in implicit and explicit bias. They are hurtful, discriminatory, traumatic and must end."
+
+
+            """,
+        source: "The Straits Times", sourceLink: "https://www.straitstimes.com/world/united-states/a-woman-thought-she-saw-burglars-but-they-were-just-black-airbnb-guests", keywords: "US news airbnb race issues", date:"10.05.2018"),
+    
+    
+    News(
+        id: 33,
+        imageURL: URL.init(string: "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/05/11/2018-03-20t184708z_1867166395_rc16f723f080_rtrmadp_3_laudamotion-m-a-ryanair.jpg?itok=R64NgnBR")!,
+        title: "Survey says two-thirds of flight attendants endure sexual harassment",
+        category: .world,
+        preview: "NEW YORK (BLOOMBERG) - More than two-thirds of flight attendants in the US report experiencing verbal or physical sexual harassment during their careers, according to a study released on Thursday (May 10) by the Association of Flight Attendants-CWA.",
+        text: """
+
+            About 35 per cent of flight attendants taking part in the survey said they experienced verbal sexual harassment, including lewd, suggestive and inappropriate comments, in the past year alone.
+
+            Eighteen per cent were physically harassed during the same period, reporting that they were "touched, felt, pulled, grabbed, groped, slapped, rubbed and fondled", on top of and under their uniforms, AFA said.
+
+            Beyond its impact on the individual, such abuse threatens passengers' safety by undermining flight attendants' authority in emergencies and making it harder for them to intervene in disputes between passengers, the union said.
+
+            The AFA called on the US airline industry to take steps to combat such harassment and acknowledge how it can affect safety.
+
+            Sixty-eight per cent of the 3,500 flight attendants who took part in the survey said they have seen no efforts by airlines to address workplace sexual harassment in the past year, and only 7 per cent have reported such abuse. The study included employees of 29 US airlines.
+
+            "Harassment of flight attendants is legendary, but this survey shows just how commonplace it remains even during the #MeToo era," Sara Nelson, the AFA president, said in a statement.
+
+            "It's time for all of us - airlines, unions, regulators, legislators and passengers - to put a stop to behaviours that can no longer be condoned. The dignity and well-being of flight attendants and the safety of all travellers depend on it."
+
+            United Continental Holdings, Spirit Airlines and Alaska Air Group have worked with the union on stopping such behaviour in the industry, the AFA said.
+            """,
+        source: "The Straits Times", sourceLink: "https://www.straitstimes.com/world/united-states/survey-says-two-thirds-of-flight-attendants-endure-sexual-harassment", keywords: "surveys airlines harassment", date:"10.05.2018"),
+    
+    News(
+        id: 34,
+        imageURL: URL.init(string: "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/05/11/topshots-topshot-syria-israel-conflict-204238.jpg?itok=oeawKUB9")!,
+        title: "Calls for restraint after Israeli raids on 'Iranians' in Syria",
+        category: .world,
+        preview: "JERUSALEM (AFP) - Israel carried out widespread deadly raids against what it said were Iranian targets in Syria on Thursday (May 10) after rocket fire towards its forces it blamed on Iran, drawing global calls for restraint.",
+        text: """
+
+            The reported exchange of fire came after weeks of rising tensions and followed US President Donald Trump's decision Tuesday to withdraw from the landmark 2015 Iran nuclear deal, a move Israel had long sought.
+
+            The bombardment led to calls for calm from Russia, France, Germany and Britain and the European Union, while the United States put the blame squarely on Iran and stressed Israel's right to "self-defence".
+
+            Germany and Britain joined the United States in denouncing the rocket fire towards the Israel-occupied Golan Heights they also said was carried out by Iran, while France reiterated its "unwavering support for Israel's security".
+
+            Israeli Prime Minister Benjamin Netanyahu said Iran had "crossed a red line" and that the resulting bombardment against targets in Syria "was a consequence".
+
+            Iran's President Hassan Rouhani told German Chancellor Angela Merkel in a telephone call that he did not want "new tensions" in the Middle East.
+
+            Rouhani did not mention of Israel's strikes in Syria, or those against the Israeli-occupied Golan Heights.
+
+            But the chairman of his country's parliamentary committee on foreign affairs, Allaeddine Boroujerdi, condemned the strikes, warning that "Israel has entered a dangerous game".
+
+            The Israeli raids in Syria, which a monitor said killed 23 fighters, were one of the largest Israeli military operations in recent years and the biggest such assault on Iranian targets, the Israeli military said.
+
+            "We hit nearly all the Iranian infrastructure in Syria," said Defence Minister Avigdor Lieberman.
+
+            "I hope we've finished this episode and everyone understood." Israel carried out the raids after it said 20 rockets, either Fajr or Grad type, were fired from Syria at its forces in the Golan Heights at around midnight.
+
+            It blamed Iran's Quds force, adding that Israel's anti-missile system intercepted four while the rest did not land in its territory.
+
+            There were no Israeli casualties.
+
+            If confirmed, it would be the first time Iran has sought to directly attack Israeli-controlled territory aside from an alleged attempted drone assault in February.
+
+            'NEW PHASE'
+
+            "We know that comes from the Al-Quds force," army spokesman Lieutenant-Colonel Jonathan Conricus said, referring to the special forces unit affiliated with Iran's elite Revolutionary Guard.
+
+            The Syrian Observatory for Human Rights monitor reported that dozens of rockets were fired from Syria towards the Israeli-occupied Golan, without saying who fired them.
+
+            It said the rockets followed a "first Israeli bombardment on the town of Baath" in Quneitra province.
+
+            A senior pro-regime military source in Syria confirmed the salvo of rockets, insisting Israel had fired first.
+
+            Later, in the early hours of the morning, explosions were heard in Damascus, while live images were broadcast on television showing projectiles above the capital and several missiles destroyed by anti-aircraft systems.
+
+            Syrian state media said Israeli missile strikes had hit military bases as well as an arms depot and a military radar installation, without specifying where.
+
+            The official Sana news agency said "dozens of missiles were shot down by anti-aircraft systems in Syrian airspace", acknowledging a number had reached their targets.
+
+            Israel's military later confirmed it had carried out the raids, saying some 70 military and intelligence targets had been struck and all of its aircraft had returned safely.
+
+            Syrian air defences, which fired dozens of times on Israeli jets, were also targeted, he said.
+
+            Syria said it was the Israeli strikes that marked a "new phase" of direct involvement in the country's seven-year conflict.
+
+            Its army said three people had been killed.
+
+            In a rare if not unprecedented move for an Arab country, Bahrain backed Israel's right to "defend itself" after the strikes.
+
+            RUSSIA HOTLINE
+
+            Bahrain is a close ally of Saudi Arabia and the two countries, whose foreign policies are often in lockstep, view Iran as the chief threat to the region.
+
+            Israel has long warned it will not accept Iran entrenching itself militarily in neighbouring Syria, where the Islamic republic is supporting President Bashar al-Assad's regime in the civil war.
+
+            It has been blamed for a series of recent strikes inside Syria that have killed Iranians, though it has not acknowledged those raids.
+
+            The Jewish state says it has conducted dozens of raids in Syria to stop what it says are advanced arms deliveries to Iran-backed Hezbollah, another key foe of Israel.
+
+            Israel had been preparing itself for weeks for possible Iranian retaliation.
+
+            Trump's withdrawal from the nuclear deal has added to tensions and led to a new level of uncertainty over how Iran will respond.
+
+            On Wednesday, Netanyahu held talks in Moscow with Russian President Vladimir Putin, whose country has provided massive military and diplomatic backing to Assad's regime.
+
+            "I told President Putin that it is the right of every state, certainly the right of Israel, to take the necessary steps in order to protect itself from this aggression," Netanyahu said, referring to Iran's presence in Syria.
+
+            Israel and Russia have established a hotline to avoid accidental clashes in the war-torn country.
+
+            Russia was informed in advance of Israel's strikes, Conricus said.
+
+            UN Secretary-General Antonio Guterres appealed for an "immediate halt to all hostile acts and any provocative actions to avoid a new conflagration in the region already embroiled in terrible conflicts with immense suffering of civilians," in a statement.
+            """,
+        source: "The Straits Times", sourceLink: "https://www.straitstimes.com/world/middle-east/calls-for-restraint-after-israeli-raids-on-iranians-in-syria", keywords: "Israel Iran Syria", date:"10.05.2018"),
+    
+    
+    
+    //________________________________________Health data set______________________________________________________
+
+    News(
+        id: 35,
+        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321772/senior-woman-learning-to-walk-again-after-stroke.jpg")!,
+        title: "Stroke survivors may benefit from magnetic brain stimulation",
+        category: .health,
+        preview: "A new meta-analysis of existing studies shows that a technique called repetitive transcranial magnetic stimulation might be a useful tool to help stroke survivors regain the ability to walk independently.",
+        text: """
+            Repetitive transcranial magnetic stimulation (rTMS) is a noninvasive brain stimulation technique; magnetic coils are placed on a person's scalp, and short electromagnetic pulses are delivered to specific brain areas through the coil.
+
+            Although these pulses only cause an almost imperceptible "knocking or tapping" sensation for the patient undergoing the procedure, they reach into the brain, triggering electric currents that stimulate neurons.
+
+            rTMS has mainly been used to treat psychosis, depression, anxiety, and other mood disorders with a fair degree of success. In a recent study, more than one third of people living with auditory verbal hallucinations — a marker of schizophrenia — reported a reduction in their symptoms following the procedure.
+
+            But researchers have also been delving into the potential that the technique has for improving life after stroke. Four years ago, for instance, a team of researchers at The Ohio State University Wexner Medical Center in Columbus used rTMS to improve arm movement in people who had experienced a stroke, and more studies have explored this therapeutic potential since.
+
+            Now, a team of researchers — jointly led by Dr. Chengqi He, of Sichuan University in the People's Republic of China, and Shasha Li, of Massachusetts General Hospital and Harvard Medical School, both in Boston, MA — set out to review these studies.
+
+            Dr. He and colleagues wanted to see if the technique improved motor skills for people who had stroke; to do so, the researchers examined the impact rTMS has on walking speed, balance, and other key factors for post-stroke rehabilitation.
+
+            The findings were published in the American Journal of Physical Medicine & Rehabilitation, the official journal of the Association of Academic Physiatrists.
+
+
+            rTMS 'significantly improves walking speed'
+            Dr. He and team reviewed nine studies of rTMS — including five randomized controlled trials — which were published between 2012 and 2017.
+
+            The people who participated in these studies had either had an ischemic stroke — that is, a stroke caused by a blood clot in one of the brain's arteries — or a hemorrhagic stroke — that is, one caused by bleeding within the brain.
+
+            Of the nine studies, six included data on the walking speed of 139 stroke survivors. The researchers carried out a pooled analysis of these studies, and the results revealed that rTMS "significantly improves walking speed."
+
+            This improvement was greater among people who received stimulation on the same side of the brain that the stroke occurred. By contrast, those who received rTMS on the opposite side did not see any improvement.
+
+            Could saunas reduce stroke risk?
+            Not everything that feels good is bad for you; regular sauna use may lower the risk of stroke.
+            READ NOW
+            Other key health outcomes for stroke survivors such as balance, motor function, or brain responsiveness did not show any improvement as a result of rTMS.
+
+            In the United States, it is estimated that almost 800,000 people annually have a stroke, which makes the condition a leading cause of long-term disability in the country. More than half of the seniors who survived a stroke have reduced mobility as a result.
+
+            Although the review shows that rTMS is a promising strategy for restoring independent walking, the authors say that more research is needed. Dr. He and colleagues conclude:
+
+            "Future studies with larger sample sizes and an adequate follow-up period are required to further investigate the effects of rTMS on lower limb function and its relationship with changes in cortical excitability with the help of functional neuroimaging techniques."
+            """,
+        source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321772.php", keywords: "stroke survivors brain stimulation", date:"10.05.2018"),
+    
+    
+    News(
+        id: 36,
+        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321765/woman-holding-clock.jpg")!,
+        title: "Body clock gene may protect against breast cancer",
+        category: .health,
+        preview: "Our bodies have an innate timer known as the biological clock. A new study suggests that one gene that helps to regulate this timer may also have a protective role against breast cancer.",
+        text: """
+            A collection of genes that encode different proteins found in many of our tissues and organs, our biological clocks regulate our circadian rhythms.
+
+            These are behavioral and physiological changes that occur in response to the day and night cycle.
+
+            More and more studies are now beginning to tie circadian rhythm disruptions to a variety of disorders.
+
+            Alzheimer's, stress migraines, and cancer are a few of the illnesses that have been linked to a disrupted body clock or to faulty genes that regulate it.
+
+            The link between cancer and circadian rhythms has increasingly become the focal point of medical research.
+
+            A recent study, for example, revealed that two genes — called Bmal1 and Per2 — produce a cancer-promoting protein when "jetlagged." This, the researchers suggest, may explain why people who work night shifts are at higher risk of cancer.
+
+            Now, a new study — conducted at the Texas A&M University in College Station — suggests that the same Per2 gene may have a protective effect against the formation of mammary tumors.
+
+            The findings were published in the journal Development.
+
+            The role of Per2 in our body clock
+            The function of Per2, the authors of the new study explain, is to regulate the circadian rhythms found within each cell.
+
+            Circadian rhythms are controlled by a "master clock" located in the brain. Specifically, the brain's hypothalamus hosts this central clock, which consists of over 20,000 neurons grouped in a structure known as the suprachiasmatic nucleus (SCN).
+
+            Lead investigator Weston Porter, a professor at the Texas A&M College of Veterinary Medicine and Biomedical Sciences, explains the function of Per2 within the larger mechanism of our body clock.
+
+            He explains, "Not only do we have a central clock [the SCN], but every one of our cells has one of these peripheral clocks and they're in coordination with the central clock [...]."
+
+            "When you wake up in the morning and see light," adds Prof. Porter, "the light goes right into the brain and it triggers this molecular mechanism that regulates the (circadian rhythm) process."
+
+            Per2 — which is short for Period 2 — is responsible for encoding the "negative feedback" in this daily cycle, explain the researchers.
+
+            Prof. Porter goes on to explain, "The negative and positive feedback mechanisms are constantly in balance, going up and down. One's up during the day, the other one's up at night — they oscillate right at 24 hours — but when you see light, that resets it in the morning."
+
+            "When Per2 comes back, it suppresses another gene called BMAL or CLOCK," he adds.
+
+            Per2 may keep breast cancer at bay
+            Using a transplantation mouse model, Prof. Porter and colleagues determined an additional role of Per2 besides the timekeeping one. Suppressing Per2 in mice led to abnormally developed mammary glands in the rodents.
+
+            As Prof. Porter goes on to say, "We discovered that these glands have what we call a kind of a bipotent phenotype; they're actually halfway to cancer. [They] already have many of the characteristics you would see in a premalignant cell."
+
+            The gene, therefore, plays a key role in the differentiation and development of mammary gland cells. Also, most of the mammary tumors have a low Per2 expression — which, the scientists explain, suggests that the body clock gene may protect against breast cancer.
+
+            "Per2 is functioning as a tumor suppressor gene associated with cell identity," says Prof. Porter. The lead investigator also shares some of his upcoming research.
+
+            "Right now, we are investigating how our findings relate to humans," he says. "There are studies out there showing a relationship between decreased levels of Per2 and certain types of breast cancer, which are more invasive. So, we believe that there is a direct relationship."
+
+
+            """,
+        source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321765.php", keywords: "body clock breast cancer", date:"10.05.2018"),
+    
+    
+    
+    News(
+        id: 37,
+        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321752/distracted-woman.jpg")!,
+        title: "Alzheimer's: Are changes in the brain's attention hub at fault?",
+        category: .health,
+        preview: "Researchers suggest that we become more easily distracted as we age, and that it's all down to a part of our brains called the locus coeruleus. Could this advance our understanding of Alzheimer's disease?",
+        text: """
+            The "locus coeruleus" is a part of the brain stem that regulates the release of norepinephrine, a hormone linked to our level of attention and stress response.
+
+            Under typical conditions, norepinephrine will stimulate the activity of already highly active neurons, while "silencing" less active ones.
+
+            At a neural level, this helps us to stay focused and ignore distractions under conditions of stress.
+
+            But as we age, it seems that we become more easily distracted by irrelevant stimuli, and even more so while in a situation that registers as stressful.
+
+            Mara Mather and other researchers at the University of Southern California in Los Angeles decided to try to test whether older people are, in fact, less focused than younger people, and to find out why and how that happens.
+
+            The new study — which has been published in the journal Nature Human Behavior — confirms that the older we get, the more difficult it becomes for us to stay focused in less than ideal conditions.
+
+            "Trying hard to complete a task increases emotional arousal," explains Mather, "so when younger adults try hard, this should increase their ability to ignore distracting information."
+
+            "But for older adults, trying hard may make both what they are trying to focus on and other information stand out more."
+
+            Mara Mather
+            She and her colleagues explain that this suggests that the locus coeruleus begins to function less effectively over time.
+
+            A key locus in cognitive decline
+            Mather's previous research also tied the locus coeruleus to something else: Alzheimer's disease. More specifically, this is where tangles of tau protein — which is a main characteristic of this neurodegenerative disease — first start to form in the brain.
+
+            "Initial signs of this pathology," she says, "are evident in the locus coeruleus in most people by age 30."
+
+            "Thus," Mather continues, "it is critical to better understand how locus coeruleus function changes as we age."
+
+            So, for the purpose of the new study, the researchers worked with 28 younger adults, aged 18–34, and 24 older adults, aged 55–75, whose locus coeruleus activity and emotional arousal they monitored during a set of attention experiments.
+
+            They did so using both brain scans and by assessing pupil dilation, which has been deemed a good indicator of locus coeruleus activity.
+
+            Smooth communication in younger brains
+            The tests consisted of showing the participants pairs of images: one featuring a building, and the other depicting a type of object. In some instances, the building was highlighted and the object appeared faded, and at other points it was the other way around.
+
+            In each case, participants were asked to note which image was accentuated. But, in order to add an element of stress to the experiment, every now and again an announcement was made to the participants that they might receive an electric shock at the end of the exercise. At other times, though, an announcement would be made that no electric shock was forthcoming.
+
+            It was revealed that in the case of the younger participants, when the picture of a building was highlighted, the stress of expecting a shock actually increased brain activity in an area called the "parahippocampal place area."
+
+            This brain region gets its name from the fact that it is activated when we look at places and map out spaces.
+
+            The same sort of brain activity decreased when they were shown unhighlighted images, indicating that the communication between the locus coeruleus, the parahippocampal place area, and the frontoparietal network — another brain structure tied to attention — ran smoothly, without any "hiccups."
+
+
+            Older adults struggle to focus under stress
+            The same did not hold true in the case of older study participants. Under conditions of stress — when expecting a mild electric shock — the older adults exhibited less intense activity of the frontoparietal network, even when looking at highlighted images.
+
+            This, the researchers explain, suggests that the link between this brain network and the locus coeruleus may stop functioning so well later in life.
+
+            At the same time, the older participants displayed increased activity in the parahippocampal place area in stressful conditions, regardless of whether they were looking at highlighted or faded images of buildings.
+
+            This indicates that the younger adults' attention become more selective when they experienced emotional arousal, allowing them to focus only on the pictures that stood out.
+
+            By contrast, in older adults, the parahippocampal place area "lit up" indiscriminately when they felt stress, suggesting that they were unable to focus on one prominent stimulus.
+
+            These findings, the study authors note, provide another building block in our understanding of how cognitive functions change over time, and they may, in the future, help us to prevent neurodegeneration.
+
+            "Deciphering exactly how these changes in the brain occur as we age could one day help us uncover how to protect the brain from cognitive decline and loss of function," concludes Mather.
+
+            """,
+        source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321752.php", keywords: "alzheimer brain locus coeruleus", date:"09.05.2018"),
+    
+    
+    
+    News(
+        id: 38,
+        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321740/concussion-helmet-illustration.jpg")!,
+        title: "Even mild TBI might raise dementia risk",
+        category: .health,
+        preview: "Concussion does not have to result in loss of consciousness for it to be followed by a higher risk of developing dementia.",
+        text: """
+            This was the conclusion of a large study of veterans in the United States that found that the risk of developing dementia more than doubled following mild traumatic brain injury (TBI) without loss of consciousness.
+
+            The study, by researchers at the University of California, San Francisco (UCSF) and now published in JAMA Neurology, addresses a gap in the evidence linking TBI with dementia.
+
+            Other studies have shown that moderate and severe TBI are followed by a higher likelihood of developing dementia, but evidence of a link with mild TBI — particularly where no loss of consciousness occurs — was somewhat patchy.
+
+            "There are several mechanisms," says senior study author Kristine Yaffe, who is a UCSF professor in neurology, psychiatry, and epidemiology and biostatistics, "that may explain the association between traumatic brain injury and dementia."
+
+            Some have suggested that TBI triggers or speeds up the "accumulation of abnormal proteins" that kills brain cells, such as that which occurs in Alzheimer's disease.
+
+            Others are of the view that TBI increases vulnerability to damage from further injuries or aging. But Prof. Yaffe reminds us that these are just theories and that "we need more work in this area."
+
+            Mild TBI accounts for most TBIs
+            A TBI is a blow, jolt, or bump to the head that causes disruption to normal brain function. Its severity depends on whether there is loss of consciousness, and the extent of any memory impairment, or altered mental status, and how long these changes last.
+
+            Mild TBI, also known as concussion, accounts for most cases of TBI in the U.S.
+
+            The researchers note that of the 2.8 million TBIs that occurred during 2013 in the U.S., around 80 percent were mild TBIs.
+
+            They refer to a survey of men and women who had served in Iraq and Afghanistan that found that as many as 17 percent of personnel said that they had experienced mild TBIs in the field, of whom more than half reported having had more than one.
+
+            The majority of these cases, note the authors, are caused by "shockwaves from blasts, rather than blunt trauma," and they are not necessarily accompanied by loss of consciousness.
+
+            Study tracked more than 350,000 veterans
+            For their study, the researchers used two sources of health information on U.S. veterans. One source was a database of "all-era" veterans whose TBIs could have occurred either during service or during their lives as civilians.
+
+            The other database only contained records of veterans who had served in Iraq and Afghanistan, and most of the TBIs they detailed had occurred during military service.
+
+            Altogether, they included 178,779 individuals diagnosed with TBI, with 54 percent having experienced mild TBI, or concussion.
+
+            The researchers compared them with the same number of individuals with no history of TBI, bringing the total tracked by the study to more than 350,000 veterans.
+
+            The average age of the veterans was 49, and the study followed them for an average of 4.2 years, noting any cases of diagnosed dementia. The vast majority of the vets were males, and nearly three quarters were white.
+
+            More than double dementia risk
+            The researchers found that, even after they had taken into account gender, race, age, and medical conditions that might affect the results, TBI was linked to an increased risk of dementia, as follows:
+
+            Mild TBI without loss of consciousness was tied to a 2.36 times higher risk.
+            Mild TBI with loss of consciousness was tied to a 2.51 times higher risk.
+            Moderate to severe TBI was linked to a 3.77 times higher risk.
+            The results were largely similar for the two sources of data, leading the team to conclude that mild TBIs that occur during military life are just as likely to have a link to dementia as those that occur in the population at large.
+
+            The researchers believe that their findings show that more should be done to reduce the risks of brain injury.
+
+            "In older adults," says first study author Deborah Barnes, who is a UCSF professor of psychiatry, epidemiology, and biostatistics, "exercise and multifactorial interventions may limit the risks of falls, which are a leading cause of head injury."
+
+            In 2013, falls accounted for nearly half of all TBI visits to emergency departments, hospital admissions, and deaths in the U.S.
+
+            In an accompanying editorial, Prof. Kimbra Kenney, from the Uniformed Services University of the Health Services in Bethesda, MD, and Prof. Ramon Diaz-Arrastia, of the University of Pennsylvania in Philadelphia, note that the large study is "the best information to date" to show that U.S. veterans face an increased risk of dementia as a result of being injured while serving their country.
+
+            In the meantime, Prof. Barnes advises that you seek medical attention if you have a concussion and allow it "time to heal and try to avoid repeat concussions."
+
+            "Although our study did not directly examine this issue, there is growing evidence that repeated concussions appear to have a cumulative effect."
+
+            Prof. Deborah Barnes
+
+            """,
+        source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321740.php", keywords: "TBI dementia risk", date:"08.05.2018"),
+    
+    
+    
+    News(
+        id: 39,
+        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321601/dandelion-in-the-wind.jpg")!,
+        title: "Letter from the Editor: Winds of change",
+        category: .health,
+        preview: "Spring has finally sprung outside the Medical News Today office. The sun has been shining, daffodils are in bloom, and all that's required to go outside is a light jacket and scarf — which, in England, is practically summer attire.",
+        text: """
+            This shift in weather reminds me of how familiar the MNT editorial team is with change and transition. These are recurring themes running through how we operate, and I'm proud of how agile we all are.
+
+            Test, analyze the data, pivot; this has been our way of working for quite some time now, and it is this ability to adapt to what our readers need and want that I believe has brought us such monumental success.
+
+            And what were you curious about this month, dear reader? Our original Spotlight article on how sex affects the brain caught your attention, as did our report on how two existing drugs combined destroy lung cancer.
+
+            You were also interested in a biological tattoo that could catch cancer in its early stages.
+
+            In our Nutrition category, you were most interested in learning about high-protein foods and plant-based protein sources.
+
+            You were also curious about cervical penetration and how to fart.
+
+            Continuing on the theme of change, our homepage will soon get a facelift, which will enable you to access our News content with greater ease. Watch for this change and please send us your feedback in the coming weeks as it goes live.
+
+            On a final note that echoes the transition motif, I will be moving out of the Managing Editor position and into a new role working closely with our Production and Copy Editing teams. As I'll be relocating away from our office, I now hand over the editorial reins to Honor Whiteman.
+
+            If her name sounds familiar to you, it's because she has led our News team for the past several years. In fact, she started with MNT on the same day I did 5 years ago and has contributed so much to the growth of the website.
+
+            I'm excited to watch her lead this team, and I'm likewise thrilled to continue to be a part of this company, which is so committed to the health and well-being of our readers and employees alike.
+
+            Do you have any feedback you'd like to share? Let us know so we can continue to provide you with the best content possible.
+
+            You can also contact us on Twitter and Facebook.
+
+            Thank you for following us at MNT. Embrace the change you wish to make in your life and dive right in. Now is always the time!
+
+            """,
+        source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321601.php", keywords: "MNT spring daffodils bloom", date:"25.04.2018"),
+    
+    
+    News(
+        id: 40,
+        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321738/balding-man.jpg")!,
+        title: "Existing drug may be the answer to hair loss",
+        category: .health,
+        preview: "Sometimes, the answer to a difficult problem may come from an unexpected direction. In this instance, researchers have found that a drug designed to treat osteoarthritis might also combat baldness.",
+        text: """
+            Hair loss can be incredibly distressing for men and women alike.
+
+            Consequently, for many years, scientists have made efforts to find a way to combat it.
+
+            Over the centuries, in the hunt for a hair loss cure, no path has been left untrodden — no matter how unusual.
+
+            For instance, in Ancient Egypt, where premature baldness was thought to be a punishment from the gods, one remedy involved rubbing goat dung into the scalp.
+
+            Because goats never lose their hair, this treatment was supposed to trick the gods into believing that the afflicted individual was, in fact, a goat.
+
+            Thousands of years later, the options are still limited; there are now two available hair-loss drugs — minoxidil and finasteride — both of which have mixed results and some unpleasant side effects, including allergic reactions, erectile dysfunction, and, paradoxically, hair loss.
+
+            The other option is hair transplantation surgery, which is costly, long-winded, and painful.
+
+            Searching for a better option
+            Dr. Nathan Hawkshaw and colleagues, from the University of Manchester's Centre for Dermatology Research in the United Kingdom, are involved in an ongoing search for a drug to fill this pharmaceutical void.
+
+            On this quest, they assess existing drugs that are known to be well tolerated. They hope to find a compound that is already safe for human use that may also be useful in treating androgenetic alopecia, which is also known as male-pattern baldness (although it can affect women, too).
+
+            One drug that piqued their interest was an immunosuppressive called cyclosporine A (CsA). It has been used to help prevent the rejection of transplants since the 1980s. And, one of CsA's side effects is unwanted hair growth.
+
+            Dr. Hawkshaw took this as his starting point. If they could understand the mechanism at work, it might provide a novel approach to treating hair loss.
+
+            Using isolated human scalp hair follicles, they found that CsA reduced the expression of a protein called SFRP1. This protein is known to inhibit the growth of tissues, including hair follicles.
+
+            This explains why CsA promotes hair growth; it effectively takes the brake off of follicle activity. It also offers up a new mechanism to exploit.
+
+            Dr. Hawkshaw sought an existing drug that would interact with this pathway and, potentially, encourage hair growth. After a long search, he came across WAY-316606, a drug originally designed to treat osteoporosis. WAY-316606 specifically targets SFRP1.
+
+            To investigate whether the drug might work, the team experimented with donated human hair follicles from people undergoing hair transplantation.
+
+            "Thanks to our collaboration with a local hair transplant surgeon, Dr. Asim Shahmalak, we were able to conduct our experiments with scalp hair follicles that had generously been donated by over 40 patients and were then tested in organ cultures."
+
+            Using this tissue was important, as Dr. Hawkshaw explains, "This makes our research clinically very relevant, as many hair research studies only use cell culture."
+
+            In fact, previous studies that had looked at the hair growth properties of CsA had drawn completely different conclusions.
+
+            Dr. Hawkshaw explains, "When the hair growth-promoting effects of CsA were previously studied in mice, a very different molecular mechanism of action was suggested; had we relied on these mouse research concepts, we would have been barking up the wrong tree."
+
+            Their results were published earlier this week in the journal PLOS Biology.
+
+            Did it work?
+            Application of the osteoporosis drug did indeed encourage new hair growth in the tissue samples. Dr. Hawkshaw believes that WAY-316606 might even outpace CsA, but without the unpalatable side effects.
+
+            "The fact this new agent, which had never even been considered in a hair loss context," he says, "promotes human hair growth is exciting because of its translational potential: it could one day make a real difference to people who suffer from hair loss."
+
+            Many people will greet this discovery with jubilation. However, before large clinical trials have been run, we should be cautious. The study was carried out in relevant human tissue, but, in real-life situations, drugs can respond in subtly different ways.
+
+            Only time and research will tell, but the findings are a great start. Even if WAY-316606 does not cut the mustard, investigating related molecules might eventually come up with the goods.
+
+
+            """,
+        source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321738.php", keywords: "hair loss drug", date:"09.05.2018"),
+    
+    
+    News(
+        id: 41,
+        imageURL: URL.init(string: "https://cdn1.medicalnewstoday.com/content/images/articles/321/321723/student-asleep.jpg")!,
+        title: "Quiet rest after learning helps us to remember the fine details",
+        category: .health,
+        preview: "Most of us know that without sleep, we are unable to create new memories. But is simply resting — without falling into the dreamy state — for only 10 minutes after learning something enough for us to memorize it in fine detail? Recent research suggests so.",
+        text: """
+            Sleep and memory are loving bedfellows. Sleep "blocks" our brain's mechanisms of forgetting, lowering the neurotransmitter dopamine, and therefore facilitating memory formation.
+
+            Furthermore, recent studies have revealed that sleep is key for consolidating memories that we made while awake, as well as for preserving the brain's ability to learn new things in the future.
+
+            For instance, a study revealed that during sleep, our synapses relax, staying supple and flexible, which maintains our brain's neuroplasticity and ability to learn.
+
+            On the other hand, poor sleep leads to rigid synapses and an impaired ability to learn new things in the long run.
+
+            Perhaps even more surprisingly, researchers have recently been able to interfere with the memory consolidation process that takes place during sleep by scanning people's brains, selectively choosing certain memories, and reinforcing them.
+
+            But could a state of simple, restful wakefulness be just as beneficial for new memory formation? A new study — jointly conducted by Michael Craig, a research fellow at the Heriot-Watt University in Edinburgh, United Kingdom, and Michaela Dewar, a research leader and assistant professor at the same university — suggests that it can.
+
+            "Recent research," says Craig, "suggests that the memory system strengthens weak new memories by 'reactivating' them, where brain activity first observed during learning automatically reappears in the minutes that follow."
+
+            Based on the findings of their own research, the scientists say, "This appears especially true during sleep and quiet resting, when we're not busy taking in any new sensory information."
+
+            What's more, the new research suggests not only that a period of quiet restfulness helps us to remember new things, but that such a rest is crucial for retaining the fine details.
+
+            The new findings were published in the journal Nature Scientific Reports.
+
+            Studying fine memories
+            Craig and Dewar designed a memory test to assess the ability to retain finely grained information. They asked 60 young male and female participants — aged 21, on average — to look at a set of photos.
+
+            They were asked to discern between "old" photos and "similar" ones. If the participants' ability to retain fine nuances was good, they would say the photos were "similar."
+
+
+
+            "However," explains Craig, "if not-so-detailed memories are stored, people should miss the subtle differences in similar photos, and mistake them for 'old' photos."
+
+            He goes on to summarize these "interesting" findings, saying, "Younger adults who quietly rested in the minutes that followed the photo presentation were better at noticing subtle differences in similar photos."
+
+            This, he explains, suggests "that these individuals stored more detailed memories, compared to those who did not rest."
+
+            "This new finding provides the first evidence that a brief period of quiet rest can help us to retain more detailed memories."
+
+            Michael Craig
+            He adds, "We think that quiet resting is beneficial because it is conducive to the strengthening of new memories in the brain, possibly by supporting their automatic reactivation."
+
+            However, Craig admits that the mechanisms behind this surprising phenomenon remain a mystery.
+
+            "[W]e don't know exactly," he goes on to conclude, "how this rest-related memory strengthening works. Specifically, it remained unknown whether quiet resting only allows us to retain more information, or whether it also helps us to retain more detailed memories."
+
+            """,
+        source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321723.php", keywords: "rest remember the fine details learning memorize", date:"06.05.2018"),
     
 ]
 
