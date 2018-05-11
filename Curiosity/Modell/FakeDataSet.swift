@@ -1715,5 +1715,438 @@ The prototype early warning system has been functioning reliably during lab test
             """,
         source: "MedicalNewsToday", sourceLink: "https://www.medicalnewstoday.com/articles/321723.php", keywords: "rest remember the fine details learning memorize", date:"06.05.2018"),
     
+    
+        //________________________________________Science data set______________________________________________________
+    
+    News(
+        id: 42,
+        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050818_EC_gaia_feat.jpg")!,
+        title: "Gaia delivers a trove of data revealing secrets of the Milky Way",
+        category: .science,
+        preview: "Astronomers are using the info to gauge the galaxy’s mass, size up exoplanets and more",
+        text: """
+
+            Astronomers are going gaga over Gaia.
+
+            The April 25 release of data from the European Space Agency’s Gaia spacecraft, which cataloged nearly 1.7 billion stars, has kicked off a scientific spree, with multiple papers published online in the last two weeks at arXiv.org.
+
+            Charting stars in the Milky Way and beyond, Gaia surveys the entire sky. The spacecraft can measure stars’ motions and distances (SN Online: 4/25/18), properties which haven’t been inventoried on such a large scale before. “It’s really opening new dimensions in how we view stars,” says astronomer Ana Bonaca of the Harvard-Smithsonian Center for Astrophysics in Cambridge, Mass.
+
+            Because Gaia takes multiple images over time, “you're not only getting a static picture of the sky at one instant, you’re looking at how it changes,” says astronomer Laura Watkins of the Space Telescope Science Institute in Baltimore. “We’ve never really had something like this before.”
+
+            Here are five new observations made with the unprecedented info.
+
+            1. Sizing up the Milky Way
+            Pinning down the mass of our home galaxy is a hefty challenge. Much of the Milky Way’s mass is hidden in the form of a dark matter halo, a shroud of matter that is invisible except for its gravitational pull. But scientists can gauge the galaxy’s unseen bulk by observing objects moving at the outskirts of the galaxy.
+
+            Combining information from Gaia and the Hubble Space Telescope, Watkins and colleagues estimated the galaxy’s mass using the motions of clumps of stars called globular clusters. The Milky Way is about 1.7 trillion times the mass of the sun, the team reports in a paper submitted April 30.
+
+            2. Rescaling exoplanets
+            Exoplanet updates are also on the agenda. Because NASA’s exoplanet-hunting Kepler telescope has limited ability in gauging how big stars are, the diameters of exoplanets passing in front of those stars were not well known (SN Online: 6/19/17). “Gaia has now completely changed the game and solved this problem,” says astronomer Daniel Huber of the University of Hawaii at Manoa.
+
+            Knowing both the brightness and distance of a star helps determine its size. So Huber and colleagues used Gaia’s data to better size up nearly 200,000 stars and more than 2,000 orbiting planets, the researchers report in a paper submitted May 1.
+
+            3. Expanding a cosmic debate
+            A disagreement over how fast the universe is expanding persists (SN Online: 1/16/18). Gaia data reinforced the discrepancy in results between two methods for measuring the expansion rate.
+
+            One of those techniques involves estimating the distances of exploding stars, or supernovas, and measuring how their light is stretched by the expansion of space. Gaia improved distance estimates for variable stars called Cepheids, which scientists use to estimate how far away the supernovas are. The result: The expansion rate mismatch is now slightly worse, Adam Riess of the Space Telescope Science Institute and colleagues report in a paper submitted April 27.
+
+            4. Dipping into star streams
+            The Milky Way is a violent beast, ripping up clumps of stars and stretching them into strands known as stellar streams. Bonaca and astronomer Adrian Price-Whelan of Princeton University study the longest thin stream in the Milky Way, known as GD-1, in a paper posted May 1.
+
+            Gaia’s measurements of stars’ motions, combined with information about their brightness and color from the Hawaii-based Panoramic Survey Telescope and Rapid Response System, or Pan-STARRS, allowed the duo to pinpoint which stars were going with the flow of the stellar stream. The data also revealed gaps where stars seem to be missing. That could indicate the stream was disturbed in the past by a close encounter with a clump of dark matter.
+
+            5. Spotting speed demons
+            Several teams used Gaia to pick out fast-moving stars, zipping through the galaxy at speeds of more than 1,000 kilometers per second. A team including Ken Shen of the University of California, Berkeley seized on this capability to look for clues to the origins of a kind of explosion called a type 1a supernova, thought to occur when a dead star known as a white dwarf explodes.
+
+            Scientists don’t know exactly what causes a white dwarf explosion. In one theory, two white dwarfs swirl around one another as one steals material from the other. The thief eventually explodes and its partner is flung away at high speed.
+
+            Shen and colleagues wasted no time in hunting for these fast-moving white dwarfs. Within an hour and a half of the Gaia data release, the team had the first of several ground-based telescopes taking a closer look at some of the speed demons. Three stars potentially fit the bill for coming from a type 1a supernova, the team reports in a paper submitted April 30.
+
+            This is only the beginning of the Gaiapalooza, though. The data is so rich, Watkins says, “it’s going to take us months and years to get to grips with what’s there.”
+
+
+            
+            """,
+        source: "ScienceNews", sourceLink: "https://www.sciencenews.org/article/gaia-delivers-trove-data-revealing-secrets-milky-way", keywords: "Milky Way Gaya", date:"09.05.2018"),
+    
+    
+    
+    News(
+        id: 43,
+        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050918_LG_interstellar-gas-cloud_feat.jpg")!,
+        title: "First 3-D map of a gas cloud in space shows it’s flat like a pancake",
+        category: .science,
+        preview: "Its newfound shape could explain why the structure is missing stars",
+        text: """
+
+        For the first time, astronomers have charted the 3-D shape of a cloud of interstellar gas. The map explains why this cloud has failed to form stars so far, and could help test theories of how star formation works.
+
+        Astrophysicists Aris Tritsis, now of the Australian National University in Canberra, and Konstantinos Tassis of the University of Crete in Heraklion, Greece, examined a narrow gas cloud in the constellation Musca, located between about 490 and 650 light-years from Earth. What looked like a narrow wisp of cloud that should have been condensed enough to make stars instead stretches 20 light-years away from Earth, the pair report in the May 11 Science.
+
+        Such interstellar clouds are the primary birthplaces of stars and come in all sorts of blobby shapes. On the sky, the Musca cloud (sometimes called “the Dark Doodad Nebula”) looks like a long, thin snake about 26 light-years long. It has been “the poster child of a filament or cylindrical cloud,” says Tritsis, who studied the celestial wisp while at the University of Crete.
+
+        The cloud’s apparent shape, however, posed a puzzle. If the object was really a cylinder, its mass should have been compressed enough to create stars. But the cloud shows no sign of star formation. Still, astronomical objects can be seen in only two dimensions on the sky. Previous observations of the orientation of light around Musca had suggested that the cloud might extend into space, but it was impossible to tell how deep it went just by looking at it.
+
+        So the researchers decided to listen to the cloud instead, analyzing data taken by the Herschel Space Observatory of the cloud’s magnetic field. Wispy stripes called striations, which are formed by magnetic pressure waves — similar to sound waves — ripple through the cloud and bounce off of its edges. It’s like the whole cloud is singing, Tritsis says.
+
+        The frequencies of these waves can reveal the size and shape of the object they’re ringing through. Musca’s waves exposed a nearly square sheet, extending about 20 light-years out into space away from Earth.
+
+        “They found a way to measure this depth,” says astronomer Antonio Magalhães of the University of São Paulo, who was involved in earlier observations but not the new result. “They have a clever way to get this sheetlike structure.”
+
+        That structure explains why Musca isn’t forming stars — its gas is spread out more than previously thought. The cloud could start forming stars sometime in the next 10 million years, Tritsis says.
+
+        Many physical processes that affect when and how stars form, including magnetic fields, turbulence and gravity, are encoded in the shape of an interstellar cloud. So nailing down Musca’s true form could help refine scientists’ theories of how stars are born.
+
+        “Musca can be used as a laboratory to find all this stuff,” Tritsis says.
+
+
+        """,
+        source: "ScienceNews", sourceLink: "https://www.sciencenews.org/article/first-3d-map-gas-cloud-space-shows-flat-pancake?tgt=nr", keywords: "3-D map pancake", date:"10.05.2018"),
+    
+    News(
+        id: 44,
+        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/051018_MT_north-korea-nuclear-test_feat.jpg")!,
+        title: "Satellite data backs theory of North Korean nuclear site collapse",
+        category: .science,
+        preview: "Whether underground cave-ins have made the facility unusable is unknown",
+        text: """
+
+        A new analysis of satellite images and seismic waves from North Korea’s nuclear test site support theories that the underground facility has at least partially collapsed.
+
+        Seismologists across the world have been tracking the clandestine nuclear weapons program for years by analyzing vibrations that emanate from explosions at the test site under Mount Mantap (SN: 8/5/17, p. 18). Now, researchers have paired 3-D satellite images of Mount Mantap with seismic tremor data to simulate how the mountain’s interior might have changed after a hydrogen bomb test on September 3, 2017.
+
+        The simulations indicate that the blast — which triggered an earthquake of estimated magnitude 6.3 — caused a cave-in directly above the detonation site, researchers report online May 10 in Science. The simulations also suggest that a second rock collapse, about 700 meters south of the detonation site, caused a smaller quake about eight minutes after the initial explosion.
+
+        These rock falls, which caused the face of Mount Mantap to sink about 0.5 meters, could have buried part or all of the underground test facility, rendering it unusable, says study coauthor Teng Wang, a remote sensing and geodesy researcher at the Earth Observatory of Singapore.
+
+        The results support another seismic analysis published online April 27 in Geophysical Research Letters suggesting an underground collapse at Mantap. That study led some media to speculate that North Korea didn’t pledge in April to halt nuclear testing because of international pressure, but because the test site could no longer be used.
+
+        Ultimately, experts would have to inspect the site to confirm that the Mount Mantap facility is out of order, says study coauthor Douglas Dreger, an earth and planetary scientist at the University of California, Berkeley. “It’s really hard to make that judgment call without having information at that site — getting boots on the ground and investigating it.”
+
+
+        """,
+        source: "ScienceNews", sourceLink: "https://www.sciencenews.org/article/satellite-data-backs-theory-north-korean-nuclear-site-collapse?tgt=nr", keywords: "North Korean satellite ", date:"10.05.2018"),
+    
+    
+    News(
+        id: 45,
+        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050918_SM_amphibian-fungus_feat.jpg")!,
+        title: "A deadly frog-killing fungus probably originated in East Asia",
+        category: .science,
+        preview: "The pandemic form of Bd chytrid likely emerged 50 to 120 years ago, a genetic study finds",
+        text: """
+
+        The biggest genetic study yet of a notorious frog-killing fungus says it probably originated in East Asia in the 20th century.
+
+        The chytrid fungus nicknamed Bd, which attacks the skin, has astonished biologists in the last several decades by causing sudden, mass die-offs among frogs and other amphibians in Australia, Panama and other places worldwide. But where and when the killer emerged and how it spread have been much-debated mysteries. Studies have proposed North and South America as well as Africa and Asia as the homeland where a once-obscure fungus turned deadly.
+
+        Building up enough genetic data to untangle the origins has taken some 10 years of field and lab work at about 35 institutions around the world, says infectious disease epidemiologist Simon O’Hanlon of Imperial College London. Analyzing the trove finds four main lineages of the fungus Batrachochytrium dendrobatidis and reveals that the worldwide killer group, BdGPL, probably originated 50 to 120 years ago, the researchers say.
+
+        How the fungus traveled far and fast is less of a mystery. All the lineages show up in animals that have been traded internationally, often as exotic pets, the team reports in the May 11 Science.
+
+        That’s “one of the parts I found most worrisome,” says longtime Bd researcher Karen Lips of the University of Maryland in College Park, who was not involved in the new study. International standards for pathogen monitoring are only as strong as their enforcement. “Here in the U.S. there is no requirement for testing of imports for chytrids,” she says.
+
+        Spread of known lineages is only one of her worries. Mingling animals with different infections around the world could encourage current fungi to mate and create new forms. The new study has already found an example of one Bd hybrid.
+
+        Bd may now be one of the most discussed fungal killers of animals in the world. It didn’t even have a name, however, when biologists were growing alarmed in the 1990s about amphibian declines and spooky die-offs. The fungus showed up now and then as researchers searched for the killer pathogen, but was dismissed at first as a skin fungus taking advantage of a dying animal. At the time, chytrids were mostly little-studied fungi that did little-known things in soils and water as far as the world’s small community of specialists knew. The idea of a chytrid, or any other fungus, causing an animal pandemic was odd.
+
+        By the time researchers gave the newfound menace its official name in 1999, the killer lineage of Bd was spreading around the world. Various sleuthing efforts to backtrack its spread have yielded the far-flung possible origins as well as extremes of time; one study calculated that the deadly form had originated 26,400 years ago.
+
+        In the new study, the team determined the arrangement of DNA building blocks in 177 individual samples of Bd from around the world, including the first ones available from Korea and Taiwan. Adding in some earlier collections, the new study draws on information from 234 individual samples.
+
+        People who haven’t tried isolating one fungus’s DNA in full from wild amphibians underestimate the difficulty, O’Hanlon says. For instance, study coauthor Matthew Fisher of Imperial College London and colleagues caught and sampled about 500 amphibians during field work in French Guiana to score just three usable versions of full DNA in later lab work.
+
+        Comparing the DNA samples let researchers rough out a genealogical tree with the four main Bd lineages, including a previously unknown one from Korea now dubbed BdASIA-1. For several reasons, that one appears to be the closest yet found to the original ancestor, the researchers propose. BdASIA-1 shows exceptional genetic variety, for example, something biologists expect from an original genetic pool that has sent out various emigrant versions. The Asian origin also fits with current thinking about the source of a sister chytrid, B. salamandrivorans, which is spreading into Europe and killing salamanders.
+
+        Still, other places in East Asia might turn out to have Bd lineages that are even older than the Korean BdASIA-1, O’Hanlon says. There aren’t that many East Asian samples in the current database, and none at all come from India. This study may have corralled the most samples yet, but resolving the Bd origins mystery in detail is going to take even more.
+
+
+        """,
+        source: "ScienceNews", sourceLink: "https://www.sciencenews.org/article/deadly-frog-killing-bd-fungus-probably-originated-east-asia?tgt=nr", keywords: "frog killing animals", date:"10.05.2018"),
+    
+    News(
+        id: 46,
+        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050818_EC_proton-brief_feat.jpg")!,
+        title: "The proton’s weak side is just as feeble as physicists thought",
+        category: .science,
+        preview: "Scientists make the most precise measurement yet of the particle’s weak charge",
+        text: """
+
+        Protons are no one-trick ponies. Although famous for their positive electric charge, the particles also carry an analogous, lesser-known charge, called the weak charge. Now, physicists have made the most precise measurement of the proton’s underdog attribute, members of the Q-weak experiment report in the May 10 Nature.
+
+        The weak charge dictates how the proton responds to the weak nuclear force. Best known for its role in certain types of radioactive decay, the weak force is named for its feebleness compared with other forces such as electromagnetism (SN: 3/3/18, p. 11).
+
+        In the experiment, located at the Thomas Jefferson National Accelerator Facility in Newport News, Va., scientists scattered beams of electrons off of protons in liquid hydrogen. The beams came in two different configurations, depending on a quantum property of the electrons called spin. In one setup, the electrons behaved as if spinning clockwise; in the other, counterclockwise. Observing the difference between how protons interacted with electrons of the two spin orientations let the team calculate the proton’s weak charge.
+
+        The resulting charge is approximately 0.0719, a unitless number that agrees with predictions of the standard model of particle physics, the theory that describes how particles interact. That agreement partially rules out the existence of certain new types of particles, which is one reason scientists have been so interested in better understanding the proton’s weak side.
+        """,
+        source: "ScienceNews", sourceLink: "https://www.sciencenews.org/article/protons-weak-charge-just-feeble-physicists-thought?tgt=nr", keywords: "particle physics proton", date:"09.05.2018"),
+    
+    
+    
+    News(
+        id: 47,
+        imageURL: URL.init(string: "https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050818_SM_caterpillar_feat.jpg")!,
+        title: "These caterpillars march. They fluff. They scare London.",
+        category: .science,
+        preview: "Threats to trees and health aside, oak processionary moth larvae have socially redeeming qualities",
+        text: """
+        Of course the guy’s wearing a full-body protective suit with face mask and goggles good and snug. He’s about to confront a nest of little fluffy caterpillars.
+
+        Insect control can get surreal in the London area’s springtime battle against the young of oak processionary moths (Thaumetopea processionea).  The species, native to southern Europe, probably hitchhiked into England as eggs on live oak trees in 2005, the U.K. forestry commission says.
+
+        Adults are just harmless mate-seeking machines in city-soot tones. But when a new generation’s caterpillars finish their second molt into a sort of preteen stage, their short barbed hairs (called setae) can prick an irritating, rash-causing protein into any overconfident fool who pokes them. Even people who’d never torment, or even touch, a caterpillar can suffer as stray hairs waft on spring breezes. (More on that below.)
+
+        The caterpillars aren’t much for house cleaning. The baggy silk nest a group spins itself high in several kinds of oak trees accumulates cast-off skins still hairy with the toxic protein.
+
+        The name processionary comes from the caterpillars lining up head-to-rump. “A column of caterpillars moving together like a train,” is how evolutionary biologist Jim Costa of Western Carolina University in Cullowhee, N.C., describes it. A little rearrangement can get processions trudging round and round in a circle.
+
+        England’s ongoing battle against these oak leaf–stripping caterpillars has gripped the news, but other nations have irritating processions of their own, says entomologist Terrence Fitzgerald of State University of New York at Cortland. One of the London invader’s cousin, called a pine processionary moth (T. pityocampa), may be edging northward in Europe as the climate warms. In the United States, dark and spiky caterpillars of the buck moth Hemileuca maia show up largely unremarked in pockets in the East but are a traditional vexation of spring in New Orleans.
+
+
+        Annoyances aside, these creatures represent part of the glorious but underappreciated social side of insects, Fitzgerald says. Ants, bees, wasps and termites have long been the social insects, but building joint nests and traveling in caravans are just some of caterpillars’ coordinated projects. If fish or birds did that, he grumbles, they’d be acclaimed as “fabulous animals.”
+
+        Inspired by this rethink, Costa published “The Other Insect Societies.” Admittedly caterpillars, too young for sex anyway, don’t have the extreme reproductive specialty of a honeybee queen with a whole caste of sterile workers. But then people don’t either, and we certainly think we’re pretty social. — Susan Milius
+
+
+        """,
+        source: "ScienceNews", sourceLink: "https://www.sciencenews.org/article/these-caterpillars-march-they-fluff-they-scare-london?tgt=more", keywords: "animals health climate caterpillars", date:"11.05.2018"),
+    
+    
+    
+    //________________________________________Entertainment data set______________________________________________________
+    
+    News(
+        id: 48,
+        imageURL: URL.init(string: "https://akns-images.eonline.com/eol_images/Entire_Site/201849/rs_600x600-180509134044-600-the-arrangement.jpg")!,
+        title: "Kyle West Sets the Record Straight About Who He Truly Is on The Arrangement",
+        category: .entertainment,
+        preview: "Kyle West (Josh Henderson) is returning to the Iris Holloway show to set the record straight about who he really is. Not the loyal friend, caring fiancé or good man he described himself as.",
+        text: """
+            After coming face-to-face with some of his demons, Kyle takes the chance to open up about the man behind the movie star in this clip from Sunday's season finale of The Arrangement.
+
+        "I've been lying and covering up things up for years in order to sell something that everybody could love. But I've realized that it's impossible to love yourself when you're lying about who you are," an emotional Kyle tells the talk show host.
+
+        "And you want to love yourself?" Iris asks.
+
+        "I hope to," Kyle says. "I think that everything really good in life starts from there."
+
+        See Kyle open up about who he really is in the clip above.
+
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/shows/the_arrangement/news/933866/kyle-west-sets-the-record-straight-about-who-he-truly-is-on-the-arrangement", keywords: "Kyle West The Arrangement", date:"11.05.2018"),
+    
+    News(
+        id: 49,
+        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2017230/rs_600x600-170330183617-600x600.brooklyn-nine-nine-melissa-fumero-andy-samberg-lp.33017.jpg")!,
+        title: "Brooklyn Nine-Nine Might Be Saved From Cancellation",
+        category: .entertainment,
+        preview: "It's a TV miracle! After being canceled by Fox in a no-good very-bad move, it's looking likely that Brooklyn Nine-Nine will be the latest series to be saved from cancellation. Huzzah!",
+        text: """
+        According to Deadline, multiple other outlets are interested in keeping the series, which was created by Parks and Recreation's Dan Goor and Michael Schur, alive.
+
+        Hulu, per Deadline's report, looks to me the most likely new home, should B99 be saved. The streaming  site already is the show's SVOD home, and they've stepped in to save a Fox comedy from Universal TV from cancellation before (The Mindy Project).
+
+        Another new home? TBS, which recently picked up the off-network rights to the cop comedy, and is overseen by Kevin Reilly, the former Fox president responsible for helping get the show, with stars Andy Samberg and Andre Braugher, on the air in the first place.
+
+        Other potential options include Netflix and NBC, though they are considered longshots.
+
+        Given the immediate and intense response from fans once news of Brooklyn Nine-Nine's cancellation was announced, with the show becoming the No. 1 trending topic on Twitter for over six hours and stars like Mark Hamill, Lin-Manuel Miranda and Seth Meyers voicing their support, the show's chances of survival are looking pretty good.
+
+        It was a comedy bloodbath at Fox on Thursday, with the network canceling The Mick and Last Man on Earth in addition to B99, which ran for five seasons and was the network's highest rated live-action comedy in the adults 18-49 demo.
+        Universal TV had yet to respond to request for comment.
+
+        Brooklyn Nine-Nine's finale airs Sunday at 8:30 p.m. on Fox.
+
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/news/934439/brooklyn-nine-nine-might-be-saved-from-cancellation", keywords: "Brooklyn Nine-Nine Fox", date:"11.05.2018"),
+    
+    News(
+        id: 50,
+        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018410/rs_600x600-180510165845-600x600.big-bang-theory-wedding2-lp.51018.jpg")!,
+        title: "The Big Bang Theory Finale: Sheldon and Amy Finally Got Married",
+        category: .entertainment,
+        preview: "Was that possibly the nerdiest wedding to have ever occurred?Sheldon and Amy just tied the knot on the Big Bang Theory and boy were there a lot of guest stars. Kathy Bates! Laurie Metcalf! Jerry O'Connell! Wil Wheaton!",
+        text: """
+        But clearly the crown jewel of it all was Mark Hamill, who agreed to officiate the wedding after Howard found his dog (named Bark Hamill), meaning former officiant Wil was out of a job and ready for a Trek vs. Wars showdown. Too bad Mark didn't even know who he was...and too bad for Mark that Sheldon and Amy were late to the wedding due to a scientific breakthrough, so he had to field Star Wars questions from the guests.
+
+        Sheldon and Amy eventually made it down the aisle and brought Mark Hamill to full tears with their vows, which were truly something.
+
+        "I can't imagine loving you more than I do right now, but I felt that way yesterday, and the day before yesterday, and the day before that," Amy said. "Sheldon, I don't know what the future holds, but I know that I've never been happier than I am in this moment, marrying you."
+
+        Then it was Sheldon's turn.
+
+        "Amy, I usually know exactly what to say, but in this moment, I have no words. I guess I'm overwhelmed by you, in a good way, not in the elevator in the Haunted Mansion way. Even if I can't tell you now how I feel, I will spend my life showing you how much I love you."
+
+        Now, this is all very nice and good, but we'd like to take a minute to address a strange through-line in this episode and this show in general where the women do not care about things like Star Wars or the Avengers. Bernadette didn't even know which movie was the latest Avengers movie until Howard reminded her she slept through it, and Amy had little to no reaction to Mark Hamill officiating her wedding.
+
+        Those are two of the biggest franchises in all of pop culture, especially at the current moment, and no longer really nerdy or niche pieces of pop culture. Women like them too, and Bernadette and Amy (and Penny!) should be allowed to enjoy them, or at least appreciate the fact that Mark Freakin' Hamill was crying at this wedding.
+
+        Enjoying pop culture is fun! Everybody should get to do it!
+
+        Anyway, congratulations to Sheldon and Amy. See ya in season 12!
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/news/934365/the-big-bang-theory-finale-sheldon-and-amy-finally-got-married", keywords: "The Big Bang Theory Sheldon Amy marriage", date:"10.05.2018"),
+    
+    
+    News(
+        id: 51,
+        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018024/rs_600x600-180124134512-600-murphy-brown-3.jpg")!,
+        title: "New TV Shows 2018: Your Guide to Who's In Them and What They're About",
+        category: .entertainment,
+        preview: "Ain't no rest for the TV fan. Doesn't it feel like just yesterday all the new shows were premiering? Well, get ready, because  the networks have started ordering pilots to series for the 2018-19 TV season ahead of their Upfront presentations in New York City next week. Doesn't it feel like being a TV viewer is a full-time job these days? It's exhausting and exhilarating and we wouldn't have it any other way.",
+        text: """
+        To help you keep track of all the new shows that will be hitting your small screen come this fall, we've put together a quick guide of what the series are about, who's in them and who's making them.
+
+        Here are all the pilots (comedy and drama) that have been picked up to series by ABC, CBS, Fox, NBC and The CW:
+
+        ABC
+
+        COMEDIES:
+        The Goldbergs Spinoff: The untitled comedy set in the ‘90s will focus on  the teachers of William Penn Academ, including Tim Meadows' Principal Glascott and Bryan Callen's Coach Mellor, with Aly Michalka also starring as Lainey Lewis. It was created by the '80s-set mothershow's showrunner Adam F. Goldberg and Marc Fire.
+
+        DRAMAS:
+        A Million Little Things: This Boston-set drama follows a group of Beantown buds who bonded under unexpected circumstances. While some have achieved success and others are still struggling in their careers and love lives, all of them feel stuck in life. When one of them dies unexpectedly, it's the wake-up call the others need to finally start living and, along the way, they discover that friends may be the one thing to save them from themselves. The ensemble cast includes David Giuntoli, Ron Livingston, Romany Malco, Allison Miller, Christina Moses, Christina Ochoa, James Roday, Stephanie Szostak and Lizzy Greene.
+        The Rookie: Nathan Fillion's back, baby! The Castle vet returns to the network with this procedural where he stars as small town guy John Nolan who, after a life-altering incident, begins pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from those who see him as a walking midlife crisis. If he can't keep up with his younger colleagues and the criminals, he'll be risking lives. But if he taps into his life experience, determination and sense of humor, he just may become a success. Alyssa Diaz, Richard T. Jones, Titus Makin, Mercedes Mason, Melissa O'Neil, Afton Williamson and Eric Winter also star in the series, created by fellow Castle vet Alexi Hawley.
+        CBS
+
+        COMEDIES:
+        Murphy Brown: Candice Bergen is set to reprise her iconic role in CBS' 13-episode revival of the landmark show, which will return just shy of its 30th anniversary.
+
+        Welcome to the Neighborhood: House of Lies vet Josh Lawson stars in this multi-cam sitcom as "the nicest guy in the Midwest" who moves his family to a tough neighborhood in L.A., where not everyone enjoys his extreme neighborliness. Dreama Walker, Cedric the Entertainer, Tichina Arnold, Sheaun McKinney, Marcel Spears and Hank Greenspan also star.
+
+        Untitled Damon Wayans Jr. sitcom: One of this pilot season's hottest commodities, Happy Endings alum Damon Wayans Jr.. stars alongside Greek's Amber Stevens West in this multi-cam comedy as a 30-something couple tired of their mundane life who start to reconnect with their younger, cooler selves when an emerging pop star (Felix Mallard), drawn to their suburban life, moves in. Chris Parnell also stars. Fun fact: The series is inspired by a time when executive producer Ben Winston lived with Harry Styles!
+        DRAMAS:
+        FBI: No, we didn't forget a Chicago in front of that show title! Dick Wolf's new drama is heading to CBS, which picked up 13 episodes of the procedural about the inner workings of the New York office of the Federal Bureau of Investigation.
+
+        Fox
+
+        DRAMAS:
+        The Passage: Based on the best-selling trilogy of the same name, this thriller is about a secret government medical facility experimenting with a dangerous virus that could either cure all disease or cause the downfall of the human race. Mark-Paul Gosselaar plays a federal agent who becomes a surrogate father to the 10-year-old girl (Saniyya Sidney) who is the test subject for the experiment. Vincent Piazza and Emmanuelle Chriqui also star.
+
+        Proven Innocent: Rachelle Lefevre stars as a fierce and fearless female lawyer with a tabloid sensation past and a hunger for justice who leads a team that reopens investigations to exonerate the innocent that were proven guilty. Russell Hornsby, Nikki M. James, Vincent Kartheiser, Riley Smith, and Clare O'Connor also star.
+
+        COMEDIES:
+
+        The Cool Kids: It's a multi-cam comedy about three guy friends in a retirement community who are shaken from their spots as top dogs by a female rebel ready to challenge them. "It's high school with 70 somethings." Vicki Lawrence, Martin Mull, David Alan Grier, and Leslie Jordan star.
+
+        Rel: Lil Rel Howery plays a fictional version of himself in a show inspired by his real life as a "self-made success" who finds his positive attitude put to the test when he learns his wife is having an affair with his barber, and then has to rebuild his life post-divorce as a long-distance single father on the south side of Chicago who's on the quest for love, respect, and a new barber. Sinbad also stars.
+
+        NBC
+
+        DRAMAS:
+        New Amsterdam: Starring The Blacklist's Ryan Eggold, Janet Montgomery and Freema Agyeman, this medical drama is inspired by Bellevue, the oldest public hospital in America.
+
+        The Enemy Within: Dexter's Jennifer Carpenter stars as a brilliant former CIA operative who is now known as the most notorious traitor in American history serving life in a Supermax prison in this spy-hunting thriller. Morris Chesnut plays an FBI Agent who enlists her help to track down an elusive criminal she knows all too well.
+
+        The Village: Think This Is Us in an apartment complex! Centering on an apartment building in Brooklyn that appears like any other from the outside, it's actually super unique on the inside. The occupants, who are bonded like a family, include a single mom raising a creative teen, a veteran who has just returned from warm young law student who got a much older and unexpected roommate and more. Starring Moran Atias, Dominic Chianese, Warren Christie, Frankie Faison, Jerod Haynes, Daren Kagasoff, Michaela McManus, Lorraine Toussaint and Grace Van Dien, you can expect hopeful, heartwarming and challenging stories of life from this one.
+        Manifest: Just when you thought people were done trying to find the next Lost, along comes this drama from Robert Zemeckis and Jack Rapke about Montego Air Flight 828. The passengers all think they landed after a routine flight, but they soon learn that the world below had aged five years and their friends, families and colleagues had mourned their losses and moved on. Of course, a deeper mystery begins to unfold and some of the passengers realize they may be meant for something greater. The series marks Once Upon a Time vet Josh Dallas' return to TV, as he stars alongside Melissa Roxburgh, Athena Karkanis, J.R. Ramirez, Luna Blaise, Jack Messina and Parveen Kaur.
+        The Inbetween: Have you missed The Ghost Whisperer? Or maybe Medium? Well, then this series from Castle vet Moira Kirland is for you. The procedural follows Cassie Bishop (Harriet Dyer) who can see and communicate with the dead, helping them with their unresolved problems—whether she likes it or not. When her longtime friend Det. Tom Hackett (Arrow's Paul Blackthorne) and his new partner need help solving a puzzling murder, she agrees to use her abilities to help solve some of the city's most challenging cases. Anne-Marie Johnson, Cindy Luna and Chad James Buchanan also star.
+        COMEDIES:
+        Abby's: This aspirational comedy about the best bar in San Diego comes from the producers of The Good Place. With an oddball cast of regulars, the unlicensed Abby's is the exact opposite of everything annoying about today's party scene. Natalie Morales, Nelson Franklin, Kimia Behpoornia, Jessica Chaffin, Leonard Ouzts and Neil Flynn all star in the multi-cam that will tape in front of a live audience.
+
+        I Feel Bad: From EP Amy Poehler, this comedy is about Emet, a mom, boss, wife, friend and daughter who is just trying to figure it all out like the rest of us. Starring Sarayu Blue, Paul Adelstein, Aisling Bea, Zach Cherry, Johnny Pemberton and James Buckley, this modern comedy about being perfectly OK with being imperfect.
+        Keep checking back with us as the networks pick up more new shows for the 2018-19 TV season.
+
+        Which new shows are you most interested in?
+
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/news/932925/new-tv-shows-2018-your-guide-to-who-s-in-them-and-what-they-re-about", keywords: "TV shows NBC FOX comedies drama", date:"10.05.2018"),
+    
+    
+    
+    
+    News(
+        id: 52,
+        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/201828/rs_600x600-180308190054-600-sarah-drew-scandal-abc.png")!,
+        title: "Grey's Anatomy: Did April Die?",
+        category: .entertainment,
+        preview: "All you need to know about tonight's episode of Grey's Anatomy is that they played Snow Patrol. ",
+        text: """
+        The dulcet tones of 2006's "Make This Go On Forever" were all we needed to start dissolving into a puddle of tears, alleviated only by the comatose April squeezing Jackson's hand and opening her eyes. She's alive, y'all. But she is not very well.
+
+        April was in a car with ex-fiance Matthew when they got into an accident around a curve. Matthew was brought in first, and Owen had to go search for April. He found her nearly dead in a ravine, and Mer, Maggie, and Alex worked hard on her for hours to bring her back.
+
+        Jackson learned what was happening about three hours into it and immediately ran to her side. Maggie eventually caught the tiniest rhythm and shocked her back to life, and the entire room went silent and prayed for her, because they knew that's what she would want.
+
+        She was in a coma for a bit, but she eventually woke up and promised everyone she never even died for a second, because only Jesus can die and then come back to life.
+
+        Matthew's bed was then wheeled in next to hers so they could recover together, and something tells us her exit from the show will be about starting a beautiful new life with her old love.
+        Before all that went down, Arizona officially gave Bailey her two weeks and reunited with Dr. Herman (Geena Davis), who came in to have Amelia check her brain for any new tumors that might be causing some symptoms.
+
+        But she was also there to tell Arizona that she had gotten a grant and planned to open up a maternal clinic, and she wanted Arizona to open it with her. Now, the plan is to open it in New York, somewhere near Callie and Sofia.
+
+        Meanwhile, next week, it appears that April is fully recovered in time for Jo and Alex's wedding, but Jo and Alex get trapped in a shed! Hilarious...until that heartbreaking twist we're always fearing with this show.
+        Grey's Anatomy will return to ABC in the fall.
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/news/934357/grey-s-anatomy-did-april-die", keywords: "ABC Grey's anatomy April die", date:"10.05.2018"),
+    
+    
+    News(
+        id: 53,
+        imageURL: URL.init(string: "https://akns-images.eonline.com/eol_images/Entire_Site/2018410/rs_634x1024-180510195423-634.chris-hardwick-lydia-hearst-solo-star-wars-premiere.ct.051018.jpg")!,
+        title: "Solo: A Star Wars Story Premieres in Hollywood: See All the Red Carpet Photos",
+        category: .entertainment,
+        preview: "The Star Wars galaxy has officially descended onto Hollywood!",
+        text: """
+        The Star Wars galaxy has officially descended onto Hollywood!
+
+        As the excitement continues to grow around Disney Pictures and Lucasfilm's upcoming film Solo: A Star Wars Story, the cast came together to celebrate the official Los Angeles premiere Thursday night at the El Capitan Theatre in Hollywood.
+
+        Donald Glover, Emilia Clarke, Alden Ehrenreich and even Chewbacca were on hand to pose for photographers and chat with reporters from around the world.
+
+        In the film, Han Solo will meet his mighty future copilot Chewbacca and encounter the notorious gambler Lando Calrissian. What comes next is a journey that will set the course of one of the Star Wars saga's most unlikely heroes.
+
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/news/934384/solo-a-star-wars-story-premieres-in-hollywood-see-all-the-red-carpet-photos", keywords: "Star Wars Story Hollywood", date:"10.05.2018"),
+    
+    
+    News(
+        id: 54,
+        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018411/rs_600x600-180511052919-600.christina-aguilera-twice.51118.jpg")!,
+        title: "Christina Aguilera Goes Back to Basics With the Ballad Twice",
+        category: .entertainment,
+        preview: "This is Christina Aguilera stripped...again.",
+        text: """
+        The brooding ballad "Twice," released Friday, follows the Kanye West-produced "Accelerate," featuring 2 Chainz and Ty Dolla $ign. Aguilera tweeted she loves the song's "raw vocal quality," and she's especially proud of the "spiritual emotion and tone" it captures and conveys for her.
+
+        "Well, you're no angel / I never asked you to be / You're my danger, 'cause that's just what I need / But it still hurts me," the five-time Grammy winner sings. "Well, sometimes I wonder what is the meaning of my life / I found the price of love and lost my mind / I will forgive them all of my wrongs and my rights / I'd do it all again and won't think twice / Won't think twice."
+
+        "Twice" is one of "many moods" expressed on Liberation, Aguilera added. The album, out June 15, features collaborations with Demi Lovato, Keida and Shenseea, and Aguilera worked with producers and songwriters such as Mike Dean, Julia Michaels, Anderson .Paak and Tayla Parx.
+
+        "I don't know why we hurt ourselves to please someone else's perception of self. I'm sorry to my own reflection, I'm sorry for putting you down. I'm sorry I struggle accepting the beauty that lies in myself," Aguilera says in her album trailer. "I feel in life when you get to a place where you feel so comfortable and so routine then you know you have to stop and start from scratch."
+
+        "The inspiration for the album? To me, the purest of reason is to get back to that little girl who just wants to be inspired again by truth and by that sense of passion for music and singing and just feeling free and alive again," says Aguilera, who released her last album, Lotus, in 2012. "I've stepped so far away from that little girl, and if that means going away for a little while and figuring out who you are again and what you need to say, then that's what you need to do."
+        Aguilera, who will perform with Lovato at the Billboard Music Awards, is going on tour this fall.
+        Don't miss E!'s Live From the Red Carpet: The 2018 Billboard Music Awards special Sunday, May 20, at 6 p.m. ET/3 p.m. PT!
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/news/934438/christina-aguilera-goes-back-to-basics-with-the-ballad-twice", keywords: "Christina Aguilera Kanye West Twice", date:"11.05.2018"),
+    
+    
+    News(
+        id: 55,
+        imageURL: URL.init(string: "https://images.eonline.com/eol_images/Entire_Site/2018410/rs_600x600-180510110454-600.girls.51018.jpg")!,
+        title: "Rita Ora, Cardi B, Bebe Rexha and Charli XCX Explore Bisexuality With Girls",
+        category: .entertainment,
+        preview: "Sometimes, Rita Ora just wants to kiss girls—and so do Cardi B, Bebe Rexha and Charli XCX, apparently. Ora recruited the rapper and two of her pop peers for the song Girls, a new summer anthem released today.",
+        text: """
+        "Sometimes, I just wanna kiss girls, girls, girls / Red wine, I just wanna kiss girls, girls, girls / Sometimes, I just wanna kiss girls, girls, girls," the foursome chants in the chorus. "Red wine, I just wanna kiss girls, girls, girls / Girls, girls, girls, girls, girls."
+
+        While the singers trade verses throughout the song, Cardi B's rhyme is quintessential Cardi B. "Now I could be your lipstick just for one night (one night) / Girls just wanna have fun, they have their funds right (yeah) / I mean, say my name, say my name, say my name (say my name)," the 25-year-old rapper says. "It tastes good just running up your tongue, right? (hurrr) / I put this smack on your lips all so pucker up (mwah) / We ain't never heard of you 'cause you ain't gun enough / And I don't gotta introduce myself (Cardi) / I'm too sexy, I seduce myself (Bardi) / Seven figure, never need a n---a (nope) / I steal your chick, have her down with the scissor / Tonight, I don't want a dog, I want a kitten / I might french your girls and break bread."
+        For Ora, teaming up with the other women was a dream come true.
+
+        "These past few years, I have been so inspired by all the strong women I've seen who aren't afraid to be themselves. For those who aren't afraid to rule the world, this is our anthem—a celebration of love," Ora said in a statement. The 27-year-old singer thanked "boss women" Cardi B, Rexha and Charli XCX for "each representing who they are and where they are from."
+
+        Added Ora, "I hope you dance your socks off with us!"
+
+        Rexha, who just had a No. 1 country hit, leapt at the chance to record a verse. "I've been so inspired by the powerful female singers of our time, and I couldn't be more proud to join Rita, Cardi and Charli in carrying on the tradition of bold, sexy and fearless expression," she said. "I strive to be a fierce champion of female empowerment and equal representation in music and beyond and am so excited to have this anthem out there in the world for girls everywhere."
+        Likewise, Charli XCX was "instantly" down to work with Ora. "She's one of my favorite people I've met through music, a genuine person who is really funny and someone I count as a true friend. There's nothing more fun than making music with your friends," the singer said, adding, "I just want to throw a huge party when this song is out. Everyone's invited, let's get f--ked up!"
+
+        Ora will kick off her sold-out European Girls Tour in Glasgow on May 11.
+        """,
+        source: "Enews", sourceLink: "https://www.eonline.com/news/934221/rita-ora-cardi-b-bebe-rexha-and-charli-xcx-explore-bisexuality-with-girls", keywords: "Rita Ora, Cardi B, Bebe Rexha and Charli XCX Girls", date:"10.05.2018")
+    
+    
 ]
 
