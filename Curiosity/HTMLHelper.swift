@@ -12,6 +12,7 @@ struct HTMLHelper {
     let htmlBeginning: String
     let htmlEnding: String
     
+    //HTML settings
     let htmlBeginningTags = ["<html>",
                              "<head>",
                              "<meta name=\"viewport\" content=\"initial-scale=1\">",
@@ -51,7 +52,6 @@ struct HTMLHelper {
         }
         
         var html = String(htmlBeginning)
-//        should work
         html += "<img src=\"\(article.imageName)\" width = 360>"
         html += getHTMLFor(id: "title", element: article.title)
         html += getHTMLFor(id: "source", element: article.source)

@@ -26,6 +26,7 @@ class HCIArticleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.activityIndicator.startAnimating()
+        
         loadArticle()
         initializeToolbar()
         
@@ -52,12 +53,14 @@ class HCIArticleViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    //load article information into html and present it
     func loadArticle() {
         let htmlHelper = HTMLHelper()
         let baseURL = Bundle.main.bundleURL.appendingPathComponent("Resources")
         webView.loadHTMLString(htmlHelper.convertToHTMLString(news: article), baseURL: baseURL)
     }
     
+    //load toolbar, set buttons and connect them to actions
     func initializeToolbar() {
         let iconNames = ["followIcon", "notificationIcon", "likeIcon", "saveIcon", "shareIcon"]
         let pressedIconsNames = ["followPressedIcon", "notificationPressedIcon", "likePressedIcon", "savePressedIcon", "shareIcon"]
@@ -161,7 +164,6 @@ class HCIArticleViewController: UIViewController {
         newsManager.categoriesNews[.favourites]!.remove(at: index!)
     }
     
-    //To Do
     func enableNotifications() {
         NotificationManager.shared.sendLocalNotification(in: TimeInterval.init(2), cat: article.category)
     }

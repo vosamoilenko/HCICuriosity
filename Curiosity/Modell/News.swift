@@ -20,6 +20,7 @@ class News: NSObject {
     var keywords: String
     var category: NewsCategory
     
+    //information for toolbar in article view
     var isFollowed: Bool = false
     var notificationsEnabled: Bool = false
     var isLiked: Bool = false
@@ -40,6 +41,7 @@ class News: NSObject {
         self.date = date
     }
     
+    //method returning states of buttons for toolbar
     func getButtonStates() -> [Bool] {
         var states = [Bool]()
         states.append(isFollowed)
