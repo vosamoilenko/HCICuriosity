@@ -16,7 +16,11 @@ class NotificationManager: NSObject {
     func requestAuthorization() {
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
             if error == nil {
-                print("Permission granted")
+                // permision is not granted
+                // in next milestone, present popover to user with notifiacation
+                // that he cannot get notification without permission
+                // This means that hw should go to settings, maybe show the steps what he need to do,
+                // or ask again for permission
             }
         }
     }
