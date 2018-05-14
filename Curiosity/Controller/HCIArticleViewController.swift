@@ -142,26 +142,35 @@ class HCIArticleViewController: UIViewController {
     }
     
     func addToFollowed() {
-        newsManager.categoriesNews[.recommended]?.append(article)
+        if (!(newsManager.categoriesNews[.recommended]?.contains(article))!) {
+            newsManager.categoriesNews[.recommended]?.append(article)
+        }
     }
     
     func removeFromFollowed() {
-        var recommended = newsManager.categoriesNews[.recommended]
-        let index = recommended?.index(of: article)
-        recommended?.remove(at: index!)
+        let index = newsManager.categoriesNews[.recommended]?.index(of: article)
+        if (index! > 0) {
+            newsManager.categoriesNews[.recommended]?.remove(at: index!)
+        }
     }
     
     func affectRecommendations() {
-        newsManager.categoriesNews[.recommended]?.append(article)
+        if (!(newsManager.categoriesNews[.recommended]?.contains(article))!) {
+            newsManager.categoriesNews[.recommended]?.append(article)
+        }
     }
     
     func addToFavorites() {
-        newsManager.categoriesNews[.favourites]?.append(article)
+        if (!(newsManager.categoriesNews[.favourites]?.contains(article))!) {
+            newsManager.categoriesNews[.favourites]?.append(article)
+        }
     }
     
     func removeFromFavorites() {
         let index = newsManager.categoriesNews[.favourites]!.index(of: article)
-        newsManager.categoriesNews[.favourites]!.remove(at: index!)
+        if (index! > 0) {
+            newsManager.categoriesNews[.favourites]!.remove(at: index!)
+        }
     }
     
     func enableNotifications() {
