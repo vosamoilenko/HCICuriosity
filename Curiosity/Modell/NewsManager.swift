@@ -63,7 +63,7 @@ class NewsManager {
     
     func newsBySearch(request: String) -> [News] {
         return currentNews.filter { (news) -> Bool in
-            return news.text.range(of: request) != nil || news.preview.range(of: request) != nil || news.title.range(of: request) != nil
+            return news.text.lowercased().range(of: request.lowercased()) != nil || news.preview.lowercased().range(of: request.lowercased()) != nil || news.title.lowercased().range(of: request.lowercased()) != nil
         }
     }
 }
