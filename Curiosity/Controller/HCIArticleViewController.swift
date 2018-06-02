@@ -13,13 +13,13 @@ class HCIArticleViewController: UIViewController {
     @IBOutlet weak var titleView: HCITitleNavigationBarView!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var toolbar: UIToolbar!
-
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var prevVC: ViewController!
     var category = String()
     var article: News!
     var newsManager: NewsManager!
+    
     var isSearchBarVisible:Bool = false
     var barButtonItems = [UIBarButtonItem]()
     
@@ -89,10 +89,14 @@ class HCIArticleViewController: UIViewController {
     
     @objc func followPressed(sender: UIBarButtonItem) {
         if (!article.isFollowed) {
+            showAlert(title: "Followed", message: "Articles from this source will now appear in \"Recommended\".")
+            
             article.isFollowed = true
             sender.image =  UIImage(named: "followPressedIcon")
             addToFollowed()
         } else {
+            showAlert(title: "Unfollowed", message: "Articles from this source will not appear in \"Recommended\" anymore.")
+            
             article.isFollowed = false
             sender.image =  UIImage(named: "followIcon")
             removeFromFollowed()
@@ -101,10 +105,14 @@ class HCIArticleViewController: UIViewController {
     
     @objc func notificationPressed(sender: UIBarButtonItem) {
         if (!article.notificationsEnabled) {
+            showAlert(title: "Notifications enabled", message: "You will get notifications about articles like this.")
+            
             article.notificationsEnabled = true
             sender.image =  UIImage(named: "notificationPressedIcon")
             enableNotifications()
         } else {
+            showAlert(title: "Notifications disabled", message: "You won't get notifications about articles like this anymore.")
+            
             article.notificationsEnabled = false
             sender.image =  UIImage(named: "notificationIcon")
             disableNotifications()
@@ -113,10 +121,14 @@ class HCIArticleViewController: UIViewController {
     
     @objc func likePressed(sender: UIBarButtonItem) {
         if (!article.isLiked) {
+            showAlert(title: "Liked", message: "More articles like this will appear in \"Recommended\".")
+            
             article.isLiked = true
             sender.image =  UIImage(named: "likePressedIcon")
             affectRecommendations()
         } else {
+            showAlert(title: "Disliked", message: "Less articles like this will appear in \"Recommended\".")
+            
             article.isLiked = false
             sender.image =  UIImage(named: "likeIcon")
             affectRecommendations()
@@ -125,10 +137,14 @@ class HCIArticleViewController: UIViewController {
     
     @objc func savePressed(sender: UIBarButtonItem) {
         if (!article.isSaved) {
+            showAlert(title: "Saved", message: "The article was saved to \"Favourites\".")
+            
             article.isSaved = true
             sender.image =  UIImage(named: "savePressedIcon")
             addToFavorites()
         } else {
+            showAlert(title: "Removed", message: "The article was removed from \"Favourites\".")
+            
             article.isSaved = false
             sender.image =  UIImage(named: "saveIcon")
             removeFromFavorites()
@@ -139,6 +155,14 @@ class HCIArticleViewController: UIViewController {
         let avc = UIActivityViewController(activityItems: [article.sourceLink], applicationActivities: [])
         avc.popoverPresentationController?.sourceView = self.view
         present(avc, animated: true)
+    }
+    
+    func showAlert(title: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        present(ac, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
+            ac.dismiss(animated: true, completion: nil)
+        }
     }
     
     func addToFollowed() {
