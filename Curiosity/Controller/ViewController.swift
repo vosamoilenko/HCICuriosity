@@ -17,6 +17,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var topConstrain: NSLayoutConstraint!
     
     var newsManager = NewsManager()
+    var isRoot = true
     
     var isSearchBarVisible = false
     var isMenuBarVisible = false
@@ -41,7 +42,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
          
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.searchBar.placeholder = "Search by category"
-        self.titleView.menuButton.isHidden = true
+        self.titleView.menuButton.isHidden = false
         
         preapreTableViewAndCells()
         setDelegates()
@@ -87,7 +88,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
 // The whole extension is for separating actions methods
 extension ViewController {
     @objc func openMenuBar() {
-        print("check")
+        if (isRoot) {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryMenu") as? CategoryMenuController {
+                isRoot = false
+                vc.newsManager = newsManager
+                vc.prevVC = self
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
     @objc func openSearchBar() {
         var value = self.topConstrain.constant
