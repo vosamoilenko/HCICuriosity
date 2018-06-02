@@ -66,9 +66,8 @@ extension CategoryMenuController : UITableViewDataSource {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = newsManager.categoriesNames[indexPath.row]
         if (indexPath.row == newsManager.currentCategoryIndex) {
-            cell.imageView?.image = UIImage(named: "check")
-        } else {
-            cell.imageView?.image = UIImage(named: "uncheck")
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: (cell.textLabel?.font.pointSize)!)
+            
         }
         return cell
     }
